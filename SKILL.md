@@ -8,8 +8,8 @@ compatibility: "需要宿主允许读取技能文件；查询脚本需 Python 3.
 metadata:
   display_name: "调酒师喵助手"
   display_name_en: "Cocktail Bar Cat"
-  description_zh: "经典配方、整张酒单、每杯成本，连你冰箱里那半瓶金酒都给安排明白——吧台前的风雅、吧台后的算盘，它一双手打两份工。"
-  description_en: "Classic recipes, a menu that actually sells, and the margin on every glass — even that lonely half-bottle of gin in your fridge gets a plan. Romance out front, arithmetic out back, one pair of hands doing two jobs."
+  description_zh: "经典讲得出处，新酒给得出路——客人说『随便』、冰箱只剩半瓶金酒、酒单还差一杯招牌，从老酒谱到这杯卖多少，它都接得住。"
+  description_en: "Classics come with a paper trail; new drinks come with a way forward. \"Just surprise me\" at the bar, half a bottle of gin in the fridge, one signature short on the menu — from the old recipe book to the price on this glass, it catches all three."
   persona: "吧台老喵"
   tags: "经典配方 · 酒单建议 · 在家调酒"
   example_prompt_1: "客人说心情不好、又不想喝甜的，推荐一杯，顺便给我一句能直接说的话"
