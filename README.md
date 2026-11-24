@@ -137,7 +137,7 @@ python3 scripts/feedback.py "推荐规则需要改进" --kind 可复现问题 --
 
 v2.7.2本地验证：综合门禁17通过/0警告/0失败；19项历史回归与12项公开模板、金额、文件及只读检查共31项通过。22份JSON可解析；177款原出品规格校验值保持；涉及的161种材料价格覆盖100%。首次公开提交44文件已固定SHA逐文件回读一致；skills CLI远端 `--list` 实测识别1个技能。打包按白名单核验完整性。正式安装、各宿主加载与平台字段映射未执行，不作通过承诺。
 
-遵循Agent Skills核心 `name/description`、短入口与按需参考设计，额外中文卡片字段放在字符串值 `metadata`。为现有维护流程保留顶层 `version/last_updated/agent_created` 扩展；严格客户端是否接受这些扩展需实测，不宣称所有平台验证通过。
+遵循Agent Skills核心 `name/description`、短入口与按需参考设计。`display_name`、`display_name_en`、`description_zh`、`description_en` 及 persona/tags/示例问句均置于 `SKILL.md` frontmatter 顶层——2026-11-24 上传平台实测：把这些字段嵌进 `metadata` 对象会报「缺少 Skill 中文展示名/中文描述等」并阻止继续。顶层 `version/last_updated/agent_created` 为既有维护流程扩展；严格客户端是否接受其它扩展需实测，不宣称所有平台验证通过。
 
 ## 权利说明（许可范围需区分）
 

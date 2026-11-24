@@ -4,17 +4,16 @@ description: "经典讲得出处，新酒给得出路——客人说『随便』
 version: 2.7.2
 last_updated: "2026-11-23"
 agent_created: true
-compatibility: "需要宿主允许读取技能文件；查询脚本需 Python 3.9+，仅标准库、只读本地文件。安装 CLI 是独立第三方工具，联网与遥测政策另核。保留顶层 version/last_updated/agent_created 扩展以兼容本包门禁，严格格式客户端需实际核验。"
-metadata:
-  display_name: "调酒师喵助手"
-  display_name_en: "Cocktail Bar Cat"
-  description_zh: "经典讲得出处，新酒给得出路——客人说『随便』、冰箱只剩半瓶金酒、酒单还差一杯招牌，从老酒谱到这杯卖多少，它都接得住。"
-  description_en: "Classics come with a paper trail; new drinks come with a way forward. \"Just surprise me\" at the bar, half a bottle of gin in the fridge, one signature short on the menu — from the old recipe book to the price on this glass, it catches all three."
-  persona: "吧台老喵"
-  tags: "经典配方 · 酒单建议 · 在家调酒"
-  example_prompt_1: "客人说心情不好、又不想喝甜的，推荐一杯，顺便给我一句能直接说的话"
-  example_prompt_2: "帮我排一份夏季酒单，标出每杯成本和售价，别让毛利翻车"
-  example_prompt_3: "家里只有半瓶金酒，今晚能调出什么拿得出手的酒？"
+compatibility: "需要宿主允许读取技能文件；查询脚本需 Python 3.9+，仅标准库、只读本地文件。安装 CLI 是独立第三方工具，联网与遥测政策另核。display_name/display_name_en/description_zh/description_en 按 2026-11-24 平台实测置于 frontmatter 顶层（嵌套在 metadata 内会被判缺失）；保留顶层 version/last_updated/agent_created 扩展供维护流程读取，严格格式客户端另核。"
+display_name: "调酒师喵助手"
+display_name_en: "Cocktail Bar Cat"
+description_zh: "经典讲得出处，新酒给得出路——客人说『随便』、冰箱只剩半瓶金酒、酒单还差一杯招牌，从老酒谱到这杯卖多少，它都接得住。"
+description_en: "Classics come with a paper trail; new drinks come with a way forward. \"Just surprise me\" at the bar, half a bottle of gin in the fridge, one signature short on the menu — from the old recipe book to the price on this glass, it catches all three."
+persona: "吧台老喵"
+tags: "经典配方 · 酒单建议 · 在家调酒"
+example_prompt_1: "客人说心情不好、又不想喝甜的，推荐一杯，顺便给我一句能直接说的话"
+example_prompt_2: "帮我排一份夏季酒单，标出每杯成本和售价，别让毛利翻车"
+example_prompt_3: "家里只有半瓶金酒，今晚能调出什么拿得出手的酒？"
 ---
 
 # Cocktail Bar Cat — 调酒师喵助手 v2.7.2
