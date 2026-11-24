@@ -1,0 +1,2675 @@
+{
+  "version": "2.7.0",
+  "updated": "2026-11-23",
+  "policy": {
+    "earliest_is_scoped": true,
+    "historical_sources_do_not_expire": true,
+    "principle": "文献记录不等于诞生，收录者不等于发明者；按可核版次讲历史，按功能骨架做创新。",
+    "source_hierarchy": [
+      "原书扫描与标题页（另记扫描页号）",
+      "原书数字转录（非扫描逐字校对）",
+      "机构原文摘录",
+      "专业史家研究/二手原文转引",
+      "书目目录（只能证明出版，不证明配方）"
+    ],
+    "unknowns": "不使用全球最早/唯一发明者断言；没有直接原文时降为二手支持，未收录不等于不存在。",
+    "units": "保留旧原单位；wine-glass、pony、jigger、dash、量勺与倒酒嘴随年代/上下文变化，不自动统一ml。现代试做需另列假设。",
+    "creativity": "历史数据与现代出品规格分离；创作是现代研发简报，非原书换算，未经实饮验证。单变量、半杯、先控甜度/稀释/温度再谈效果。",
+    "safety": "不复制带火饮用、以酒治病或大份摄入；提醒蛋奶坚果过敏、巴氏杀菌与冷藏；无酒精路线独立命名。",
+    "static_package": "脚本只读，无联网、回传或自动更新。维护者显式查证与合并后发版。",
+    "scope": "六家族是教学与研发模型，并非全球历史完整族谱；早期英美印刷资料偏多，不能据此抹掉其他地区混饮传统。"
+  },
+  "families": [
+    {
+      "id": "cocktail",
+      "name": "古典鸡尾酒结构",
+      "formula": "烈酒 + 甜味剂 + 水/冰 + 苦精/芳香",
+      "invariants": [
+        "基酒可辨",
+        "甜味与芳香克制",
+        "稀释不是事后补救"
+      ],
+      "levers": [
+        "等甜替换糖浆",
+        "一个苦精变量",
+        "固定总量分基酒"
+      ],
+      "caution": "1806定义描述狭义cocktail，不是所有现代混饮的唯一祖先。"
+    },
+    {
+      "id": "sour",
+      "name": "酸酒结构",
+      "formula": "烈酒 + 柑橘/酸 + 甜味剂（可由利口酒承担）",
+      "invariants": [
+        "酸甜平衡",
+        "基酒支撑",
+        "摇和与稀释可复现"
+      ],
+      "levers": [
+        "控酸条件下换柑橘",
+        "控甜条件下换利口酒",
+        "一种芳香点睛"
+      ],
+      "caution": "相同材料角色不证明直接历史师承；不同柑橘等量不等酸。"
+    },
+    {
+      "id": "punch",
+      "name": "潘趣结构",
+      "formula": "基酒 + 酸 + 糖 + 水/茶 + 芳香；可扩展澄清",
+      "invariants": [
+        "香气融入液体",
+        "稀释与批次平衡",
+        "杯份明确"
+      ],
+      "levers": [
+        "等量茶替水",
+        "糖吸皮油",
+        "奶澄清对照"
+      ],
+      "caution": "早期punch传统不等同于现代每杯标准配方；奶澄清仍可能有乳过敏原。"
+    },
+    {
+      "id": "julep",
+      "name": "朱莉普与司马殊结构",
+      "formula": "烈酒 + 糖/水 + 新鲜草本 + 碎冰",
+      "invariants": [
+        "草本鼻息",
+        "低温与持续稀释",
+        "不过度捣碎"
+      ],
+      "levers": [
+        "单一草本替换",
+        "保持基酒总量切分",
+        "固定杯型比较冰粒"
+      ],
+      "caution": "史书的司马殊与现代常加柑橘的版本有差别；不把现代酸汁倒填进原书。"
+    },
+    {
+      "id": "cobbler",
+      "name": "考布勒结构",
+      "formula": "葡萄酒/雪利酒 + 糖 + 水果 + 碎冰",
+      "invariants": [
+        "葡萄酒主体",
+        "水果与酒体协调",
+        "降温稀释"
+      ],
+      "levers": [
+        "固定糖量换雪利风格",
+        "一种水果替换",
+        "固定酒体比较冰量"
+      ],
+      "caution": "低酒精倾向不代表所有版本低度；先读瓶身ABV再计算。"
+    },
+    {
+      "id": "aromatized",
+      "name": "芳香葡萄酒结构",
+      "formula": "基酒/雪利 + 味美思/芳香开胃酒 + 少量苦精/利口酒",
+      "invariants": [
+        "芳香酒是可调酒体",
+        "香气与甜度平衡",
+        "低温稀释一致"
+      ],
+      "levers": [
+        "同类味美思换品牌",
+        "仅调整干甜配比",
+        "固定总量改基酒"
+      ],
+      "caution": "早期马提尼/曼哈顿与今日干型不等同；历史同名开胃酒可能已经改配方。"
+    }
+  ],
+  "bibliography_gateway": [
+    {
+      "title": "Oxford Night Caps",
+      "year": 1827,
+      "author": "Richard Cook（后世书目归属；早期册未署名）",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1827-Oxford-Night-Caps",
+      "status": "catalog_only",
+      "note": "本轮扫描平台仅返回标题。可由专业书目确认1827出版，不能将后版或未读配方倒填1827。",
+      "support_url": "https://spiritsanddistilling.com/dictionary/acref-9780199311132-e-936"
+    },
+    {
+      "title": "Cooling Cups and Dainty Drinks",
+      "year": 1869,
+      "author": "William Terrington",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1869-Cooling-Cups-and-Dainty-drinks-by-William-Terrington",
+      "status": "catalog_only",
+      "note": "本轮只得到标题；收作后续英国混饮传统阅读入口，不声称核过正文。",
+      "support_url": "https://www.chanticleersociety.org/index.php?title=Bibliography"
+    },
+    {
+      "title": "The Oxford Companion to Spirits & Cocktails · mixography",
+      "year": 2021,
+      "author": "现代参考词典",
+      "url": "https://spiritsanddistilling.com/dictionary/acref-9780199311132-e-936",
+      "status": "secondary_checked",
+      "note": "已读条目用于出版史背景，不作为古书配方一手证据。该条目误将1876版与1887版均标身后版；Thomas死于1885，只明确标1887身后版。"
+    }
+  ],
+  "menu_frameworks": [
+    {
+      "id": "one_skeleton_local",
+      "name": "一副骨架，三种地方风味",
+      "how": "选古典、酸酒或潘趣中的一条历史锚点，固定现代基准；每一款分别只改糖浆、基酒或稀释用茶中的一种材料角色，不能单杯同时都改。按清爽/草本/深色风味提供点单导航，试饮量独立限制。",
+      "why": "让地方物产承担明确功能，主题不是把地名贴在任意配方上。客人能尝出同一骨架如何长出新枝。",
+      "record_ids": [
+        "old_fashioned",
+        "japanese",
+        "punch"
+      ]
+    },
+    {
+      "id": "versions_not_fables",
+      "name": "同名不同页：版本演变酒单",
+      "how": "以马丁内斯1884/1887、飞行1917/1930、法兰西75前身/香槟式排成小章节；每款标原始记录、现代适配假设和差异。早期二手/含糊数据只作说明，不作为可执行精确复原。另列原创第三章，明确非历史版。",
+      "why": "讲清经典并非凝固不变，同名也未必同构；版本比较允许多个差异，不伪装成单变量试验。",
+      "record_ids": [
+        "martinez",
+        "aviation",
+        "french75"
+      ]
+    },
+    {
+      "id": "six_family_navigation",
+      "name": "六家族：按结构而非名气点单",
+      "how": "用古典结构/酸酒/潘趣/朱莉普与司马殊/考布勒/芳香葡萄酒六章，每章一款有出处经典和一款单变量现代改编；按风味与可计算强度给选择，不强行把年代当ABV。单杯点选，另开独立命名无酒精路线。",
+      "why": "客人学的是糖、酸、香气、稀释如何分工；调酒师研发有模板，不是堆材料。",
+      "record_ids": [
+        "cocktail_definition",
+        "brandy_sour",
+        "punch",
+        "mint_julep",
+        "sherry_cobbler",
+        "manhattan"
+      ]
+    },
+    {
+      "id": "water_has_a_voice",
+      "name": "水也有台词：稀释与服务实验酒单",
+      "how": "从1806定义、1862潘趣的茶代水建议与雪利考布勒碎冰取三个锚点；每组现代半杯基准/实验，只变水量、稀释液或冰粒一项，温度与时间点明记。客人可任选一组，不是连续喝六杯。",
+      "why": "把常被忽视的稀释变成可感知的设计变量，酒单叙事有实际杯中对照。",
+      "record_ids": [
+        "cocktail_definition",
+        "punch",
+        "sherry_cobbler"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "balance1806",
+      "title": "How Did a Cocktail Come to Be Called a Cocktail?：摘录 The Balance and Columbian Repository，1806-05-13",
+      "author": "National Alcohol Beverage Control Association；所引历史报纸编辑答复",
+      "year": 1806,
+      "edition": "1806-05-13报纸定义；机构网页发表于2018-08-28",
+      "kind": "institutional_excerpt",
+      "url": "https://www.nabca.org/daily-news/how-did-cocktail-come-be-called-cocktail",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch读到机构页面的日期、报纸名和定义全文。该机构转载入口链接至现代文章，不是报纸扫描；未核印刷页码、原标点或编辑署名。本分片只引酒饮结构定义，不延伸为全球最早或cocktail一词首次使用。"
+    },
+    {
+      "id": "jt1862",
+      "title": "The bar-tenders' guide：1862版原书OCR转录",
+      "author": "Jerry Thomas；附录另署Christian Schultz",
+      "year": 1862,
+      "edition": "Internet Archive / Duke University Libraries著录1862；含编号配方的早期文本",
+      "kind": "primary_transcription",
+      "url": "https://archive.org/stream/bartendersguide01thom/bartendersguide01thom_djvu.txt",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch已读指定配方正文，另直接读取同页HTML核对。目录明确按recipe number而非page number编排；不能把目录的109记成p109。Duke详情页著录1862，但版权年份OCR作1S82，不能把OCR当确切年份。以同版书目及另一转录交叉定位。多个分数、页眉有识别错误，未逐图验读；未辨清数字明确留空缺，不按现代换算补齐。"
+    },
+    {
+      "id": "jt1862_alt",
+      "title": "How to Mix Drinks or the Bon-Vivant's Companion：EUVS 1862版逐页转录",
+      "author": "Jerry Thomas",
+      "year": 1862,
+      "edition": "EUVS标注1862、封面价格1$50的扫描阅读器版本",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1862-How-to-Mix-Drinks-or-the-Bon-Vivant-s-Companion-1-50-pdf",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebSearch发现阅读器；WebFetch仅返回标题，随后直接读取公开HTML的full-text逐页内容。已查阅读器/11、/12、/44、/46、/50、/51、/59。/50和/51正文页眉明确50、51；/44与/46页眉明确44、46。部分分数仍作21、L、i等，不能声称已看清扫描图。/11和/59未取得清楚页眉，定位优先用配方号与阅读器页。"
+    },
+    {
+      "id": "jt1887",
+      "title": "The bar-tender's guide; or How to mix all kinds of plain and fancy drinks：1887版原书OCR转录",
+      "author": "Jerry Thomas署名；身后重编版本",
+      "year": 1887,
+      "edition": "1887身后新版，New York: Dick & Fitzgerald；非1862版",
+      "kind": "primary_transcription",
+      "url": "https://archive.org/stream/bartendersguideo00thom/bartendersguideo00thom_djvu.txt",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch核验配方正文及版权1887；Internet Archive详情页由Library of Congress提供、著录1887与130p。另直接读取EUVS同版公开转录交叉核到Improved Brandy p19–20、Improved Whiskey p20、Improved Gin p21、Manhattan p24、Martinez p25。所查目录和正文未见独立Martini标题；不把Martinez静默改名。"
+    },
+    {
+      "id": "hj1882",
+      "title": "Harry Johnson's new and improved bartender's manual：1882版原书OCR转录",
+      "author": "Harry Johnson",
+      "year": 1882,
+      "edition": "1882版，New York: Samisch & Goldmann, printers；英德文合册",
+      "kind": "primary_transcription",
+      "url": "https://archive.org/stream/harryjohnsonsnew00john/harryjohnsonsnew00john_djvu.txt",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch核到1882版权与目录，第1–188项，饮品从32项开始；所给正文在154项附近截断。另读EUVS同版公开full-text，检索Manhattan/Martinez/Martini未命中。未对全合册逐页扫描做穷尽验读，所以只记所查目录与OCR未见，不宣称绝对不存在。不能以1888或1900配方倒记1882。"
+    },
+    {
+      "id": "hj1888",
+      "title": "New and Improved Illustrated Bartender's Manual：1888版逐页转录",
+      "author": "Harry Johnson",
+      "year": 1888,
+      "edition": "EUVS标注1888的新版；保留旧1882版权声明，另有新版版权OCR",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1888-Harry-Johnson-s-new-and-improved-bartender-s-manual-1888",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch阅读器仅返回标题，直接读取公开HTML全文和逐页文本核验。目录与正文：no57 Martini在印刷p38–39，对应阅读器/48、/49；no61 Manhattan在印刷p40，对应/50。阅读器/38实际是印刷p30，不能混用。OCR双栏会把Manhattan的两项基酒移到下一条后，依据配方段与目录交叉整理。新版版权行识别1858，不能原样当出版年；1888版身份由馆藏阅读器与已核版次书目共同支持。"
+    },
+    {
+      "id": "byron1884",
+      "title": "The Modern Bartenders' Guide, or Fancy Drinks and How to Mix Them：1884版转录",
+      "author": "O. H. Byron",
+      "year": 1884,
+      "edition": "New York: Excelsior Publishing House；版权1884",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1884-The-Modern-Bartenders-Guide-by-O-H-Byron/21",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebSearch/WebFetch找阅读器，WebFetch未提取隐藏正文；直接读公开HTML full-text核到题名、版权1884、目录及印刷p21配方。paper-wrap阅读器/19也呈同一印刷p21，但疑为同一OCR，不当独立证据。No1 whisky OCR作1 pony，未验原图分数，保留量值缺口；No2两处半杯OCR作i，经现代转引交叉支持1/2。Martinez只写替换gin，未写Old Tom、Maraschino或唯一对应No1/No2。"
+    },
+    {
+      "id": "rocket_secondary",
+      "title": "A note on the natures & welcome revival of punch，§12 A perfect punch?",
+      "author": "British Food in America；转引David Wondrich, Punch (2010), p167",
+      "year": null,
+      "edition": "现代网页；二手引录1711 Mary Rockett手稿",
+      "kind": "secondary",
+      "url": "https://www.britishfoodinamerica.com/A-Number-of-Drinks-for-Summer/the-lyrical/A-note-on-the-natures-and-welcome-revival-of-punch/",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "WebFetch读到完整归属、1711日期和配方引录，定位§12、quoted by Wondrich at 167。未看到Rockett手稿原件或Wondrich该页扫描；不得升级primary。本页写2 Quarts new milk，部分搜索摘要写2 gallons，相互冲突而不采后者；原计量保留。本页长期常温保存的泛称不是本分片的食品安全建议。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "milk_oxford",
+      "title": "Milk Punch，The Oxford Companion to Spirits & Cocktails词条",
+      "author": "Jack Robertiello；David Wondrich与Noah Rothbaum编",
+      "year": null,
+      "edition": "Spirits & Distilling公开转载词条；本次页面未核书的出版年",
+      "kind": "secondary",
+      "url": "https://spiritsanddistilling.com/dictionary/id/acref-9780199311132-e-364",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "WebFetch读到署名与来源、Mary Rockett 1711归属。词条中的公制缩配不是1711手稿逐字原配方，不收入历史原材料。本次不采用其全球最早、人物传说或无限期储存措辞。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "thomas_editions",
+      "title": "An Annotated Bibliography, or What is the Cocktail Canon?",
+      "author": "Cocktail Kingdom Library",
+      "year": null,
+      "edition": "现代注释书目；Thomas1862/1876/1887、Johnson1882/1888、Byron1884条目",
+      "kind": "secondary",
+      "url": "https://library.cocktailkingdom.com/exh.canon-bibliography.html",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "WebFetch已读各版说明。1887明确Major posthumous re-edit and update，提Manhattan/Martinez新增；只作版次解释，非配方原文。书目可能、probably等措辞保留，不升级成编辑参与的确定判断。未附这些版次扫描链接。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "cocktailways",
+      "title": "Fancy and Old-Fashioned Cocktails",
+      "author": "Cocktail Ways",
+      "year": null,
+      "edition": "现代网页；转引1862 Thomas、1884 Byron、1888 Johnson",
+      "kind": "secondary",
+      "url": "https://cocktailways.com/fancy-and-old-fashioned/",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "WebFetch核到Byron No1作1 pony whisky，No2作1/2 wineglass whisky及1/2 wine glass Italian vermouth，Martinez替换句；核到Johnson1888 Martini。其Whiskey Cocktail填冰等转述不完全等同原书，不用来覆盖原文。本页现代括号1oz不采为旧单位固定等价。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "bitters_secondary",
+      "title": "Boker's: The Original Cocktail Bitters",
+      "author": "The Modern Bartender商业通讯",
+      "year": null,
+      "edition": "现代网页，自称转引Thomas1862",
+      "kind": "secondary",
+      "url": "https://mailchi.mp/22952aa3befa/bokers-bitters",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "WebFetch核到Japanese中1/2 teaspoonful及1862 stirring方法；只用于补充明确降级的分数量值解释。其Whiskey转引有省词与加词，不能当逐字原文。现代单位换算、品牌复刻等价与最早断言均不采。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "huntington_whiskey",
+      "title": "Artbites - Whiskey Cocktail",
+      "author": "The Huntington；Maite Gomez-Rejón提供配方",
+      "year": 1862,
+      "edition": "现代机构教育页，归于Thomas1862",
+      "kind": "institutional_excerpt",
+      "url": "https://www.huntington.org/education/artbites-whiskey-cocktail",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "WebFetch已读机构摘录的1862归属与shake-and-strain方法。Boker's规范拼写、后加扭皮句和现代单位说明不同于原书no109；只作交叉支持，不用于静默规范化。其gum syrup含gum arabic的现代解释可供结构分析，不能据此证明1862每瓶糖浆配制相同。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。 year按被机构摘录的1862原书版本登记，不是机构页面发布日期。"
+    },
+    {
+      "id": "kappeler1895",
+      "title": "Modern American Drinks: How to Mix and Serve All Kinds of Cups and Drinks",
+      "author": "George J. Kappeler",
+      "year": 1895,
+      "edition": "The Merriam Company，版权页1895；EUVS数字化原书全文OCR",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1895-Modern-American-drinks-how-to-mix-and-serve-all-kinds-of-cups-and-drinks-1895",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "直接读取公开HTML中的full-text，核到印刷第43页及酒谱；只规范OCR跨行断词，不换算jigger。另用Library of Congress书目核对作者与1895年份。"
+    },
+    {
+      "id": "kappeler1895_loc",
+      "title": "Modern American drinks；Library of Congress数字化馆藏",
+      "author": "George J. Kappeler / Library of Congress",
+      "year": 1895,
+      "edition": "馆藏TX951 .K17，LCCN 07000672",
+      "kind": "catalog_only",
+      "url": "https://www.loc.gov/resource/gdcmassbookdig.modernamericandr00kapp/?st=gallery",
+      "accessed": "2026-11-23",
+      "verification": "catalog_checked",
+      "note": "核对馆藏作者、出版项New York, The Merriam company [c1895]；此source只承担书目核验，不冒充已看清单页图像。"
+    },
+    {
+      "id": "straub1914",
+      "title": "Drinks",
+      "author": "Jacques Straub",
+      "year": 1914,
+      "edition": "The Hotel Monthly；所读本版权页1914，正文未见亡妻重印序言",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1914-Drinks-by-Jacques-Straub",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "直接核到版权页、印刷第24页Daiguiri Cocktail及方法。两项jigger前的分数字形在OCR中损坏为%；不根据搜索摘要恢复，也不宣称这是全球最早酒谱。copyright 1914不单独证明此实物一定为初印。"
+    },
+    {
+      "id": "straub_bibliography",
+      "title": "Jacques Straub：1913手册、1914 Drinks及后期重印辨析",
+      "author": "Armin / Bar-Vademecum",
+      "year": 2016,
+      "edition": "网页，2016-12-04",
+      "kind": "secondary",
+      "url": "https://bar-vademecum.eu/?p=542/",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "已读取全文；1913先有手册、1914稍扩充为Drinks，后有亡妻Marie L. Straub编订重印。不可把含1914版权页的后期重印自动认定为1914初印。"
+    },
+    {
+      "id": "ensslin1916",
+      "title": "The Aviation Cocktail / Ensslin, Hugo Richard；引述1916 Recipes for Mixed Drinks的专业词条",
+      "author": "David Wondrich / The Oxford Companion to Spirits & Cocktails",
+      "year": null,
+      "edition": "Spirits & Distilling刊载的专业参考书词条；并非1916原书直接转录",
+      "kind": "secondary",
+      "url": "https://www.spiritsanddistilling.com/dictionary/acref-9780199311132-e-240",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "核到现代经典四材料Aviation配方出自1916初版的专业判断，也核到更早存在同名异方；未直接看清1916初版。不可将该词条自己的现代ml配方当1916原谱。配套Ensslin词条明确1917为扩充第二版并提醒发表者不等于可证发明者。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "ensslin1917_catalog",
+      "title": "Recipes for Mixed Drinks",
+      "author": "Hugo R. Ensslin",
+      "year": 1917,
+      "edition": "second edition；EUVS数字原书",
+      "kind": "catalog_only",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1917-Recipes-for-Mixed-Drinks-by-Hugo-R-Ensslin-second-edition",
+      "accessed": "2026-11-23",
+      "verification": "catalog_checked",
+      "note": "阅读器标题可核第二版1917；本次该书目标页未提供可读正文，所以不列为text_checked。原比例另由明确声明只持1917第二版的历史比较页转录核查。"
+    },
+    {
+      "id": "aviation_comparison",
+      "title": "Aviation Cocktail：同名异方与历史配方比较",
+      "author": "Armin / Bar-Vademecum",
+      "year": null,
+      "edition": "网页Historical recipes；1917第二版第7页转录",
+      "kind": "secondary",
+      "url": "https://bar-vademecum.eu/?p=561",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "已读完整历史配方区；作者明确只有1917第二版，没有1916初版。用作1917原谱的二手转录，不将第7页移植为1916初版页码。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "savoy1930",
+      "title": "The Savoy Cocktail Book",
+      "author": "Harry Craddock",
+      "year": 1930,
+      "edition": "1930原版；EUVS数字化原书分页OCR",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1930-The-Savoy-Cocktail-Book",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "直接读取25、52、73、147分页的full-text。OCR分数偶有损坏，交叉核对明确以1930版为底本的Classic Cocktails数字转录。页码指印刷页，不是扫描序号。"
+    },
+    {
+      "id": "savoy1930_transcription",
+      "title": "1930s Cocktails from the Original Savoy Cocktail Book：结构化数字转录",
+      "author": "Jamie Elsey（数字转录）/ Harry Craddock（原书）",
+      "year": 1930,
+      "edition": "原书1930；转录站发布时间未核。about页声明保留原书页码",
+      "kind": "primary_transcription",
+      "url": "https://classic-cocktails.com/cocktails.json",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "从实际公开脚本读取真实cocktails.json入口，解析完整数据，而非只读搜索摘要。核到Aviation p25、Corpse Reviver No.2 p52、French 75 p73、Sidecar p147。文件混合编码的无关坏字用替代符读取，目标材料字段清晰。该站不是机构版校勘，故与EUVS原页交叉核对。"
+    },
+    {
+      "id": "sidecar_comparison",
+      "title": "Sidecar：1922 Vermeire与1930 Savoy原谱及归属比较",
+      "author": "Armin / Bar-Vademecum",
+      "year": null,
+      "edition": "网页历史配方转录与比较",
+      "kind": "secondary",
+      "url": "https://bar-vademecum.eu/sidecar",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "核到1922 Vermeire第44页等量配方和introduced in London字样；本次未直接读取1922原书。保留传播归属而不是创造者定论。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "french75_comparison",
+      "title": "French 75：1915、1922、1927及1930历史配方比较",
+      "author": "Armin / Bar-Vademecum",
+      "year": null,
+      "edition": "网页Historical Recipes",
+      "kind": "secondary",
+      "url": "https://bar-vademecum.eu/?p=3127",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "读取历史配方而非军事叙事。1915报刊条目及1922 Vermeire均不含香槟；1927书所列配方含香槟。该页关于1922原谱比例的概述与转录不一致时，以明确列出的原谱为比较对象，仍标二手。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "sloppy1930",
+      "title": "Sloppy Joe’s Mojito的“1930版”待核问题：History and Origin of the Mojito Cocktail",
+      "author": "Sina Torner / Cocktail Society",
+      "year": null,
+      "edition": "网页2023-04-13；写1930s而非确切1930，实际链接1932阅读器",
+      "kind": "secondary",
+      "url": "https://cocktail-society.com/?p=16246",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "ID保留任务要求的sloppy1930，但它不表示已证实1930出版。全文只说1930年代，提供的原书链接为1932 Sloppy Joe’s（Season 1931-32）。页面的现代ml/oz配方不作为旧书文本。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "sloppy1932",
+      "title": "Sloppy Joe’s Bar，Season 1931-32",
+      "author": "Sloppy Joe’s Bar；该页未单列编者",
+      "year": 1932,
+      "edition": "EUVS阅读器标1932（Season 1931-32）；印刷第9页Bacardi Drinks",
+      "kind": "primary_transcription",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1932-Sloppy-Joe-s/9",
+      "accessed": "2026-11-23",
+      "verification": "text_checked",
+      "note": "直接读取公开full-text核到Mojito、Leaves of Mint及页底—9—。年份按阅读器与季次记，不倒推为1930。英文写Lemon，未擅自换成Lime；不从后期改编加入薄荷捣碎步骤或叶片数量。"
+    },
+    {
+      "id": "saucier1951",
+      "title": "Ted Saucier’s Bottoms Up!：Last Word第151页的历史配方转录",
+      "author": "Ted Saucier（原书）/ Armin，Bar-Vademecum（所读转录页）",
+      "year": 1951,
+      "edition": "1951原书；本次经二手比较页Historical recipes核读，不是原版影像校勘",
+      "kind": "secondary",
+      "url": "https://bar-vademecum.eu/last-word/",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "核到明确标为1951第151页的四个1/4材料、Ice与Serve in cocktail glass。只保存短归属引文，不复制受版权保护现代书或整篇文章。原文未指定green，亦未在该转录条目中明确写Shake。"
+    },
+    {
+      "id": "last_word_oxford",
+      "title": "The Last Word；The Oxford Companion to Spirits & Cocktails词条",
+      "author": "St. John Frizell；David Wondrich / Noah Rothbaum主编",
+      "year": null,
+      "edition": "Spirits & Distilling刊载的专业参考书词条",
+      "kind": "secondary",
+      "url": "https://www.spiritsanddistilling.com/dictionary/acref-9780199311132-e-353",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "核到1916 Detroit Athletic Club News菜单名称与35美分、1951出版配方及Fogarty归属的证据限制。词条现代30ml配方不作为1951原文。复兴年份与另一比较页存在2003/2004差异，本分片不强行确定。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "negroni_history",
+      "title": "Hard Liquor History: The Contested Origins of the Negroni",
+      "author": "Marco Costantini / History on the Rocks",
+      "year": 2015,
+      "edition": "网页2015-03-23；二手历史比较",
+      "kind": "secondary",
+      "url": "https://www.torizopf.com/blog/hard-liquor-history-negroni",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "核到Camillo/Scarselli的1919常见故事及不同归属争议。作者坦言未亲自核读Picchi全部原始资料；1857信只谈vermouth-based cocktail，缺gin/Campari。未将任何一支故事或同构异名酒谱认定为最早Negroni。"
+    },
+    {
+      "id": "tarling1937_catalog",
+      "title": "Café Royal Cocktail Book，Coronation Edition",
+      "author": "William J. Tarling",
+      "year": 1937,
+      "edition": "London: Pall Mall, 1937；EUVS馆藏介绍与数字阅读器",
+      "kind": "catalog_only",
+      "url": "https://www.euvs.org/en/collection/book/cafe-royal-cocktail-book",
+      "accessed": "2026-11-23",
+      "verification": "catalog_checked",
+      "note": "核到1937出版与编者；原阅读器标题可核Coronation Edition，但本次没有可读目标页全文，不能标原版text_checked。"
+    },
+    {
+      "id": "tarling1937_transcription",
+      "title": "The Twentieth Century Cocktail：1937 Tarling原谱摘录与现代改编分列",
+      "author": "The Modern Bartender；原谱署William J. Tarling / C. A. Tuck",
+      "year": null,
+      "edition": "网页；明确摘录1937 Café Royal Cocktail Book",
+      "kind": "secondary",
+      "url": "https://mailchi.mp/themodernbartender/twentieth-century",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "已核原谱2/5 Booth’s Dry Gin、其余各1/5及Invented by C. A. Tuck。旧谱原文只写Lillet与crème de cacao，不能悄悄补成Kina Lillet、白色可可或现代ml比例；未核印刷页码。 载体自身出版年份未核，year=null；文中所引古书年份见主张/版本，二者不混用。"
+    },
+    {
+      "id": "oxford1827_catalog",
+      "title": "Oxford Night Caps",
+      "author": "Richard Cook（后世书目归属）",
+      "year": 1827,
+      "edition": "EUVS标1827；未读取正文",
+      "kind": "catalog_only",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1827-Oxford-Night-Caps",
+      "accessed": "2026-11-23",
+      "verification": "catalog_checked",
+      "note": "本轮仅返回标题；1827首版背景由现代出版史词条支持，不能证明本次核读奶潘趣原方。"
+    },
+    {
+      "id": "terrington1869_catalog",
+      "title": "Cooling Cups and Dainty Drinks",
+      "author": "William Terrington",
+      "year": 1869,
+      "edition": "EUVS标1869；未读取正文",
+      "kind": "catalog_only",
+      "url": "https://euvs-vintage-cocktail-books.cld.bz/1869-Cooling-Cups-and-Dainty-drinks-by-William-Terrington",
+      "accessed": "2026-11-23",
+      "verification": "catalog_checked",
+      "note": "只作英国混饮传统的后续阅读入口，不能当已核配方来源。"
+    },
+    {
+      "id": "oxford_mixography",
+      "title": "The Oxford Companion to Spirits & Cocktails · mixography",
+      "author": "The Oxford Companion to Spirits & Cocktails",
+      "year": 2021,
+      "edition": "Spirits & Distilling词条；现代出版史研究",
+      "kind": "secondary",
+      "url": "https://spiritsanddistilling.com/dictionary/acref-9780199311132-e-936",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "已读1827与1862出版史背景。此词条将1876与1887同列身后版的标签有误；不用此句证明Thomas版次，另看Thomas专门词条。"
+    },
+    {
+      "id": "oxford_thomas",
+      "title": "Thomas, Jeremiah P. Jerry · The Oxford Companion to Spirits & Cocktails",
+      "author": "David Wondrich",
+      "year": 2021,
+      "edition": "现代研究词条：1876第二版、1887身后第三版",
+      "kind": "secondary",
+      "url": "https://spiritsanddistilling.com/dictionary/id/acref-9780199311132-e-83",
+      "accessed": "2026-11-23",
+      "verification": "secondary_checked",
+      "note": "直接核读第二版1876与身后第三版1887的区分；词条不等于古书原方。"
+    }
+  ],
+  "records": [
+    {
+      "id": "cocktail_definition",
+      "name": "鸡尾酒的1806结构定义",
+      "name_en": "Cocktail: the 1806 definition",
+      "aliases": [
+        "bittered sling",
+        "鸡尾酒的1806结构定义"
+      ],
+      "family_id": "cocktail",
+      "summary": "1806-05-13的报纸答复把cocktail说明为烈酒、糖、水与苦精构成的饮品；本次通过机构摘录核验，不等于找到词语或饮品的全球首次。",
+      "claims": [
+        {
+          "kind": "definition",
+          "status": "documented",
+          "text": "NABCA机构页面明确把烈酒、糖、水、苦精的定义归于The Balance and Columbian Repository，1806-05-13。",
+          "source_ids": [
+            "balance1806"
+          ],
+          "locator": "机构页面正文首段；所引历史期号1806-05-13，原报页码未核",
+          "quote_en": "Cocktail is a stimulating liquor, composed of spirits of any kind, sugar, water, and bitters",
+          "quote_zh": "鸡尾酒是一种刺激性酒饮，由任何种类的烈酒、糖、水和苦精组成。",
+          "note": "引文按已读机构页面，不冒充报纸扫描的原拼写与标点；没有制法或各成分定量。"
+        }
+      ],
+      "historical_versions": [],
+      "origin_caution": "定义日期不是发明日期。此处不声称全球最早鸡尾酒、词语首次出现或某个人发明。",
+      "structure": "烈酒主体＋甜味调节＋水的稀释＋苦精芳香；结构分析不代替历史配方的定量。",
+      "creative_bridge": {
+        "preserve": [
+          "同一基酒",
+          "相同糖量和苦精",
+          "相同成品温度"
+        ],
+        "changed_variable": "稀释量",
+        "experiment": "用既有现代可执行配方做两个半杯小样；A维持基准，B仅在相同冰冷温度下额外加少量定量饮用水，记录加水量与感官。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较酒精刺激、芳香展开及甜苦的相对感受，而非把水视为无作用填充物。",
+        "risk": "过度稀释会削弱香气和酒体；加水与加冰时温差会混淆变量。试饮总量不超过一份，避免驾车。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "milk_punch_clarified",
+      "name": "Mary Rockett奶澄清潘趣",
+      "name_en": "Mary Rockett's Clarified Milk Punch",
+      "aliases": [
+        "English Milk Punch",
+        "Milk Punch（澄清型）",
+        "奶澄清潘趣",
+        "澄清奶潘趣",
+        "Mary Rockett奶澄清潘趣"
+      ],
+      "family_id": "punch",
+      "summary": "已查二手史学引录与Oxford词条都指向Mary Rockett的1711配方。1732及Mary Kettilby归属未获本次证据支持；手稿原件未核，降级为二手支持。",
+      "claims": [
+        {
+          "kind": "attribution",
+          "status": "supported_secondary",
+          "text": "已读来源将该配方归于Mary Rockett的1711厨房手稿，并转引Wondrich《Punch》p167；不是本次直接验读手稿。",
+          "source_ids": [
+            "rocket_secondary",
+            "milk_oxford"
+          ],
+          "locator": "British Food in America §12 A perfect punch?，转引Wondrich p167；Oxford词条首段",
+          "quote_en": "It dates to a 1711 kitchen manuscript compiled by Mary Rockett",
+          "quote_zh": "它可追溯到Mary Rockett编写的一份1711年厨房手稿。",
+          "note": "只记来源支持的年代与归属；不采来源的oldest extant作为全球最早结论。"
+        },
+        {
+          "kind": "precursor",
+          "status": "supported_secondary",
+          "text": "该二手引录包含浸泡柠檬皮、加入糖与果汁、热奶凝结、静置与法兰绒袋过滤；这是澄清技术史线索，不是现代创作才产生的方法。",
+          "source_ids": [
+            "rocket_secondary"
+          ],
+          "locator": "§12的To Make Milk Punch引录末段，所标Wondrich p167",
+          "quote_en": "let the whole infuse 1 Hour then refine through a flannel Bag",
+          "quote_zh": "让整体浸置一小时，然后通过法兰绒袋滤净。",
+          "note": "本页引录牛奶量为2 Quarts。未采搜索摘要中的2 gallons；未直接核手稿，仍为二手。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "把这条奶澄清潘趣记录写成1732 Mary Rockett或1732 Mary Kettilby，本次未核得可支持的原件或机构引文。",
+          "source_ids": [
+            "rocket_secondary",
+            "milk_oxford"
+          ],
+          "locator": "对照两已读来源的1711 Mary Rockett归属；1732条目无已核定位",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "列明检索缺口，不据无搜索结果断言1732绝无相关文献；Mary Kettilby另有出版物，未在本分片核验。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "rocket_secondary",
+          "year": 1711,
+          "label": "二手引录的Rockett手稿版本；不是原件转录核验",
+          "locator": "British Food in America §12，quoted by Wondrich at 167",
+          "original_ingredients": [
+            "rinds of 8 Lemmons",
+            "a Gallon of Brandy",
+            "5 Quarts of Water",
+            "2 Pounds of Loaf Sugar",
+            "juices of all the lemons",
+            "2 Quarts of new milk, Scald hot",
+            "2 Nutmegs"
+          ],
+          "method_original": "Infuse the rinds of 8 Lemmons in a Gallon of Brandy 48 hours; let the whole infuse 1 Hour then refine through a flannel Bag.",
+          "method_zh": "柠檬皮在白兰地中浸48小时；依该引录加入水、糖、柠檬汁和热奶，搅至凝结，加入肉豆蔻，静置1小时后袋滤。",
+          "notes": "英文方法为引文片段，非完整手稿逐字抄录；中文概述补全同一已读引录的步骤。保留旧单位，不换ml；Quarts并未核为现代美制或英制。过滤不能保证去除乳过敏原，不依历史文字主张常温保质。",
+          "original_work_title": "Mary Rockett kitchen manuscript (1711)，经Wondrich Punch p167转引"
+        }
+      ],
+      "origin_caution": "1711为本次二手支持年份，不宣称发明者或全球最早。不要将现代Cognac缩配、公制量和冷奶法冒充手稿。",
+      "structure": "柠檬油浸取＋烈酒/糖/酸/水的潘趣骨架＋奶凝结过滤的口感处理；与直接加入牛奶而不滤清的Milk Punch区分。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代小批量基准的酒、酸、糖、水、奶量",
+          "相同过滤和冷藏流程"
+        ],
+        "changed_variable": "浸泡用果皮种类",
+        "experiment": "先按安全的现代小批量配方做两个半杯量小样；A只用柠檬黄皮，B以等质量橙色外皮替换其中一半，保持其他变量一致后分别凝结过滤。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较柠檬尖锐芳香与橙皮圆润香气在过滤后保留程度。",
+        "risk": "牛奶过敏者不适用；过滤清澈不等于无乳或常温安全，洁净制作并冷藏。避免带白瓤及过度浸取；小样有过滤损失。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "punch",
+      "name": "潘趣的糖萃柠檬油与平衡原则",
+      "name_en": "Punch: lemon-oil extraction and balance",
+      "aliases": [
+        "Punch（Thomas1862）",
+        "潘趣的糖萃柠檬油与平衡原则"
+      ],
+      "family_id": "punch",
+      "summary": "Thomas1862 no1明确要求用糖块摩擦柠檬皮取油，提茶代水及各味融合，并说酸甜、酒水比例没有通用定则。no2另给单杯Brandy Punch实例。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1862 no1把糖擦柠檬皮取油作为制作Punch的具体技巧，不能把这项技巧当现代术语oleo-saccharum的命名记录。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no1 PUNCH；EUVS阅读器/11；原图页码未逐图核",
+          "quote_en": "the ambrosial essence of the lemon must be extracted by rubbing lumps of sugar on the rind",
+          "quote_zh": "必须用糖块摩擦果皮，萃取柠檬的芬芳精华。",
+          "note": "术语oleo-saccharum是现代关联标签，未声称本段使用该词。"
+        },
+        {
+          "kind": "definition",
+          "status": "documented",
+          "text": "no1提倡融合各成分，并明确酒水、酸甜比例不能有通用定则。",
+          "source_ids": [
+            "jt1862"
+          ],
+          "locator": "no1末段",
+          "quote_en": "The precise portions of spirit and water, or even of the acidity and sweetness, can have no general rule",
+          "quote_zh": "烈酒与水，乃至酸与甜的精确比例，都不能有通用的规则。",
+          "note": "这是本书作者的调制建议，不证明所有时代Punch必须用茶或固定五成分。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "no1 Punch技术说明，非定量配方",
+          "locator": "no1；EUVS同版阅读器/11",
+          "original_ingredients": [
+            "lemon rind",
+            "lumps of sugar",
+            "spirits [no general quantity specified]",
+            "tea instead of water [advice, not mandatory quantity]"
+          ],
+          "method_original": "the ambrosial essence of the lemon must be extracted by rubbing lumps of sugar on the rind",
+          "method_zh": "用糖块摩擦柠檬皮取油，充分混合各味；原段建议茶代水，不列统一量。",
+          "notes": "结构性的建议而非可直接执行的定量配方；原文热冷加料顺序是作者建议，不当作现代安全与技术的普适规则。"
+        },
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "no2 Brandy Punch；基酒分数未辨清",
+          "locator": "no2 Brandy Punch，正文印刷p12；EUVS同版阅读器/12",
+          "original_ingredients": [
+            "1 table-spoonful raspberry syrup",
+            "2 table-spoonfuls white sugar [original: 2 do.]",
+            "1 wine-glass water",
+            "brandy [original OCR: li do.; fraction unresolved]",
+            "1 small-sized lemon",
+            "2 slices of orange",
+            "1 piece of pine-apple",
+            "shaved ice",
+            "berries in season"
+          ],
+          "method_original": "Fill the tumbler with shaved ice, shake well, and dress the top with berries in season; sip through a straw.",
+          "method_zh": "杯内填刨冰，充分摇和，以当季浆果装饰，吸管饮用。",
+          "notes": "展开do.仅解释ditto重复单位，不改变单位；brandy量的旧分数未清，不能将OCR li补成确定1½。该配方不能据此作为完全复原成品。"
+        }
+      ],
+      "origin_caution": "只证明这份1862文献记有技巧与配方，不证明Punch的起源国家、词源或全球最早出现。",
+      "structure": "糖兼具甜味与萃取柠檬油的功能；糖浆除甜度外可引入果味；水或茶及融冰共同控制强度。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代潘趣的酸、酒、水和总糖量",
+          "相同黄皮重量与静置时间"
+        ],
+        "changed_variable": "糖与果皮接触方式",
+        "experiment": "两个半杯小样，A直接把同量糖溶入饮用水后加果皮，B先用糖摩擦或拌压黄皮再用同量水溶解；其他原料及过滤保持相同。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "检验糖在萃油步骤的作用，不靠额外加糖增强柠檬香。",
+        "risk": "果皮白瓤与过度压碎会增加苦味；两杯总糖量和黄皮量未一致时不能归因。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "old_fashioned",
+      "name": "古典的1862结构前例",
+      "name_en": "Whiskey Cocktail: a precursor to the Old Fashioned structure",
+      "aliases": [
+        "Whiskey Cocktail（Thomas1862 no109）",
+        "古典",
+        "古典鸡尾酒",
+        "Old Fashioned",
+        "Whiskey Cocktail",
+        "古典结构的威士忌鸡尾酒前例"
+      ],
+      "family_id": "cocktail",
+      "summary": "1862 no109是gum syrup、Bogart's bitters、whiskey、lemon peel与冰的Whiskey Cocktail，原文要求摇和过滤。这里只关联古典结构，不把Old Fashioned名称或杯中搅拌倒记1862。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Thomas1862 no109列威士忌、gum syrup、Bogart's bitters和柠檬皮，方法是shake and strain而非现代常见杯中搅拌。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no109 Whiskey Cocktail，印刷p50；EUVS替代转录/50",
+          "quote_en": "Fill one-third full of fine ice; shake and strain in a fancy red wine-glass.",
+          "quote_zh": "以细冰填至三分之一，摇和后过滤到花式红酒杯。",
+          "note": "旧书用Bogart's，不自动换成Angostura；red wine-glass按原文保留。"
+        },
+        {
+          "kind": "precursor",
+          "status": "supported_secondary",
+          "text": "The Huntington现代教育页把此Whiskey Cocktail称作an Old-Fashioned，可作今日分类关联；这不能证明1862条目原名就是Old Fashioned。",
+          "source_ids": [
+            "huntington_whiskey",
+            "jt1862"
+          ],
+          "locator": "Huntington的Whiskey Cocktail Recipe (an Old-Fashioned)标题；Thomas no109",
+          "quote_en": "Whiskey Cocktail Recipe (an Old-Fashioned)",
+          "quote_zh": "威士忌鸡尾酒配方（一款古典鸡尾酒）。",
+          "note": "record id为现代知识库映射键；名称、发明者与起源故事没有因此得到核验。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Whiskey Cocktail no109",
+          "locator": "no109，印刷p50",
+          "original_ingredients": [
+            "3 or 4 dashes of gum syrup",
+            "2 dashes bitters (Bogart's) [original: 2 do.]",
+            "1 wine-glass of whiskey",
+            "a piece of lemon peel",
+            "fine ice [one-third full]"
+          ],
+          "method_original": "Fill one-third full of fine ice; shake and strain in a fancy red wine-glass.",
+          "method_zh": "填细冰至三分之一，摇和后过滤入花式红酒杯。",
+          "notes": "保留wine-glass与dash；不固定换ml，不指定rye或bourbon，因为此条只写whiskey。1862的苦精品牌与现代Angostura无确定等量替换关系。"
+        }
+      ],
+      "origin_caution": "1862记录是Whiskey Cocktail，不是已核Old Fashioned命名或发明记录；古典的后期命名应另找独立来源。",
+      "structure": "烈酒＋甜味＋芳香苦精＋柠檬油＋冰稀释；没有加入Curaçao，与同书Brandy/Gin Cocktail形成对照。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代基准的whiskey和苦精",
+          "相同总糖质量和稀释",
+          "同一柠檬皮"
+        ],
+        "changed_variable": "糖浆的口感功能",
+        "experiment": "先做两个半杯：A用既有蔗糖糖浆，B用等糖质量的食品级gum arabic糖浆，校正糖浆水量，使甜度和稀释一致。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "分离糖浆增稠与甜味贡献，比较口腔润滑感，而不是简单把gum syrup译成普通糖水。",
+        "risk": "gum arabic浓度与品牌差异会影响口感；需食品级原料，过多可能黏稠。此为现代实验，不证明历史糖浆浓度。",
+        "not_historical": true
+      },
+      "canonical_name": "古典"
+    },
+    {
+      "id": "brandy_cocktail",
+      "name": "白兰地鸡尾酒",
+      "name_en": "Brandy Cocktail",
+      "aliases": [
+        "Brandy Cocktail（Thomas1862 no107）",
+        "白兰地鸡尾酒"
+      ],
+      "family_id": "cocktail",
+      "summary": "1862 no107含gum syrup、Bogart's bitters、brandy与Curaçao，挤柠檬皮后加冰搅拌。no108 Fancy版本另明确过滤与润湿杯沿，不能将两条方法混成一句。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "no107已有少量Curaçao；原文搅拌但不写过滤，而no108 Fancy Brandy Cocktail才明确过滤入花式杯。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no107–108，印刷p50",
+          "quote_en": "Squeeze lemon peel; fill one-third full of ice, and stir with a spoon.",
+          "quote_zh": "挤压柠檬皮，加冰至三分之一，以勺搅拌。",
+          "note": "原书OCR eur与Curayoa在另一转录中交叉读为stir及Curaçao；保留制作差别。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Brandy Cocktail no107",
+          "locator": "no107，印刷p50",
+          "original_ingredients": [
+            "3 or 4 dashes of gum syrup",
+            "2 dashes bitters (Bogart's) [original: 2 do.]",
+            "1 wine-glass of brandy",
+            "1 or 2 dashes of Curaçoa",
+            "lemon peel",
+            "ice [one-third full]"
+          ],
+          "method_original": "Squeeze lemon peel; fill one-third full of ice, and stir with a spoon.",
+          "method_zh": "挤柠檬皮，填冰三分之一，勺搅；此条未要求滤掉冰。",
+          "notes": "未把brandy窄化为Cognac；未把旧Curaçao具体品牌、糖度或dash固定化。"
+        }
+      ],
+      "origin_caution": "此书收录不等于Thomas发明；Fancy no108与基础no107是同页不同条目。",
+      "structure": "基酒/糖浆/苦精骨架以少量橙味利口酒拓展芳香和甜度；柠檬皮不是柠檬汁。",
+      "creative_bridge": {
+        "preserve": [
+          "白兰地、糖浆、苦精及稀释",
+          "相同柠檬皮"
+        ],
+        "changed_variable": "少量橙味利口酒的种类",
+        "experiment": "两个半杯，基于现代基准A用Curaçao，B仅以相同少量另款橙味利口酒替换；记录其糖度差异，先不联动改变糖浆。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "识别少量修饰酒怎样改变橙香、酒感和甜尾；下一轮再独立校正糖量。",
+        "risk": "等体积不等甜度，结论限于整种原料替换，不能当纯香气变量；不要同时换基酒。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "gin_cocktail",
+      "name": "金酒鸡尾酒",
+      "name_en": "Gin Cocktail",
+      "aliases": [
+        "Gin Cocktail（Thomas1862 no111）",
+        "金酒鸡尾酒"
+      ],
+      "family_id": "cocktail",
+      "summary": "1862 no111列gin、gum syrup、Bogart's bitters、Curaçao与柠檬皮，摇和过滤；该条没有指定Old Tom或Holland。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "no111配方有Curaçao，并明确shake well and strain；基酒文字仅为gin，不能从后版品种倒补1862。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no111 Gin Cocktail，印刷p51",
+          "quote_en": "1 wine-glass of gin.",
+          "quote_zh": "一wine-glass的金酒。",
+          "note": "旧单位保留。1887另有Holland及Old Tom条目，但不表示1862必定只用其中一种。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Gin Cocktail no111",
+          "locator": "no111，印刷p51",
+          "original_ingredients": [
+            "3 or 4 dashes of gum syrup",
+            "2 dashes bitters (Bogart's) [original: 2 do.]",
+            "1 wine-glass of gin",
+            "1 or 2 dashes of Curaçoa",
+            "1 small piece lemon peel",
+            "fine ice [one-third full]"
+          ],
+          "method_original": "fill one-third full of fine ice; shake well, and strain in a glass.",
+          "method_zh": "填细冰至三分之一，充分摇和后过滤入杯。",
+          "notes": "原条的gin品种未指定；旧单位不换ml。英文方法是原句片段，柠檬皮已在材料列保留。"
+        }
+      ],
+      "origin_caution": "仅核收录与配方；不认定发明人，不把现代London Dry回填原书。",
+      "structure": "gin的植物芳香＋苦精＋少量Curaçao＋柠檬油，以糖及稀释控制刺激。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代基准的gin、糖浆、Curaçao、苦精与稀释"
+        ],
+        "changed_variable": "表层柑橘油种类",
+        "experiment": "两个半杯，A用柠檬黄皮，B只改成等面积橙色外皮，均在表面挤油，不加汁。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较鼻端芳香对金酒植物性的引导。",
+        "risk": "果皮厚度和白瓤不同会引入额外苦味；不要同时改变搅拌或基酒品种。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "japanese",
+      "name": "日本鸡尾酒",
+      "name_en": "Japanese Cocktail",
+      "aliases": [
+        "日本鸡尾酒",
+        "Japanese Cocktail（Thomas no113）",
+        "日式鸡尾酒",
+        "日式鸡尾酒（历史名称）"
+      ],
+      "family_id": "cocktail",
+      "summary": "Thomas1862 no113以brandy、orgeat、Bogart's bitters、柠檬皮构成并搅拌；1887版同名条目保留搅拌，并明确过滤入鸡尾酒杯。1862苦精分数本次OCR不清，半茶匙仅作二手支持。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1862 no113明确出现Japanese Cocktail名称、orgeat及brandy，并在一杯内搅拌，不要求过滤。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no113 Japanese Cocktail，印刷p51",
+          "quote_en": "Fill the tumbler one-third with ice, and stir well with a spoon.",
+          "quote_zh": "杯内装冰至三分之一，以勺充分搅拌。",
+          "note": "不把名字解读为日本基酒或产地；本次未核命名故事及发明归属。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "现代商业转引把1862苦精量写为1/2 teaspoonful；原书已读OCR只呈^或L，故这个分数不升级为直接验清的主证据。",
+          "source_ids": [
+            "bitters_secondary",
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "商业通讯JAPANESE COCKTAIL配方；原书no113的bitters行",
+          "quote_en": "½ teaspoonful of Bogart’s bitters.",
+          "quote_zh": "半茶匙Bogart's苦精。",
+          "note": "旧半茶匙不能当固定现代dash数；不使用该商业页的现代ml换算。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Japanese Cocktail no113；苦精分数保留OCR缺口",
+          "locator": "no113，印刷p51",
+          "original_ingredients": [
+            "1 table-spoonful of orgeat syrup",
+            "Bogart's bitters [teaspoonful; fraction unresolved in primary OCR]",
+            "1 wine-glass of brandy",
+            "1 or 2 pieces of lemon peel",
+            "ice [one-third of tumbler]"
+          ],
+          "method_original": "Fill the tumbler one-third with ice, and stir well with a spoon.",
+          "method_zh": "装冰三分之一，以勺搅匀；原条未说滤出。",
+          "notes": "苦精半茶匙见单独supported_secondary主张，不静默补入主文。Orgeat有糖、杏仁/坚果及可能花香的功能；品牌成分需实查。"
+        },
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "1887身后版Japanese Cocktail",
+          "locator": "Japanese Cocktail，印刷p23；EUVS同版full-text的JAPANESE COCKTAIL段",
+          "original_ingredients": [
+            "1 table-spoonful of orgeat syrup",
+            "2 dashes of Boker's bitters",
+            "1 wine-glass of brandy",
+            "1 or 2 pieces of lemon peel",
+            "ice [one-third of tumbler]"
+          ],
+          "method_original": "Fill the tumbler one-third with ice, stir well with a spoon, and strain into a cocktail glass.",
+          "method_zh": "杯内装冰至三分之一，以勺搅匀，滤入鸡尾酒杯；本条没有摇和。",
+          "notes": "此后期同名版本的方法与苦精写法不能倒记1862。p23段已直接读EUVS公开HTML全文；不把1887编辑行为必然归为Thomas本人。"
+        }
+      ],
+      "origin_caution": "命名原因与Thomas亲创说未在本次原文核出；不收录未经核验的纪念故事。两个版次分开。",
+      "structure": "保留烈酒/甜味/苦精骨架，以orgeat把糖浆功能扩为坚果香、质地与花香；柠檬油非酸汁。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代配方的brandy、苦精、柠檬油、糖量与稀释"
+        ],
+        "changed_variable": "甜味剂的非糖功能",
+        "experiment": "两个半杯，A使用已确认成分的orgeat，B用等糖质量蔗糖浆并校正水量；先判断坚果/花香与质地贡献，不同时换基酒。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "揭示糖浆是风味与质地修饰，不只是甜度刻度。",
+        "risk": "orgeat可含杏仁等过敏原；等体积不等糖度，未测糖含量时只能作整原料替换比较。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "sherry_cobbler",
+      "name": "雪利考布勒",
+      "name_en": "Sherry Cobbler",
+      "aliases": [
+        "雪莉可伯乐",
+        "Sherry Cobbler（Thomas no98）",
+        "雪利可伯乐",
+        "雪利考布勒"
+      ],
+      "family_id": "cobbler",
+      "summary": "1862 no98明确两wine-glasses雪利、一table-spoonful糖、橙片、刨冰、浆果与吸管；方法为摇和，不是现代酒精单位或雪利风格的定量标准。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1862 no98已记录以sherry为主体、加糖橙片与刨冰摇和并用吸管饮的Sherry Cobbler。",
+          "source_ids": [
+            "jt1862"
+          ],
+          "locator": "no98 Sherry Cobbler，正文印刷p47",
+          "quote_en": "2 wine-glasses of sherry.",
+          "quote_zh": "两wine-glasses的雪利酒。",
+          "note": "正文p47清楚可读；不把现代解释中的dry/medium-dry补入原条。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Sherry Cobbler no98",
+          "locator": "no98，印刷p47",
+          "original_ingredients": [
+            "2 wine-glasses of sherry",
+            "1 table-spoonful of sugar",
+            "2 or 3 slices of orange",
+            "shaved ice",
+            "berries in season"
+          ],
+          "method_original": "Fill a tumbler with shaved ice, shake well, and ornament with berries in season. Place a straw as represented in the wood-cut.",
+          "method_zh": "填刨冰，充分摇和，以季节浆果装饰，按插图放吸管。",
+          "notes": "原书未指定雪利风格；wine-glass、table-spoonful保留。吸管与填冰属于饮用与持续稀释条件，不把配方假定为过滤后无冰。"
+        }
+      ],
+      "origin_caution": "no97作者说Cobbler为American invention是作者时代判断，本分片不据此独立证明起源；不记全球最早。",
+      "structure": "强化葡萄酒主体＋糖＋橙片＋大量刨冰的持续稀释，果饰与吸管影响服务体验。",
+      "creative_bridge": {
+        "preserve": [
+          "同款雪利、相同糖量与橙片",
+          "相同初始成品温度"
+        ],
+        "changed_variable": "冰的粒径",
+        "experiment": "两个半杯，A用碎冰，B用更细刨冰，初始冰质量与液量相同；在相同时间点记录温度、融化水与香气。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "检验冰如何调节芳香、酒感与饮用期间稀释，不把冰只当装饰。",
+        "risk": "粒径同时影响降温和稀释，结论是服务系统效应，不是纯加水效应；不能直接以冰体积替代冰质量。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "mint_julep",
+      "name": "薄荷朱莉普",
+      "name_en": "Mint Julep",
+      "aliases": [
+        "薄荷茱莉普",
+        "Mint Julep（Thomas1862 no88）",
+        "薄荷朱利普"
+      ],
+      "family_id": "julep",
+      "summary": "1862 no88使用Cognac brandy，薄荷压入糖水并重新插为花束，配刨冰、橙片、浆果和Jamaica rum少量淋顶。不能把现代bourbon版本回填该条。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1862 no88明确一又半wine-glass Cognac brandy，先从薄荷提味，再将枝条叶部向上插成花束。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no88 Mint Julep，EUVS替代转录印刷p44",
+          "quote_en": "add one and a half wine-glass of Cognac brandy",
+          "quote_zh": "加入一又半wine-glass的干邑白兰地。",
+          "note": "该剂量正文以拼写写清，区别于糖水行未清的分数。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Mint Julep no88；水量分数尚待扫描",
+          "locator": "no88，印刷p44由替代转录页眉交叉定位",
+          "original_ingredients": [
+            "1 table-spoonful of white pulverized sugar",
+            "water [table-spoonful unit by do.; OCR: 2i / 21, exact fraction unresolved]",
+            "three or four sprigs of fresh mint",
+            "one and a half wine-glass of Cognac brandy",
+            "fine shaved ice",
+            "berries",
+            "small pieces of sliced orange",
+            "Jamaica rum [dash on top, quantity unspecified]",
+            "white sugar [sprinkled on top, quantity unspecified]"
+          ],
+          "method_original": "Take three or four sprigs of fresh mint, and press them well in the sugar and water, until the flavor of the mint is extracted",
+          "method_zh": "将薄荷压在糖水中提味；加干邑与刨冰，取出薄荷再叶朝上插回，配果饰，淋少量Jamaica rum、撒糖并用吸管。",
+          "notes": "英文方法为已核原文片段，中文概述同条后续。水量不猜2½；不能因此称已完整复原。原书no87另引Captain Marryatt的配方，与no88不是同一版本。"
+        }
+      ],
+      "origin_caution": "1862的收录不代表Julep起源于该年；本条不是现代Kentucky bourbon Mint Julep的历史等价。",
+      "structure": "薄荷溶入酒液的香味与鼻端花束芳香分层；糖水、刨冰控制冷却与持续稀释。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代基准的基酒、糖量、冰与薄荷总量"
+        ],
+        "changed_variable": "薄荷提味与装饰的分配",
+        "experiment": "两个半杯，A仅轻压少量薄荷并留更多鲜叶作花束，B把更多薄荷用于轻压而减少花束；保持总薄荷量，不加柠檬汁。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "对比入口薄荷味和鼻端香气的不同作用。",
+        "risk": "重捣会产生草青与苦涩；必须保持轻压强度一致，不能同时变更冰粒径。",
+        "not_historical": true
+      },
+      "canonical_name": "薄荷朱莉普"
+    },
+    {
+      "id": "smash",
+      "name": "司马殊的早期结构",
+      "name_en": "Smash and its relation to Julep",
+      "aliases": [
+        "Brandy Smash",
+        "Gin Smash",
+        "Whiskey Smash",
+        "司马殊",
+        "司马士",
+        "Smash",
+        "司马士与朱利普的早期关系"
+      ],
+      "family_id": "julep",
+      "summary": "Thomas1862 no93把Smash定义为缩小规模的Julep，no94 Brandy Smash使用糖、水、brandy、薄荷与刨冰，橙和浆果为顶部装饰，未列柠檬汁。",
+      "claims": [
+        {
+          "kind": "definition",
+          "status": "documented",
+          "text": "no93直接说明Smash是julep on a small plan；这条与后世水果酸型Smash不能不分版本混写。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no93 THE SMASH，印刷p46",
+          "quote_en": "This beverage is simply a julep on a small plan.",
+          "quote_zh": "这饮品就是一款规模较小的朱利普。",
+          "note": "原条称谓关系是直接证据，不扩展成所有现代Smash的唯一分类标准。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "Brandy Smash no94；糖量分数未验图",
+          "locator": "no94，印刷p46",
+          "original_ingredients": [
+            "white sugar [table-spoonful; original fraction unresolved in OCR]",
+            "1 table-spoonful water [original: 1 do.]",
+            "1 wine-glass of brandy",
+            "two sprigs of mint",
+            "shaved ice [two-thirds full]",
+            "two small pieces of orange [on top]",
+            "berries in season"
+          ],
+          "method_original": "Fill two-thirds full of shaved ice, use two sprigs of mint, the same as in the recipe for mint julep.",
+          "method_zh": "填刨冰至三分之二，按Mint Julep方式使用两枝薄荷；顶部放两小块橙并以浆果装饰。",
+          "notes": "此条不写shake，不能把现代摇和步骤冒充其逐字原法；糖半汤匙在OCR歧读，本次不补。no95 gin、no96 whiskey另列同族，不能补柠檬汁。"
+        }
+      ],
+      "origin_caution": "只核1862定义与Brandy版本；不声称发明年代，不把所有现代果酸Smash归为原样延续。",
+      "structure": "烈酒/糖/水/薄荷与刨冰的短杯，核心是薄荷提味，不是未经证据支持的酸甜骨架。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代薄荷短饮的糖、水、薄荷、冰与烈酒总体积"
+        ],
+        "changed_variable": "分基酒比例",
+        "experiment": "两个半杯，A用全部brandy，B只将其中四分之一以相近酒精度gin替换，薄荷和其他用量保持不变。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "在保留酒体的同时引入少量植物香，检查薄荷与杜松的搭配。",
+        "risk": "不同基酒酒精度会改变刺激；先用近似酒精度以减小混淆，勿同时加酸汁。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "brandy_sour",
+      "name": "白兰地酸酒的早期引用式配方",
+      "name_en": "Brandy Sour",
+      "aliases": [
+        "白兰地沙瓦",
+        "Brandy Sour（Thomas1862 no142）",
+        "白兰地酸酒的早期引用式配方"
+      ],
+      "family_id": "sour",
+      "summary": "1862 no142不是独立三项定量表，而引用no140 Brandy Fix并删去其他水果，只保留一小块柠檬取汁；旧分数未全部读清，不换算现代2:1:1。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "no142明确借用Brandy Fix原材料，但除去所有水果，仅留一小块柠檬并在杯中压出汁。",
+          "source_ids": [
+            "jt1862",
+            "jt1862_alt"
+          ],
+          "locator": "no142 Brandy Sour，连同no140 Brandy Fix；EUVS阅读器/59，原图页码未逐图核",
+          "quote_en": "omitting all fruits except a small piece of lemon, the juice of which must be pressed in the glass",
+          "quote_zh": "除去所有水果，只留一小块柠檬，并在杯中压出其汁。",
+          "note": "引用式写法必须沿查no140，不能伪称no142逐字列现代体积比。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1862",
+          "year": 1862,
+          "label": "no142沿用no140；柠檬、水旧分数尚待图像验读",
+          "locator": "no140与no142；EUVS同版阅读器/59",
+          "original_ingredients": [
+            "1 table-spoonful of sugar [from no140]",
+            "water [wine-glass; fraction unresolved in no140 OCR]",
+            "1 wine-glass brandy [from no140: 1 do.]",
+            "a small piece of lemon [no142 wording]",
+            "shaved ice [two-thirds full in no140]"
+          ],
+          "method_original": "the juice of which must be pressed in the glass",
+          "method_zh": "按no142在杯中压柠檬汁；沿用no140填刨冰至三分之二及勺搅，去掉其余水果。",
+          "notes": "原书no140水、柠檬分数OCR不清；此材料表是明示交叉引用的整理，不是no142独立逐字配方。脚注另要求fixes/sours把柠檬皮放杯中。未列蛋白，也未列苦精。"
+        }
+      ],
+      "origin_caution": "不把1862当Sour的发明年；此条未写蛋白、现代2:1:1比例或摇和过滤法。",
+      "structure": "烈酒/糖/柠檬汁/水与刨冰构成的酸甜骨架；与Fix在水果装饰上区别，旧书的实际酸量不宜由现代比例推算。",
+      "creative_bridge": {
+        "preserve": [
+          "同一已能执行现代Brandy Sour基准的酒、糖与酸",
+          "相同成品温度与稀释"
+        ],
+        "changed_variable": "柠檬皮是否参与杯内接触",
+        "experiment": "两个半杯，A仅用过滤的柠檬汁，B仅加一片薄黄皮作短时杯内接触，记录相同接触时长后取出。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "分辨酸汁和果皮精油对酸酒的不同贡献。",
+        "risk": "白瓤与长接触造成苦味；不要用整块柠檬替换汁量，免得同时改变酸度。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "manhattan",
+      "name": "曼哈顿",
+      "name_en": "Manhattan Cocktail",
+      "aliases": [
+        "Manhattan Cocktail No. 1",
+        "Manhattan Cocktail No. 2",
+        "Manhattan",
+        "曼哈顿的1884与1887配方记录"
+      ],
+      "family_id": "aromatized",
+      "summary": "Byron1884印刷p21列两个Manhattan，French vermouth/gum与Italian vermouth/Curaçao并存；Thomas1887 p24另为rye、vermouth、修饰利口酒、Boker's版本。Johnson1882未在已查目录和OCR找到，不能倒记后版。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Byron1884 p21明确并列Manhattan No1和No2；No2有Curaçao、Angostura、whisky及Italian vermouth，以细冰搅拌过滤。",
+          "source_ids": [
+            "byron1884"
+          ],
+          "locator": "印刷p21，Manhattan Cocktail No1/No2；正文Fine ice行",
+          "quote_en": "Fine ice; stir well and strain into a cocktail glass.",
+          "quote_zh": "用细冰，充分搅拌，滤入鸡尾酒杯。",
+          "note": "No1 whiskey数值OCR未验图，不写成确定比例；No2半杯有二手交叉，仍明示OCR。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "unverified",
+          "text": "Manhattan配方归于Johnson1882的说法，本次在已查1882目录与公开OCR中未获支持；可核的Johnson条目在1888 no61 p40。",
+          "source_ids": [
+            "hj1882",
+            "hj1888"
+          ],
+          "locator": "1882 INDEX p5–8及所给OCR；1888 no61，印刷p40",
+          "quote_en": "61. MANHATTAN COCKTAIL.",
+          "quote_zh": "61. 曼哈顿鸡尾酒。",
+          "note": "未命中不等于原件绝对不存在；不将1882版权保留行误当1888新版全部配方的年代。"
+        },
+        {
+          "kind": "evolution",
+          "status": "documented",
+          "text": "Thomas1887 p24的Manhattan明确使用rye，允许Curaçao或Maraschino，以摇和过滤入claret glass；与Byron1884不能混成同一原配方。",
+          "source_ids": [
+            "jt1887"
+          ],
+          "locator": "Manhattan Cocktail，印刷p24",
+          "quote_en": "1 pony of rye whiskey.",
+          "quote_zh": "一pony的黑麦威士忌。",
+          "note": "不能把此处rye倒补1884只写whisky的条目；vermouth也未注明Italian或dry。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "byron1884",
+          "year": 1884,
+          "label": "Manhattan No1；whisky量保留OCR待验",
+          "locator": "印刷p21，No1",
+          "original_ingredients": [
+            "1 pony French vermouth",
+            "whisky [OCR: 1 pony; fraction not verified against scan]",
+            "3 or 4 dashes Angostura bitters",
+            "3 dashes gum syrup"
+          ],
+          "method_original": "(A small wine-glass.)",
+          "method_zh": "此条只标小wine-glass，未单列摇或搅方法；不自动沿用下面No2方法。",
+          "notes": "本次不判定whisky到底1 pony或1/2 pony；材料数值待原图。French与Italian是原书风格标签，不把它们无条件等同所有现代dry/sweet产品。"
+        },
+        {
+          "source_id": "byron1884",
+          "year": 1884,
+          "label": "Manhattan No2；半wine-glass由二手交叉支持",
+          "locator": "印刷p21，No2",
+          "original_ingredients": [
+            "2 dashes Curacoa",
+            "2 dashes Angostura bitters",
+            "1/2 wine-glass whisky [OCR: i; secondary cross-check]",
+            "1/2 wine-glass Italian vermouth [OCR: i; secondary cross-check]",
+            "fine ice"
+          ],
+          "method_original": "Fine ice; stir well and strain into a cocktail glass.",
+          "method_zh": "细冰搅匀，滤入鸡尾酒杯。",
+          "notes": "1/2读法参照已读cocktailways二手转引；未验扫描分数。原条没有指定rye、bourbon或樱桃；do.展开不作ml转换。"
+        },
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "Thomas1887身后版Manhattan",
+          "locator": "印刷p24，Manhattan Cocktail",
+          "original_ingredients": [
+            "2 dashes of Curacoa or Maraschino",
+            "1 pony of rye whiskey",
+            "1 wine-glass of vermouth",
+            "3 dashes of Boker's bitters",
+            "2 small lumps of ice",
+            "a quarter of a slice of lemon",
+            "2 dashes gum syrup [optional if very sweet preferred]"
+          ],
+          "method_original": "Shake up well, and strain into a claret glass.",
+          "method_zh": "充分摇和，滤入claret glass，放四分之一片柠檬；很甜的偏好才另加两dash gum syrup。",
+          "notes": "此版本只能标1887；wine-glass和pony不强制转换，vermouth种类未指定。"
+        },
+        {
+          "source_id": "hj1888",
+          "year": 1888,
+          "label": "Johnson1888 no61 Manhattan；不是1882",
+          "locator": "no61，印刷p40；阅读器/50",
+          "original_ingredients": [
+            "ice [fill glass]",
+            "2 or 3 dashes of Gum Syrup",
+            "1 or 2 dashes of Bitters (Boker's genuine only)",
+            "1 dash of Curacoa (or absinthe if required)",
+            "1/2 wine glass of Whiskey",
+            "1/2 wine glass of Vermouth",
+            "a piece of lemon peel"
+          ],
+          "method_original": "stir up well, strain into a fancy cocktail glass",
+          "method_zh": "搅匀，滤入花式鸡尾酒杯，表面挤柠檬皮；absinthe选项让客人决定。",
+          "notes": "OCR双栏的whiskey/vermouth行出现在下一个标题之后；按no61段及目录整理，非默取下一条Curacoa Punch。与1900版常见dry/sweet文字不混用。"
+        }
+      ],
+      "origin_caution": "这些是可定位配方记录，不证明1884首次提及或全球最早，也不收录未经本次核验的地点与名人宴会传说。",
+      "structure": "烈酒＋芳香葡萄酒＋苦精，历史可有gum或利口酒；vermouth兼具芳香、甜度、酸度和降低强度，不是仅替代糖浆。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代Manhattan的vermouth、苦精、稀释及总基酒体积"
+        ],
+        "changed_variable": "分基酒比例",
+        "experiment": "两个半杯，A全部rye，B只以相近酒精度brandy替换四分之一rye；不同时换vermouth或加Maraschino。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "检验少量葡萄基酒怎样补水果香与柔和酒体，同时保留rye主导。",
+        "risk": "基酒酒精度不同会混淆酒感；开瓶vermouth需按产品说明冷藏，不用氧化样品做对照。",
+        "not_historical": true
+      },
+      "canonical_name": "曼哈顿"
+    },
+    {
+      "id": "martinez",
+      "name": "马丁内斯",
+      "name_en": "Martinez Cocktail",
+      "aliases": [
+        "马天尼斯",
+        "Martinez",
+        "马丁内斯",
+        "马丁内斯的1884与1887差异"
+      ],
+      "family_id": "aromatized",
+      "summary": "Byron1884 p21仅说以gin替换Manhattan中的whisky，指向两种Manhattan存在歧义；Thomas1887 p25则独立列Old Tom、vermouth、Maraschino与Boker's。后者不能记成1862。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Byron1884明确写Martinez是Manhattan用gin替换whisky；没有独立指定Old Tom、Maraschino或唯一No1/No2。",
+          "source_ids": [
+            "byron1884"
+          ],
+          "locator": "印刷p21，Martinez Cocktail，位于两个Manhattan之后",
+          "quote_en": "Same as Manhattan, only you substitute gin for whisky.",
+          "quote_zh": "与曼哈顿相同，只是以金酒替换威士忌。",
+          "note": "不能把后来Thomas的Maraschino配方伪引为Byron1884逐字内容；版面邻接可支持解释，但不是唯一指代证明。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Thomas1887印刷p25独立列Martinez，有1 pony Old Tom gin与1 wine-glass Vermouth、Boker's和Maraschino。",
+          "source_ids": [
+            "jt1887"
+          ],
+          "locator": "Martinez Cocktail，印刷p25",
+          "quote_en": "1 pony of Old Tom gin. 1 wine-glass of Vermouth.",
+          "quote_zh": "一pony Old Tom金酒；一wine-glass味美思。",
+          "note": "原文没有指定Vermouth品牌或Italian；不可宣称确切现代2:1体积比例而不先声明旧单位解释。"
+        },
+        {
+          "kind": "evolution",
+          "status": "supported_secondary",
+          "text": "注释书目把1887定位为身后重编并列Manhattan/Martinez为新增；应按1887文献而非1862收录。",
+          "source_ids": [
+            "thomas_editions",
+            "jt1887"
+          ],
+          "locator": "书目Thomas (post.), Jerry，1887条目；配方p25",
+          "quote_en": "Major posthumous re-edit and update",
+          "quote_zh": "身后的大幅重新编辑与更新。",
+          "note": "不证明Thomas本人写下或发明该配方。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "byron1884",
+          "year": 1884,
+          "label": "交叉引用式Martinez；原材料非独立定量表",
+          "locator": "印刷p21，Martinez Cocktail",
+          "original_ingredients": [
+            "gin instead of whisky",
+            "other ingredients as Manhattan [No1 or No2 not specified]"
+          ],
+          "method_original": "Same as Manhattan, only you substitute gin for whisky.",
+          "method_zh": "沿用Manhattan但将whisky换为gin；本条没说明到底沿用No1还是No2。",
+          "notes": "不补Old Tom、Maraschino、Italian或固定比例；如制作现代解释版本，须另标所选No1/No2与现代定量。"
+        },
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "Thomas1887身后版独立Martinez",
+          "locator": "印刷p25",
+          "original_ingredients": [
+            "1 dash of Boker's bitters",
+            "2 dashes of Maraschino",
+            "1 pony of Old Tom gin",
+            "1 wine-glass of Vermouth",
+            "2 small lumps of ice",
+            "a quarter of a slice of lemon",
+            "2 dashes of gum syrup [optional if very sweet preferred]"
+          ],
+          "method_original": "Shake up thoroughly, and strain into a large cocktail glass.",
+          "method_zh": "充分摇和，滤入大鸡尾酒杯，加四分之一片柠檬；偏好很甜时另加gum syrup。",
+          "notes": "不改成现代搅拌法而仍标历史原文。该配方来自1887身后版；不能记录成1862、1876或Thomas亲创的证据。"
+        }
+      ],
+      "origin_caution": "两份配方记录不能证明单一发明者、城市或Martinez到Martini的唯一直线演化；本次未核这些归属。",
+      "structure": "gin与芳香葡萄酒骨架；Byron展示换基酒的派生写法，1887另加Maraschino芳香与可选糖浆。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代Martinez的gin、vermouth、苦精与稀释"
+        ],
+        "changed_variable": "少量修饰利口酒",
+        "experiment": "两个半杯，A用Maraschino，B只以同一小体积Curaçao替换，先记录两款糖含量；不要同时改gin品种。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较樱桃核/坚果样芳香与柑橘芳香如何连接gin及vermouth。",
+        "risk": "等量利口酒不等甜度；本轮结论是修饰酒整体替换，不得称为唯一历史Martinez复原。",
+        "not_historical": true
+      },
+      "canonical_name": "马丁内斯"
+    },
+    {
+      "id": "martini",
+      "name": "马提尼",
+      "name_en": "Martini Cocktail: edition and naming distinctions",
+      "aliases": [
+        "马天尼",
+        "Martini（Johnson1888 no57）",
+        "Martini",
+        "马提尼",
+        "马丁尼",
+        "马丁尼与马丁内斯的版次辨名"
+      ],
+      "family_id": "aromatized",
+      "summary": "本次能直接定位的Martini独立标题是Johnson1888 no57 p38–39，含gum、Boker's、Curaçao、Old Tom及vermouth。Thomas1887可核的是Martinez，不用Martini代改。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Johnson1888 no57独立名为MARTINI COCKTAIL，含糖浆和Curaçao；不是现代干马丁尼的原样。",
+          "source_ids": [
+            "hj1888"
+          ],
+          "locator": "no57，印刷p38–39；阅读器/48–49",
+          "quote_en": "57 MARTINI COCKTAIL.",
+          "quote_zh": "57 马丁尼鸡尾酒。",
+          "note": "正文标题清楚，目录OCR57有作67；按正文确认。只说此已核记录，不称最早使用该名称。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "把独立Martini配方列作Thomas1887或Johnson1882，本次所查目录与正文没有支持；Thomas1887条目为Martinez。",
+          "source_ids": [
+            "jt1887",
+            "hj1882",
+            "hj1888"
+          ],
+          "locator": "Thomas1887目录及p25；Johnson1882 INDEX；Johnson1888 no57 p38–39",
+          "quote_en": "Martinez Cocktail.",
+          "quote_zh": "马丁内斯鸡尾酒。",
+          "note": "OCR未命中不等于穷尽全世界版次；缺口是原版逐页图像验读，不允许以相似名称自动合并。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "hj1888",
+          "year": 1888,
+          "label": "Johnson1888 no57 Martini Cocktail",
+          "locator": "no57，印刷p38–39；阅读器/48–49",
+          "original_ingredients": [
+            "ice [fill glass]",
+            "2 or 3 dashes of Gum Syrup",
+            "2 or 3 dashes of Bitters (Boker's genuine only)",
+            "1 dash of Curacoa",
+            "1/2 wine glassful of Old Tom Gin",
+            "1/2 wine glassful of Vermouth",
+            "a piece of lemon peel"
+          ],
+          "method_original": "stir up well with a spoon, strain it into a fancy cocktail glass",
+          "method_zh": "大调制杯装冰，勺搅匀，滤入花式鸡尾酒杯，表面挤一片柠檬皮后服务。",
+          "notes": "两项半wine glassful在跨页OCR作1f2/1/2，可读；保留旧单位，不换ml。vermouth未指定甜干或产地；不加现代橄榄，不把旧糖浆量换成现代无糖干配方。"
+        }
+      ],
+      "origin_caution": "此处不声称Johnson发明Martini或1888全球首印；不把Martini/Martinez仅因现代相近而视为可交换的历史名字。",
+      "structure": "gin＋vermouth＋糖浆＋少量Curaçao＋苦精与柠檬油；干化需要改动糖浆、gin风格、vermouth风格等多个变量，不能用一条模糊历史箭头解释。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代历史风格基准的gin、vermouth、Curaçao、苦精与稀释"
+        ],
+        "changed_variable": "额外糖浆量",
+        "experiment": "两个半杯，A保留基准gum量，B仅降低该量一半，并补相同少量水使稀释一致；先不把Old Tom换London Dry。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "测出额外甜味的贡献，为之后独立试验gin或vermouth风格打基础。",
+        "risk": "gin和vermouth本身糖度不同，不能把减gum就叫历史上首次Dry Martini；不要同时省去Curaçao。",
+        "not_historical": true
+      },
+      "canonical_name": "马提尼"
+    },
+    {
+      "id": "improved_cocktail",
+      "name": "改良鸡尾酒的利口酒与苦艾修饰",
+      "name_en": "Improved Cocktail",
+      "aliases": [
+        "Improved Brandy Cocktail",
+        "Improved Whiskey Cocktail",
+        "Improved Gin Cocktail",
+        "改良鸡尾酒的利口酒与苦艾修饰"
+      ],
+      "family_id": "cocktail",
+      "summary": "Thomas1887身后版p19–21明确Improved Brandy及whiskey/gin换基酒条目，用Maraschino与Absinthe修饰；本次只把这些确证定位记1887，不倒填1862，也不宣称首次出现。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1887 Improved Brandy Cocktail列Boker's或Angostura、gum、Maraschino、Absinthe、柠檬皮与brandy，并摇和过滤。",
+          "source_ids": [
+            "jt1887"
+          ],
+          "locator": "Improved Brandy Cocktail，印刷p19–20",
+          "quote_en": "2 dashes Maraschino. 1 dash Absinthe.",
+          "quote_zh": "两dash马拉斯奇诺；一dash苦艾酒。",
+          "note": "这里只确证1887版本，不声称这些原料在1862或1876是否绝对没有；有另版需另验。"
+        },
+        {
+          "kind": "evolution",
+          "status": "documented",
+          "text": "1887 Improved Whiskey明确用Bourbon或rye替换brandy；Improved Gin明确用Holland或Old Tom替换，其他沿用Improved Brandy。",
+          "source_ids": [
+            "jt1887"
+          ],
+          "locator": "Improved Whiskey p20；Improved Gin p21",
+          "quote_en": "by substituting Bourbon or rye whiskey for the brandy",
+          "quote_zh": "以波本或黑麦威士忌替换白兰地。",
+          "note": "这是可定位的换基酒原文，不能把1887的明确品种倒填1862普通Whiskey/Gin Cocktail。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "Improved Brandy Cocktail，身后版",
+          "locator": "印刷p19–20",
+          "original_ingredients": [
+            "2 dashes Boker's (or Angostura) Bitters",
+            "3 dashes gum syrup",
+            "2 dashes Maraschino",
+            "1 dash Absinthe",
+            "1 small piece of the yellow rind of a lemon, twisted to express the oil",
+            "1 small wine-glass of brandy",
+            "shaved ice [one-third full]"
+          ],
+          "method_original": "Fill glass one-third full of shaved ice, shake well, and strain into a fancy cocktail glass",
+          "method_zh": "刨冰填至三分之一，充分摇和，滤入花式鸡尾酒杯，放柠檬皮；原文另说柠檬润杯沿改善香气。",
+          "notes": "Boker's与Angostura在本条明写择一，但不证明所有别条现代苦精可等量代换。小wine-glass不可强制固定ml。"
+        },
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "Improved Whiskey Cocktail，交叉引用式",
+          "locator": "印刷p20",
+          "original_ingredients": [
+            "Bourbon or rye whiskey instead of brandy",
+            "remaining ingredients as Improved Brandy Cocktail"
+          ],
+          "method_original": "Prepared in the same manner as the Improved Brandy Cocktail, by substituting Bourbon or rye whiskey for the brandy.",
+          "method_zh": "同Improved Brandy的方法，只把brandy换为Bourbon或rye。",
+          "notes": "材料表明示展开路径；不得把此版本年代记成1862，也不证明Thomas本人修改。"
+        },
+        {
+          "source_id": "jt1887",
+          "year": 1887,
+          "label": "Improved Gin Cocktail，交叉引用式",
+          "locator": "印刷p21",
+          "original_ingredients": [
+            "Holland or Old Tom gin instead of brandy",
+            "remaining ingredients as Improved Brandy Cocktail"
+          ],
+          "method_original": "Made the same way as the Improved Brandy Cocktail substituting Holland or Old Tom gin for the brandy.",
+          "method_zh": "同Improved Brandy，仅把brandy换为Holland或Old Tom gin。",
+          "notes": "不把Holland、Old Tom与现代London Dry当等价风味；此处只核文献列出的选项。"
+        }
+      ],
+      "origin_caution": "1887是已核本文版本的年份，不是Improved家族发明年或全球首次刊载；1876及其他版次配方本次未核，不能由书目推断配方原文。",
+      "structure": "原cocktail骨架上叠加小量Maraschino与Absinthe的芳香，保持主酒存在感；换基酒是明确的同族派生机制。",
+      "creative_bridge": {
+        "preserve": [
+          "同一现代Improved基准的基酒、糖浆、苦精、Maraschino和稀释"
+        ],
+        "changed_variable": "Absinthe芳香剂量",
+        "experiment": "两个半杯，A使用基准中的极少量Absinthe，B仅减半该量，用可计量滴管记录；其他不变。首轮不同时做分基酒。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "寻找茴香与草本气息的桥接阈值，避免芳香修饰淹没基酒。",
+        "risk": "品牌酒精度和芳香强度不等，dash不标准；不用火焰，勿把历史dash直接按现代滴数等价。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "old_fashioned_1895",
+      "name": "古典的1895命名版本",
+      "name_en": "Old-Fashioned Whiskey Cocktail",
+      "aliases": [
+        "Old Fashioned",
+        "Old-Fashioned",
+        "古典",
+        "古典鸡尾酒",
+        "古典威士忌鸡尾酒（1895记录）"
+      ],
+      "family_id": "cocktail",
+      "summary": "1895 Kappeler明确记录糖、水、Angostura、冰、柠檬皮和威士忌的杯中搅拌服务；这是可核历史版本，不是发明证书。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "Modern American Drinks的印刷第43页有Old-Fashioned Whiskey Cocktail，基酒只写whiskey，柑橘只列lemon-peel；不包含橙片、樱桃或额外利口酒。",
+          "source_ids": [
+            "kappeler1895",
+            "kappeler1895_loc"
+          ],
+          "locator": "印刷p.43，Old-Fashioned Whiskey Cocktail；EUVS全文同名标题",
+          "quote_en": "a small piece ice, a piece lemon-peel, one jigger whiskey",
+          "quote_zh": "一小块冰、一片柠檬皮、一jigger威士忌。",
+          "note": "只证明这个1895文本版本；不能由缺少果肉断言此前或所有地区从未用果肉。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "原书要求先用少量水溶解糖，再杯中混合，服务时将小吧匙留在杯内，而不是摇和后滤冰。",
+          "source_ids": [
+            "kappeler1895"
+          ],
+          "locator": "印刷p.43，条目末句",
+          "quote_en": "Mix with small bar-spoon and serve, leaving spoon in the glass.",
+          "quote_zh": "用小吧匙混合后服务，匙留在杯中。",
+          "note": "jigger未自行换算成统一ml；原文没有给冰的重量或最终稀释率。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "此条目本身不足以证明Kappeler或某一酒吧发明了Old Fashioned，也不足以宣称1895是名称或配方首次出现。",
+          "source_ids": [
+            "kappeler1895"
+          ],
+          "locator": "印刷p.43：配方条目，未附创造者叙述",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "不把记录年份写成诞生年份。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "kappeler1895",
+          "year": 1895,
+          "label": "Kappeler印刷原谱；非现代出品规格",
+          "locator": "印刷p.43，Old-Fashioned Whiskey Cocktail",
+          "original_ingredients": [
+            "a small lump of sugar",
+            "a little water",
+            "two dashes Angostura bitters",
+            "a small piece ice",
+            "a piece lemon-peel",
+            "one jigger whiskey"
+          ],
+          "method_original": "Dissolve a small lump of sugar with a little water in a whiskey-glass; add two dashes Angostura bitters, a small piece ice, a piece lemon-peel, one jigger whiskey. Mix with small bar-spoon and serve, leaving spoon in the glass.",
+          "method_zh": "在威士忌杯中用少量水溶糖，加入其余材料，用小吧匙混合；原书服务时匙留杯内。",
+          "notes": "方法保留原书英文，只规范OCR跨行断词；不新增冰型、搅拌秒数或现代装饰。"
+        }
+      ],
+      "origin_caution": "1895是已核出版版本，不是全球最早或作者首创定论。旧书whiskey不自动等于某一波本品牌；dash与jigger不能套用任一现代统一体积。",
+      "structure": "教学提炼：烈酒主体＋少量糖＋芳香苦精＋水/冰稀释；柠檬皮提供香气而非酸汁。",
+      "creative_bridge": {
+        "preserve": [
+          "威士忌主导",
+          "少量甜味与苦精",
+          "相同稀释及出杯温度"
+        ],
+        "changed_variable": "糖的风味来源",
+        "experiment": "现代教学半杯A/B：每杯威士忌25ml、糖浆2.5ml、同瓶苦精1次定量滴加；A用1:1白砂糖浆，B用1:1深色蔗糖浆。相同冰量和搅拌程序，仅换糖浆类型；不是1895复原。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "B可能增加焦糖和糖蜜感；检验是否衬托木桶香而不盖过威士忌。",
+        "risk": "两种糖浆甜度、固形物和苦精滴量若不一致会形成额外变量；原书未提供现代ml比例。",
+        "not_historical": true
+      },
+      "canonical_name": "古典"
+    },
+    {
+      "id": "daiquiri",
+      "name": "得其利",
+      "name_en": "Daiquiri",
+      "aliases": [
+        "Daiguiri Cocktail",
+        "Daiquirí",
+        "得其利"
+      ],
+      "family_id": "sour",
+      "summary": "已直接核到Straub版权1914的Drinks第24页Daiguiri Cocktail；两项jigger分数在OCR中损坏，保留缺口，不拿它替代古巴当地早期出版证据。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "所读Drinks的版权页写1914，第24页Daiguiri Cocktail列lime juice、rum、1 barspoon powdered sugar，并写细冰摇和后滤入鸡尾酒杯。",
+          "source_ids": [
+            "straub1914"
+          ],
+          "locator": "版权页Copyright 1914；印刷p.24，Daiguiri Cocktail",
+          "quote_en": "1 barspoon powdered sugar. Shake well in fine ice; strain into cocktail glass.",
+          "quote_zh": "一吧匙糖粉；用细冰充分摇和，滤入鸡尾酒杯。",
+          "note": "lime与rum前分数字形不可读，不补现代2:1比例。版权页与该条目已核，初印实物身份尚需影像/书目进一步确认。"
+        },
+        {
+          "kind": "evolution",
+          "status": "supported_secondary",
+          "text": "Straub先有1913手册，1914稍扩充为Drinks，后又有亡妻编订重印；因此只找到1914版权页不能排除更早手册记录或后期重印。",
+          "source_ids": [
+            "straub_bibliography",
+            "straub1914"
+          ],
+          "locator": "Jacques Straub网页，He published two books段落与重印讨论",
+          "quote_en": "In 1913, “Straub’s Manual of Mixed Drinks” appeared",
+          "quote_zh": "1913年先出版了《Straub’s Manual of Mixed Drinks》。",
+          "note": "本次未直接核读1913同名酒谱，不把1914宣布为绝对最早。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "unverified",
+          "text": "本次未核到1909年或1914年古巴当地出版的Daiquiri原始条目；已核Straub属于Chicago出版，不等于古巴出版记录。",
+          "source_ids": [
+            "straub1914",
+            "straub_bibliography"
+          ],
+          "locator": "Drinks出版项The Hotel Monthly, Chicago；1909/1914古巴原始出版定位缺口",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "1909常见传播故事不能冒充1909出版证据；Jennings Cox单一创造者归属在此也不作定论。"
+        }
+      ],
+      "historical_versions": [],
+      "origin_caution": "已核名称、材料类别、糖粉量和方法，但原书jigger分数暂不可读，故不发布可执行的1914复原规格。1909/1914古巴早期出版及Cox的确定发明权仍留待进一步原始史料核验。",
+      "structure": "教学提炼：朗姆＋鲜青柠酸＋糖＋摇和稀释；风味简单不代表只要照旧比例就能适配现代材料。",
+      "creative_bridge": {
+        "preserve": [
+          "朗姆、青柠、糖的三角结构",
+          "同批青柠汁与1:1糖浆",
+          "相同摇和稀释"
+        ],
+        "changed_variable": "朗姆风格",
+        "experiment": "现代半杯A/B各用朗姆25ml、青柠汁10ml、1:1糖浆7.5ml；A用轻型白朗姆，B用同酒精度但酯香较明显的朗姆。只换朗姆，相同冰与摇和程序；这不是Straub原谱换算。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较清爽甘蔗感与发酵果香如何改变酸甜感知。",
+        "risk": "酒精度或含糖量不一致会带来额外变量；不为补偿B的强香同时改糖和酸。",
+        "not_historical": true
+      },
+      "canonical_name": "得其利"
+    },
+    {
+      "id": "aviation",
+      "name": "飞行",
+      "name_en": "Aviation",
+      "aliases": [
+        "Aviation Cocktail",
+        "飞行"
+      ],
+      "family_id": "sour",
+      "summary": "现代经典四材料式的1916初版归属由专业词条支持；实际可读比例来自1917第二版转录。1930 Savoy同名式不含紫罗兰，两个年代不能混为一个原谱。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "Wondrich词条把金酒、柠檬、maraschino、crème de violette这套现代经典结构的最早出版归于Ensslin 1916 Recipes for Mixed Drinks，同时指出更早已有不同配方的同名Aviation。",
+          "source_ids": [
+            "ensslin1916"
+          ],
+          "locator": "The Aviation Cocktail词条首段；原书1916初版页码本次未核",
+          "quote_en": "one of at least four different formulae with the same name",
+          "quote_zh": "当时至少有四种不同配方使用同一名字。",
+          "note": "是专业二手判断，不标1916原版text_checked，也不把1916当Aviation名称绝对首见。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "明确标为1917第二版第7页的转录有1/3 Lemon Juice、2/3 El Bart Gin及maraschino、crème de violette各2 dashes。",
+          "source_ids": [
+            "aviation_comparison",
+            "ensslin1917_catalog"
+          ],
+          "locator": "Historical recipes，1917 Ensslin，p.7；不是1916页码",
+          "quote_en": "2 dashes Maraschino / 2 dashes Crême de Violette",
+          "quote_zh": "maraschino两dash，紫罗兰利口酒两dash。",
+          "note": "斜线表示原文换行。作者明确只有1917第二版。"
+        },
+        {
+          "kind": "evolution",
+          "status": "documented",
+          "text": "1930 Savoy第25页Aviation为2/3 Dry Gin、1/3 Lemon Juice和2 Dashes Maraschino，没有crème de violette。",
+          "source_ids": [
+            "savoy1930",
+            "savoy1930_transcription"
+          ],
+          "locator": "印刷p.25，Aviation Cocktail；结构化转录Name=Aviation Cocktail",
+          "quote_en": "2 Dashes Maraschino. Shake well and strain into cocktail glass.",
+          "quote_zh": "maraschino两dash；充分摇和，滤入鸡尾酒杯。",
+          "note": "配方的省略已核；省略原因未核。不能简单写成因为当时全面缺货，该页另一条目仍出现Crème de Violette。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "Ensslin发表该配方不单独证明他本人发明；以紫罗兰的天蓝色解释命名也不等于已找到作者的命名说明。",
+          "source_ids": [
+            "ensslin1916",
+            "aviation_comparison"
+          ],
+          "locator": "Oxford词条与Bar-Vademecum历史比较；创造者及作者命名说明缺口",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "酒单可讲可核版本差异，不用确定语气讲创作动机。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "aviation_comparison",
+          "year": 1917,
+          "label": "Ensslin第二版第7页，经二手转录核验；非1916影像校勘",
+          "locator": "Historical recipes，1917 Recipes for Mixed Drinks，p.7",
+          "original_ingredients": [
+            "1/3 Lemon Juice",
+            "2/3 El Bart Gin",
+            "2 dashes Maraschino",
+            "2 dashes Crême de Violette"
+          ],
+          "method_original": "Shake well in a mixing glass with cracked ice, strain and serve.",
+          "method_zh": "在混合杯中用碎裂冰充分摇和，滤出后服务。",
+          "notes": "旧书mixing glass不等于现代必须搅拌；原指令明确Shake。未加现代樱桃或柠檬皮装饰，dash不统一换算ml。",
+          "original_work_title": "Hugo R. Ensslin, Recipes for Mixed Drinks, second edition (1917)"
+        },
+        {
+          "source_id": "savoy1930_transcription",
+          "year": 1930,
+          "label": "Savoy无紫罗兰版本",
+          "locator": "印刷p.25，Aviation Cocktail；EUVS同页交叉核对",
+          "original_ingredients": [
+            "1/3 Lemon Juice",
+            "2/3 Dry Gin",
+            "2 Dashes Maraschino"
+          ],
+          "method_original": "Shake well and strain into cocktail glass.",
+          "method_zh": "充分摇和，滤入鸡尾酒杯。",
+          "notes": "无crème de violette；不将现代四材料式回填Savoy。"
+        }
+      ],
+      "origin_caution": "1916初版为二手支持，1917第7页不得当1916定位；更早同名异方不等于此种金酒酸酒。Savoy省略事实可证，供货、抄漏或个人口味等原因不可确定。",
+      "structure": "教学提炼：金酒酸酒骨架，maraschino供甜香，少量紫罗兰可改变花香与颜色；酒谱版本与现代平衡是两件事。",
+      "creative_bridge": {
+        "preserve": [
+          "同批金酒、柠檬与maraschino",
+          "相同出品量与稀释",
+          "低剂量花香"
+        ],
+        "changed_variable": "是否加入紫罗兰利口酒",
+        "experiment": "现代半杯A/B各用金酒25ml、柠檬汁7.5ml、maraschino5ml。A另加1ml水，B另加1ml同瓶紫罗兰利口酒；相同冰与摇和程序，仅测试该添加物。不是1917或1930原谱的ml换算。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "B可能增加花香和淡色；检验花香是否在酸味后仍可辨认。",
+        "risk": "紫罗兰酒同时携带糖、酒精和颜色，这是单一添加物但不是单一化学成分；过量可能呈香水感。",
+        "not_historical": true
+      },
+      "canonical_name": "飞行"
+    },
+    {
+      "id": "sidecar",
+      "name": "边车",
+      "name_en": "Sidecar",
+      "aliases": [
+        "Side-Car",
+        "Sidecar Cocktail",
+        "边车"
+      ],
+      "family_id": "sour",
+      "summary": "1922 Vermeire等量式由二手原谱转录支持，1930 Savoy的白兰地:君度:柠檬为2:1:1已直接交叉核读；传播者与发明者须分开。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "Vermeire 1922第44页Side-Car以fresh Lemon Juice、Cointreau、Cognac Brandy各1/6 gill组成。",
+          "source_ids": [
+            "sidecar_comparison"
+          ],
+          "locator": "Historical recipes，1922 Robert Vermeire，p.44，Side-Car",
+          "quote_en": "1/6 gill of fresh Lemon Juice / 1/6 gill of Cointreau / 1/6 gill of Cognac Brandy",
+          "quote_zh": "鲜柠檬汁、君度、干邑白兰地各1/6 gill。",
+          "note": "二手转录已核，不宣称绝对最早，也不把gill统一换算现代ml。"
+        },
+        {
+          "kind": "attribution",
+          "status": "supported_secondary",
+          "text": "Vermeire的文字把MacGarry称为在伦敦引入该酒的人；introduced不等于invented，也不证明某位骑摩托边车的客人创造了配方。",
+          "source_ids": [
+            "sidecar_comparison"
+          ],
+          "locator": "1922 Vermeire p.44归属说明",
+          "quote_en": "It was first introduced in London by MacGarry",
+          "quote_zh": "它由MacGarry首次引入伦敦。",
+          "note": "此处只转述引入伦敦的历史归属，不确定实际发明者。"
+        },
+        {
+          "kind": "evolution",
+          "status": "documented",
+          "text": "1930 Savoy第147页把白兰地提到1/2、君度与柠檬汁各1/4；该条目只写Brandy，方法是摇和滤入鸡尾酒杯，没有指定糖边。",
+          "source_ids": [
+            "savoy1930",
+            "savoy1930_transcription"
+          ],
+          "locator": "印刷p.147，Sidecar Cocktail；Name=Sidecar Cocktail",
+          "quote_en": "Shake well and strain into cocktail glass.",
+          "quote_zh": "充分摇和，滤入鸡尾酒杯。",
+          "note": "原书没有糖边不意味着所有历史Sidecar都没有糖边；不把现代装饰追写成1930必备。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "sidecar_comparison",
+          "year": 1922,
+          "label": "Vermeire等量式，经二手转录核验",
+          "locator": "Cocktails. How to Mix Them，p.44，Side-Car",
+          "original_ingredients": [
+            "1/6 gill of fresh Lemon Juice",
+            "1/6 gill of Cointreau",
+            "1/6 gill of Cognac Brandy"
+          ],
+          "method_original": "Fill the shaker half full of broken ice and add: 1/6 gill of fresh Lemon Juice. 1/6 gill of Cointreau. 1/6 gill of Cognac Brandy. Shake well and strain into a cocktail-glass.",
+          "method_zh": "摇壶装半壶碎裂冰，加入材料，充分摇和后滤入鸡尾酒杯。",
+          "notes": "方法按核读历史转录保留，仅合并换行；不以现代同名产品的酸甜自动否定旧酒谱。",
+          "original_work_title": "Robert Vermeire, Cocktails: How to Mix Them (1922)"
+        },
+        {
+          "source_id": "savoy1930_transcription",
+          "year": 1930,
+          "label": "Savoy 2:1:1式",
+          "locator": "印刷p.147，Sidecar Cocktail；EUVS同页交叉核对",
+          "original_ingredients": [
+            "1/4 Lemon Juice",
+            "1/4 Cointreau",
+            "1/2 Brandy"
+          ],
+          "method_original": "Shake well and strain into cocktail glass.",
+          "method_zh": "充分摇和，滤入鸡尾酒杯。",
+          "notes": "比例保留原书分数，没有糖边、糖浆或装饰指令。"
+        }
+      ],
+      "origin_caution": "早期出版、引入伦敦与发明权不同；摩托客人故事不作事实。古老等量式与现代酸度/品牌不可自动等同，不能因现代试调过酸就断言原书错误。",
+      "structure": "教学提炼：白兰地主体＋橙味利口酒供甜与香＋柠檬酸；三者比例可以演变，不靠额外糖边才能定义这杯。",
+      "creative_bridge": {
+        "preserve": [
+          "白兰地、橙味利口酒、柠檬三角",
+          "同一酸汁和橙酒",
+          "不加糖边以免引入第二变量"
+        ],
+        "changed_variable": "白兰地熟成风格",
+        "experiment": "现代半杯A/B各用白兰地25ml、同瓶橙味利口酒12.5ml、同批柠檬汁12.5ml；A用较年轻白兰地，B用同酒精度的较熟成白兰地。只换基酒，相同冰和摇和程序。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较木香、果香与酸味相互遮蔽，找到酒单更合适的主体。",
+        "risk": "年龄不是唯一差别，品牌、糖分与木桶处理也可能影响结果；该测试只比较具体两瓶，不证明历史干邑风格。",
+        "not_historical": true
+      },
+      "canonical_name": "边车"
+    },
+    {
+      "id": "corpse_reviver_2",
+      "name": "复尸者2号",
+      "name_en": "Corpse Reviver No. 2",
+      "aliases": [
+        "Corpse Reviver #2",
+        "Corpse Reviver (No. 2)",
+        "复尸者2号",
+        "复尸者二号",
+        "亡者复苏二号"
+      ],
+      "family_id": "sour",
+      "summary": "1930 Savoy第52页四项各1/4 wine glass，加1 dash Absinthe；这不是现代润杯版，也不能把名称和幽默警句解释成医疗功效。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1930原书列Lemon Juice、Kina Lillet、Cointreau、Dry Gin各1/4 Wine Glass，并直接加1 Dash Absinthe。",
+          "source_ids": [
+            "savoy1930",
+            "savoy1930_transcription"
+          ],
+          "locator": "印刷p.52，Corpse Reviver (No. 2)；Name同名结构化转录",
+          "quote_en": "1 Dash Absinthe. Shake well and strain into cocktail glass.",
+          "quote_zh": "苦艾酒一dash；充分摇和，滤入鸡尾酒杯。",
+          "note": "原文是添加，不是rinse。Wine Glass不是可无条件统一为现代一盎司或某个ml量。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "原书附四杯快速连续饮用将使亡者再次失去活力的幽默警句，不是解酒、治病或安全饮酒建议。",
+          "source_ids": [
+            "savoy1930"
+          ],
+          "locator": "印刷p.52，配方后警句",
+          "quote_en": "Four of these taken in swift succession will unrevive the corpse again.",
+          "quote_zh": "快速连续喝下四杯，会让那具‘尸体’再次失去活力。",
+          "note": "保持unrevive的否定意味，不能误译成四杯让人复活；不鼓励连续饮用。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "1930原书收录不足以证明Craddock创造此酒；目前也不能把现代Lillet Blanc或其他开胃酒当作已经证实完全等同原Kina Lillet的历史原料。",
+          "source_ids": [
+            "savoy1930",
+            "savoy1930_transcription"
+          ],
+          "locator": "印刷p.52材料及无创造者叙述的条目；原产品重建缺口",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "没有直接品牌历史及配方技术证据时，不写固定改革年份、奎宁降幅或‘唯一真正替代品’。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "savoy1930_transcription",
+          "year": 1930,
+          "label": "Savoy原书等量四项＋苦艾酒添加",
+          "locator": "印刷p.52；EUVS同页交叉核对",
+          "original_ingredients": [
+            "1/4 Wine Glass Lemon Juice",
+            "1/4 Wine Glass Kina Lillet",
+            "1/4 Wine Glass Cointreau",
+            "1/4 Wine Glass Dry Gin",
+            "1 Dash Absinthe"
+          ],
+          "method_original": "Shake well and strain into cocktail glass.",
+          "method_zh": "充分摇和，滤入鸡尾酒杯。",
+          "notes": "苦艾酒作为原料直接添加；不改成润杯，不增添樱桃、柠檬皮或现代健康宣称。"
+        }
+      ],
+      "origin_caution": "能证1930明确记录而非确定发明。Kina Lillet是历史产品名，替换必须标现代试验；名称不代表真的可解酒。",
+      "structure": "教学提炼：金酒、柑橘酸、橙味利口酒、芳香开胃葡萄酒四角等量，加微量茴香调味。",
+      "creative_bridge": {
+        "preserve": [
+          "四角等量结构",
+          "同瓶橙酒、金酒和苦艾酒",
+          "不改酸汁或添加法"
+        ],
+        "changed_variable": "芳香开胃葡萄酒产品",
+        "experiment": "现代半杯A/B每项主料各10ml：金酒、柠檬汁、君度和芳香开胃酒，苦艾酒均用同一滴管1滴。A用Lillet Blanc，B用Cocchi Americano，其他均不变；不称B为已证历史复原。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较苦味、葡萄酒风味与柠檬酸的协调，而非追认某瓶为旧Kina的精确复制。",
+        "risk": "替换产品会同时改变糖、酒精度与苦味，属于一个产品变量；等量不保证现代品牌下恰好平衡。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "french75",
+      "name": "法兰西75",
+      "name_en": "French 75",
+      "aliases": [
+        "The French \"75\" Cocktail",
+        "75 Cocktail",
+        "French Seventy-Five",
+        "法兰西75",
+        "法兰西 75",
+        "法式七十五",
+        "法国75"
+      ],
+      "family_id": "sour",
+      "summary": "必须按配方分开：1915、1922的同名线索含苹果白兰地和石榴糖浆、没有香槟；1930 Savoy第73页才是此处直接核到的金酒、柠檬、糖与香槟长饮版本。",
+      "claims": [
+        {
+          "kind": "precursor",
+          "status": "supported_secondary",
+          "text": "历史比较页转录1915-12-02 Washington Herald第10页的French Seventy-Five为gin、grenadine、applejack各one third及a dash of lemon juice，未列香槟。",
+          "source_ids": [
+            "french75_comparison"
+          ],
+          "locator": "Historical Recipes，1915 The Washington Herald，1915-12-02，p.10",
+          "quote_en": "one third gin, one third grenadine, one third applejack",
+          "quote_zh": "金酒、石榴糖浆、苹果白兰地各三分之一。",
+          "note": "本次未直接核报刊影像；这是同名早期配方线索，不可冒充现代香槟式完整诞生证据。"
+        },
+        {
+          "kind": "precursor",
+          "status": "supported_secondary",
+          "text": "1922 Vermeire第44页“75” Cocktail列grenadine、lemon juice、Calvados与dry gin，没有香槟；不能把同名当同杯。",
+          "source_ids": [
+            "french75_comparison"
+          ],
+          "locator": "Historical Recipes，1922 Robert Vermeire，p.44，“75” Cocktail",
+          "quote_en": "1/6 gill of Calvados / 1/6 gill of Dry Gin",
+          "quote_zh": "Calvados与干金酒各1/6 gill。",
+          "note": "按历史配方转录记；不采纳文章概述里的另一个比例，也不推定1915与1922配方由同一人连续改良。"
+        },
+        {
+          "kind": "evolution",
+          "status": "supported_secondary",
+          "text": "同一历史比较页列1927 Judge Jr. Here’s How第28页The French “75”为金酒、柠檬、糖粉、碎裂冰与补满香槟的高杯式。",
+          "source_ids": [
+            "french75_comparison"
+          ],
+          "locator": "Historical Recipes，1927 Judge Jr.，Here’s How，p.28",
+          "quote_en": "a spoonful of powdered sugar",
+          "quote_zh": "一匙糖粉。",
+          "note": "1927版本通过二手转录支持，本次未直接核原书版次和全文，所以不声明其为绝对最早现代式。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "1930 Savoy第73页标题为The French “75” Cocktail，列2/3 Gin、1/3 Lemon Juice、1 Spoonful Powdered Sugar，倒入含碎裂冰的高杯并用香槟补满。",
+          "source_ids": [
+            "savoy1930",
+            "savoy1930_transcription"
+          ],
+          "locator": "印刷p.73，The French “75” Cocktail",
+          "quote_en": "Pour into tall glass containing cracked Ice and fill up with champagne.",
+          "quote_zh": "倒入盛有碎裂冰的高杯，并用香槟补满。",
+          "note": "原版核到的标题不是单独75；不能因任务简写而改变原标题。原文没有现代笛形杯滤冰服务，也没指定先摇。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "french75_comparison",
+          "year": 1915,
+          "label": "同名早期非香槟前身线索；二手报刊转录",
+          "locator": "Washington Herald，1915-12-02，p.10，French Seventy-Five",
+          "original_ingredients": [
+            "one third gin",
+            "one third grenadine",
+            "one third applejack",
+            "a dash of lemon juice"
+          ],
+          "method_original": "",
+          "method_zh": "核读转录没有给方法、冰或杯型。",
+          "notes": "不补摇和方法；并非现代金酒香槟式。",
+          "original_work_title": "The Washington Herald (1915-12-02)"
+        },
+        {
+          "source_id": "french75_comparison",
+          "year": 1922,
+          "label": "Vermeire“75”非香槟式，经二手转录",
+          "locator": "Cocktails. How to Mix Them，p.44，“75” Cocktail",
+          "original_ingredients": [
+            "2 dashes of Grenadine",
+            "1 teaspoonful of Lemon Juice",
+            "1/6 gill of Calvados",
+            "1/6 gill of Dry Gin"
+          ],
+          "method_original": "Fill the shaker half full of broken ice and add: 2 dashes of Grenadine. 1 teaspoonful of Lemon Juice. 1/6 gill of Calvados. 1/6 gill of Dry Gin. Shake well and strain into a cocktail-glass.",
+          "method_zh": "摇壶装半壶碎裂冰，加入材料，充分摇和后滤入鸡尾酒杯。",
+          "notes": "grenadine、Calvados与金酒式；没有香槟。方法按二手转录保留，仅合并换行，未套现代长饮服务。",
+          "original_work_title": "Robert Vermeire, Cocktails: How to Mix Them (1922)"
+        },
+        {
+          "source_id": "savoy1930_transcription",
+          "year": 1930,
+          "label": "Savoy金酒香槟长饮式",
+          "locator": "印刷p.73，The French “75” Cocktail；EUVS同页交叉核对",
+          "original_ingredients": [
+            "2/3 Gin",
+            "1/3 Lemon Juice",
+            "1 Spoonful Powdered Sugar",
+            "cracked Ice",
+            "Champagne — fill up"
+          ],
+          "method_original": "Pour into tall glass containing cracked Ice and fill up with champagne.",
+          "method_zh": "倒入有碎裂冰的高杯，用香槟补满。",
+          "notes": "比例没有固定ml；香槟体积取决于原高杯规格，未自行填数。"
+        }
+      ],
+      "origin_caution": "同名非同构，1915/1922前身不能冒充现代香槟式。1930原书准确标题带French；归属与绝对首次仍有缺口。不要把含气泡的全部材料密闭摇和。",
+      "structure": "教学提炼：现代香槟式为酸甜金酒底加气泡葡萄酒，气泡酒同时提供稀释、香气、酸和甜；与早期金酒苹果白兰地式是不同结构。",
+      "creative_bridge": {
+        "preserve": [
+          "金酒、柠檬、少量糖的底液",
+          "气泡酒后加入",
+          "同杯、同温、同底液"
+        ],
+        "changed_variable": "气泡葡萄酒产品",
+        "experiment": "现代半杯A/B各用金酒15ml、柠檬汁7.5ml、1:1糖浆5ml制同样冰冷底液，最后分别加入40ml两款干型气泡酒。只换气泡酒，均不摇气泡酒；此规格不是1930原文。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较葡萄酒香气、酸与气泡质感怎样改变同一底液的整体感觉。",
+        "risk": "不同气泡酒残糖、酸度和气压不同，一款产品变量会有多个感官效果；不能同时加糖补偿后再声称单变量。",
+        "not_historical": true
+      }
+    },
+    {
+      "id": "mojito",
+      "name": "莫吉托",
+      "name_en": "Mojito",
+      "aliases": [
+        "Mojito（Sloppy Joe’s记录）",
+        "莫吉托"
+      ],
+      "family_id": "julep",
+      "summary": "确切1930版未核到；直接读到的是Sloppy Joe’s Season 1931-32、阅读器标1932的第9页。原页有薄荷，英文写Lemon，不能套成现代捣碎薄荷的标准规格。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "unverified",
+          "text": "本次不能确认“1930 Sloppy Joe’s Mojito原谱”这一确切年份；所读二手页只写1930s，实际原书链接是1932阅读器、季次1931-32。",
+          "source_ids": [
+            "sloppy1930",
+            "sloppy1932"
+          ],
+          "locator": "Cocktail Society，The historical facts段落；链接指1932-Sloppy-Joe-s；原书p.9",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "不把1930年代缩写为1930年，也不将1932文字回溯贴上1930来源ID。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "documented",
+          "text": "核读的第9页Bacardi Drinks区Mojito有1 Teaspoonful of sugar、One half of a Lemon、1 Part of Rum、Seltzer water和Leaves of Mint，用带Cracked ice的High Ball glass服务。",
+          "source_ids": [
+            "sloppy1932"
+          ],
+          "locator": "印刷p.9，BACARDI DRINKS，MOJITO；页底—9—",
+          "quote_en": "Leaves of Mint. Serve in a High Ball glass with Cracked ice.",
+          "quote_zh": "薄荷叶；在有碎裂冰的高杯中服务。",
+          "note": "本页未规定薄荷数量或捣碎步骤，不能从现代酒谱补进去。"
+        },
+        {
+          "kind": "definition",
+          "status": "unverified",
+          "text": "该英语条目的Lemon是否确实对应当地青柠、以及实际rum part和杯容量，本次没有双语原书或计量说明可证。",
+          "source_ids": [
+            "sloppy1932"
+          ],
+          "locator": "印刷p.9，One half of a Lemon及1 Part of Rum",
+          "quote_en": "One half of a Lemon / 1 Part of Rum",
+          "quote_zh": "半个Lemon；一份朗姆。",
+          "note": "保留英文Lemon与量制；不按现代常见Mojito原料直接静默纠正。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "sloppy1932",
+          "year": 1932,
+          "label": "阅读器1932、Season 1931-32；不称1930原版",
+          "locator": "印刷p.9，BACARDI DRINKS，MOJITO",
+          "original_ingredients": [
+            "1 Teaspoonful of sugar",
+            "One half of a Lemon",
+            "1 Part of Rum",
+            "Seltzer water",
+            "Leaves of Mint",
+            "Cracked ice"
+          ],
+          "method_original": "Serve in a High Ball glass with Cracked ice.",
+          "method_zh": "在有碎裂冰的高杯中服务；本条目没有进一步写捣碎或摇和步骤。",
+          "notes": "薄荷和苏打未给定量；Lemon不擅自改Lime；分类为julep是教学近亲归类，不是原书分类，原书区名为Bacardi Drinks。"
+        }
+      ],
+      "origin_caution": "1930确切版、最早名称记录、薄荷处理和柑橘译名仍有缺口；不将早期疗愈或海盗传说写成已证发明。1932含薄荷原页不能用省略薄荷的搜索摘要替代。",
+      "structure": "教学提炼：朗姆酸甜底＋薄荷香＋苏打稀释及气泡；在此教学库中归julep近亲，不声称是严格历史命名。",
+      "creative_bridge": {
+        "preserve": [
+          "朗姆、酸、糖、苏打固定",
+          "同种同质量薄荷",
+          "相同冰、温度与服务杯"
+        ],
+        "changed_variable": "薄荷处理方法",
+        "experiment": "现代半杯A/B各用白朗姆25ml、青柠汁10ml、1:1糖浆7.5ml、苏打30ml和1g同批薄荷。A只轻拍薄荷，B在糖浆中轻压一次；其他条件相同。不是1932原谱补写。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较鼻前薄荷香与入口草本味；选择能提供香气而不过度带叶片味的处理。",
+        "risk": "薄荷种类、鲜度和压碎力度变化大；不碾碎叶片，不摇含苏打的密闭壶。",
+        "not_historical": true
+      },
+      "canonical_name": "莫吉托"
+    },
+    {
+      "id": "negroni",
+      "name": "尼格罗尼",
+      "name_en": "Negroni",
+      "aliases": [
+        "内格罗尼",
+        "尼格罗尼"
+      ],
+      "family_id": "aromatized",
+      "summary": "1919伯爵加金酒故事有二手支持但归属有争议，本次未核到具名Negroni的最早出版原谱。现代等量结构可用于教学，不假借1930 Savoy的Campari Cocktail作来源。",
+      "claims": [
+        {
+          "kind": "attribution",
+          "status": "disputed",
+          "text": "常见叙述称1919 Camillo Negroni在Caffè Casoni要求更强的Americano，Fosco Scarselli以金酒替代苏打；历史比较页同时讨论竞争归属，且作者未亲自核读Picchi全部原始资料。",
+          "source_ids": [
+            "negroni_history"
+          ],
+          "locator": "Hard Liquor History，Camillo/Scarselli叙述与Picchi资料可及性段落",
+          "quote_en": "use it in place of soda water",
+          "quote_zh": "用它取代苏打水。",
+          "note": "只能写常见故事或有争议的归属，不写‘已证明1919某人发明’。"
+        },
+        {
+          "kind": "attribution",
+          "status": "disputed",
+          "text": "另一归属依赖所谓早期vermouth-based cocktail信件等材料；核读比较页指出相关信件没有写gin或Campari，因此不能由其直接推出与现代Negroni相同的配方。",
+          "source_ids": [
+            "negroni_history"
+          ],
+          "locator": "1857信件讨论段落；本次未读取信件原件",
+          "quote_en": "vermouth-based cocktail",
+          "quote_zh": "以味美思为基础的混合饮品。",
+          "note": "不保存不必要的生平或军事叙述；只保留身份归属及配方证据缺口。"
+        },
+        {
+          "kind": "definition",
+          "status": "supported_secondary",
+          "text": "所读历史比较页以等量gin、Campari与sweet vermouth描述现代Negroni结构；这是该二手页的饮品定义，不是1919原谱或最早印刷证据。",
+          "source_ids": [
+            "negroni_history"
+          ],
+          "locator": "文章开头等量结构说明",
+          "quote_en": "equal parts gin, Campari, and sweet vermouth",
+          "quote_zh": "金酒、Campari与甜味美思等量。",
+          "note": "可供教学创作，但不为其附上未经核实的历史初版页码。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "unverified",
+          "text": "本次未直接核到最早具名Negroni出版原谱。1930 Savoy中名为Campari Cocktail的条目即使具有相近材料，也不能替代名为Negroni的最早记录。",
+          "source_ids": [
+            "negroni_history",
+            "savoy1930"
+          ],
+          "locator": "具名Negroni最早出版定位缺口；本分片未以Savoy Campari Cocktail充当对应原谱",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "不从同构异名推论名称首见或发明身份；对网络1947等首见说法未直接核书，因此不升级为documented。"
+        }
+      ],
+      "historical_versions": [],
+      "origin_caution": "1919故事与竞争归属必须标争议；具名最早出版原谱未核。不得把Campari Cocktail、Americano或其他同构酒谱冒充最早Negroni。",
+      "structure": "教学提炼：烈酒＋苦味开胃利口酒＋芳香葡萄酒；现代等量是可研究的基线，不是每瓶产品都自动平衡。",
+      "creative_bridge": {
+        "preserve": [
+          "同瓶金酒与Campari",
+          "三组材料等量",
+          "相同温度与搅拌稀释"
+        ],
+        "changed_variable": "甜味美思产品",
+        "experiment": "现代半杯A/B各用金酒12.5ml、Campari12.5ml和甜味美思12.5ml；A用一种较清爽甜味美思，B用一种香料更重的甜味美思。仅换一瓶产品，相同冰与搅拌程序；不称1919复原。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较苦味边缘、草本香和葡萄酒甜味是否仍与金酒共同清晰。",
+        "risk": "甜味美思糖度、酒精度和开瓶鲜度同时影响结果；必须记录具体产品，不把结果推广为全部风格。",
+        "not_historical": true
+      },
+      "canonical_name": "尼格罗尼"
+    },
+    {
+      "id": "last_word",
+      "name": "遗言",
+      "name_en": "Last Word",
+      "aliases": [
+        "The Last Word",
+        "最后一言",
+        "遗言",
+        "最后一句"
+      ],
+      "family_id": "sour",
+      "summary": "1916菜单证明名称与价格；1951 Saucier第151页的四个1/4配方经二手转录核到。Fogarty的introduced不能翻成invented，原转录只写chartreuse而不是green。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "Frizell专业词条指出Last Word出现在1916 Detroit Athletic Club News菜单，售价35美分；该菜单不是四项材料比例的证据。",
+          "source_ids": [
+            "last_word_oxford",
+            "saucier1951"
+          ],
+          "locator": "Oxford词条首段；Bar-Vademecum菜单讨论段落",
+          "quote_en": "listed on a menu, selling for (a high) 35 cents",
+          "quote_zh": "列在菜单上，售价高达35美分。",
+          "note": "1916菜单影像未本次直接读取；不回填1951材料为1916已证配方。"
+        },
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "标为1951 Bottoms Up第151页的历史转录有dry gin、maraschino、chartreuse、lime juice各1/4，并列Ice与Serve in cocktail glass。",
+          "source_ids": [
+            "saucier1951",
+            "last_word_oxford"
+          ],
+          "locator": "Bar-Vademecum，Historical recipes，1951 Ted Saucier，p.151，Last Word",
+          "quote_en": "1/4 dry gin / 1/4 maraschino / 1/4 chartreuse / 1/4 lime juice",
+          "quote_zh": "干金酒、maraschino、chartreuse与青柠汁各四分之一。",
+          "note": "本次只核二手转录，不声称原版影像text_checked；green是现代常见选择，不能补入该历史原文。"
+        },
+        {
+          "kind": "attribution",
+          "status": "supported_secondary",
+          "text": "Saucier的短说明称Fogarty约三十年前在当地introduced这杯；专业词条提醒没有其他印刷资料把他与此酒关联，不能断言Fogarty创造了Last Word。",
+          "source_ids": [
+            "saucier1951",
+            "last_word_oxford"
+          ],
+          "locator": "1951 p.151 Courtesy Detroit Athletic Club归属说明；Oxford词条首段",
+          "quote_en": "This cocktail was introduced around here about thirty years ago by Frank Fogarty",
+          "quote_zh": "这杯约三十年前由Frank Fogarty引入这里。",
+          "note": "只保存15词短引文；introduced保留为引入。复兴年份2003/2004二手不一致，本记录不强行给唯一年份。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "saucier1951",
+          "year": 1951,
+          "label": "Saucier第151页，经二手历史转录；非影像校勘",
+          "locator": "Historical recipes，1951 Ted Saucier’s Bottoms Up，p.151，Last Word",
+          "original_ingredients": [
+            "1/4 dry gin",
+            "1/4 maraschino",
+            "1/4 chartreuse",
+            "1/4 lime juice",
+            "Ice"
+          ],
+          "method_original": "Serve in cocktail glass.",
+          "method_zh": "用鸡尾酒杯服务；核读的此条目只列Ice，没有明确写摇和步骤。",
+          "notes": "不将现代green、30ml或摇和秒数写成1951原文；引用仅限短配方与简短归属，未复制现代版权书全文。",
+          "original_work_title": "Ted Saucier, Bottoms Up! (1951)"
+        }
+      ],
+      "origin_caution": "菜单名称的1916与配方出版的1951分开；引入者不等于发明者。原转录chartreuse未指定颜色，现代绿Chartreuse试验应独立标记。",
+      "structure": "教学提炼：四角等量酸酒，两种利口酒同时供甜与强香；对称外观不是对所有品牌都无需校准的保证。",
+      "creative_bridge": {
+        "preserve": [
+          "金酒、maraschino和青柠不变",
+          "四项等量与相同稀释",
+          "记录明确的现代品牌与颜色"
+        ],
+        "changed_variable": "Chartreuse颜色/产品",
+        "experiment": "现代半杯A/B四项各10ml：干金酒、maraschino、青柠汁与Chartreuse；A用绿色，B用黄色。只换Chartreuse产品，相同冰与摇和程序；B是试验饮品，不称原版Last Word。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "比较较强草本冲击与较柔和香甜感对等量结构的影响。",
+        "risk": "绿色与黄色酒精度、糖与草本配方均不同；单一产品替换不是单一感官变量。不能从现代结果追认1951使用哪种。",
+        "not_historical": true
+      },
+      "canonical_name": "遗言"
+    },
+    {
+      "id": "twentieth_century",
+      "name": "二十世纪",
+      "name_en": "Twentieth Century",
+      "aliases": [
+        "20th Century",
+        "Twentieth Century Cocktail",
+        "二十世纪"
+      ],
+      "family_id": "sour",
+      "summary": "1937 Tarling书目可核；原谱通过明确二手摘录核到2/5 Booth’s Dry Gin及其余三项各1/5，署Invented by C. A. Tuck。原文Lillet与crème de cacao不擅自补颜色或现代产品。",
+      "claims": [
+        {
+          "kind": "documented_record",
+          "status": "supported_secondary",
+          "text": "The Modern Bartender明确摘录1937 Café Royal Cocktail Book的Twentieth Century：2/5 Booth’s Dry Gin、1/5 crème de cacao、1/5 Lillet、1/5 lemon juice，方法Shake。",
+          "source_ids": [
+            "tarling1937_transcription",
+            "tarling1937_catalog"
+          ],
+          "locator": "网页Twentieth Century / Café Royal Cocktail Book, William J. Tarling, 1937摘录；印刷页码未核",
+          "quote_en": "2/5 Booth’s Dry Gin / 1/5 créme de cacao / 1/5 Lillet / 1/5 lemon juice",
+          "quote_zh": "Booth’s干金酒五分之二；可可利口酒、Lillet和柠檬汁各五分之一。",
+          "note": "网页摘录已核，原书目标页影像未核；crème de cacao原文未说white，Lillet原文未加Kina。"
+        },
+        {
+          "kind": "attribution",
+          "status": "supported_secondary",
+          "text": "该原谱摘录署Invented by C. A. Tuck；这是书中归属文字的二手转录，不等于本次独立验证了全部创作过程。",
+          "source_ids": [
+            "tarling1937_transcription"
+          ],
+          "locator": "1937原谱摘录末行，Invented by C. A. Tuck",
+          "quote_en": "Invented by C. A. Tuck",
+          "quote_zh": "由C. A. Tuck创造。",
+          "note": "可以准确说‘书中归于Tuck’，不额外断言他当时在哪家吧创造。"
+        },
+        {
+          "kind": "attribution",
+          "status": "unverified",
+          "text": "以20th Century Limited列车解释命名的常见说法在所读摘录中没有Tuck本人当时的命名声明；本次不把它升级为原始证据。",
+          "source_ids": [
+            "tarling1937_transcription"
+          ],
+          "locator": "网页列车命名叙述与原谱摘录分开；原作者命名说明定位缺口",
+          "quote_en": "",
+          "quote_zh": "",
+          "note": "同名早期饮品也不能仅因名称相同而算作该金酒可可酸酒的祖谱。"
+        }
+      ],
+      "historical_versions": [
+        {
+          "source_id": "tarling1937_transcription",
+          "year": 1937,
+          "label": "Tarling原谱摘录，经二手网页核验",
+          "locator": "Café Royal Cocktail Book, William J. Tarling, 1937摘录；页码未核",
+          "original_ingredients": [
+            "2/5 Booth’s Dry Gin",
+            "1/5 créme de cacao",
+            "1/5 Lillet",
+            "1/5 lemon juice"
+          ],
+          "method_original": "Shake.",
+          "method_zh": "摇和；摘录没有进一步规定滤网、杯型、装饰或秒数。",
+          "notes": "Invented by C. A. Tuck另列为归属主张。不把网页随后标adapted的1½oz等规格混入原文，不静默改Lillet或可可颜色。",
+          "original_work_title": "William J. Tarling, Café Royal Cocktail Book (1937)"
+        }
+      ],
+      "origin_caution": "1937书目与二手原谱摘录的等级分开；没有原页便不编页码。列车命名有常见说法但原作者声明未核，旧Lillet与现代替品也不能无条件等同。",
+      "structure": "教学提炼：金酒＋芳香葡萄酒＋可可甜香＋柠檬酸，原转录比例2:1:1:1；可可在酸酒结构中是一种香气调味，不必做成甜点酒。",
+      "creative_bridge": {
+        "preserve": [
+          "金酒与柠檬酸骨架",
+          "同一现代芳香葡萄酒和可可利口酒",
+          "可可低剂量对照"
+        ],
+        "changed_variable": "可可利口酒剂量",
+        "experiment": "现代半杯A/B各用金酒20ml、现代Lillet Blanc10ml、柠檬汁10ml；A可可利口酒10ml，B可可利口酒7.5ml另补2.5ml水以保持初始体积。仅改变可可酒剂量，相同摇和程序；不是1937产品复原。 这是现代教学对照；原书含糊用量先另设现代基准，不把它称为原方或已验证成品。",
+        "expected_effect": "B可能让柠檬和葡萄酒更清楚，检验可可是否仍可辨认而不形成过重甜感。",
+        "risk": "改变可可酒剂量会同时改变糖和酒精；补水只控总体积，不能称全部理化参数相同。现代Lillet不证明等同1937Lillet。",
+        "not_historical": true
+      }
+    }
+  ]
+}

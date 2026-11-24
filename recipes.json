@@ -1,0 +1,7514 @@
+{
+  "public_data": {
+    "data_classification": "public_knowledge_with_synthetic_prices",
+    "price_source": "prices.json 中的确定性合成演示单价；无门店采购或售价来源",
+    "target_gross_margin": 0.75,
+    "cost_formula": "材料成本=ROUND_HALF_UP(各材料经明确演示换算后的基础量*合成单价之和,2)",
+    "suggested_price_formula": "ROUND_HALF_UP(cost_estimate/(1-0.75),2)；保留数组结构但上下限相同",
+    "cost_scope": "仅含 ingredients 列出的材料；未含独立装饰、人工、租金、税费、耗损及未列出的冰水；非标准单位与补满仅作明确演示假设，详见 public-data-manifest.json",
+    "recipe_spec_policy": "177款酒名、英文名、材料名与原amount/unit、制法、杯具、装饰保留不变；门店品牌、来源、选单与enabled已移除"
+  },
+  "recipes": [
+    {
+      "name": "莫吉托",
+      "name_en": "Mojito",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "薄荷叶",
+        "适合夏天"
+      ],
+      "mood_tags": [
+        "解暑",
+        "疲惫",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 22.5,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 12.5,
+          "unit": "ml"
+        },
+        {
+          "name": "薄荷叶",
+          "amount": 8,
+          "unit": "片"
+        }
+      ],
+      "method": "捣压",
+      "glass": "高球杯",
+      "garnish": "薄荷枝、青柠角",
+      "cost_estimate": 6.67,
+      "suggested_price": [26.68, 26.68],
+      "story": "古巴朗姆、青柠与薄荷的清爽经典；海明威相关题词与德雷克起源说不可作已证史实",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "长岛冰茶",
+      "name_en": "Long Island Iced Tea",
+      "category": "高球类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "可乐味",
+        "隐藏酒精"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "金酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "白朗姆酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "龙舌兰",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 25,
+          "unit": "ml"
+        },
+        {
+          "name": "可乐",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬角",
+      "cost_estimate": 9.58,
+      "suggested_price": [38.32, 38.32],
+      "story": "五种基酒的混血儿，'断片之王'的称号不是白来的"
+    },
+    {
+      "name": "古典",
+      "name_en": "Old Fashioned",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "醇厚",
+        "威士忌",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "独处",
+        "思考",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        },
+        {
+          "name": "橙味苦精",
+          "amount": 3,
+          "unit": "dash"
+        },
+        {
+          "name": "红糖糖浆",
+          "amount": 5,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.99,
+      "suggested_price": [31.96, 31.96],
+      "story": "烈酒、糖、水、苦精的经典结构；1806年定义是结构前身，不等于古典当年被发明",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "教父",
+      "name_en": "Godfather",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "杏仁",
+        "威士忌",
+        "治愈"
+      ],
+      "mood_tags": [
+        "失落",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "杏仁利口酒",
+          "amount": 12.5,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "橙皮",
+      "cost_estimate": 8.71,
+      "suggested_price": [34.84, 34.84],
+      "story": "电影《教父》的致敬之作，深沉中带着杏仁的温柔",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "曼哈顿",
+      "name_en": "Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "香甜",
+        "威士忌",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 9.67,
+      "suggested_price": [38.68, 38.68],
+      "story": "威士忌与味美思的芳香酒结构；丘吉尔母亲宴会起源是未经可靠证实的传说",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "尼格罗尼",
+      "name_en": "Negroni",
+      "category": "开胃酒",
+      "strength": "中烈",
+      "flavor_tags": [
+        "苦甜",
+        "金酒",
+        "橙香"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 37.5,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 12.5,
+          "unit": "ml"
+        },
+        {
+          "name": "金巴利",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.17,
+      "suggested_price": [28.68, 28.68],
+      "story": "意大利伯爵的最爱，苦甜平衡的典范",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "金汤力",
+      "name_en": "Gin Tonic",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "苦甜",
+        "简单"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "汤力水",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "青柠角",
+      "cost_estimate": 6.62,
+      "suggested_price": [26.48, 26.48],
+      "story": "英国殖民印度的产物，最简单也最经典"
+    },
+    {
+      "name": "得其利",
+      "name_en": "Daiquiri",
+      "category": "酸酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "朗姆"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 25,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "青柠轮",
+      "cost_estimate": 6.65,
+      "suggested_price": [26.6, 26.6],
+      "story": "朗姆、柑橘与糖的酸酒经典；早期出版记录、命名归属与海明威后期版本应分开讲",
+      "spec_updated": "2026-10-19",
+      "aliases": [
+        "大吉利",
+        "代基里",
+        "台克利",
+        "黛绮丽",
+        "Daiquiri"
+      ]
+    },
+    {
+      "name": "威士忌酸",
+      "name_en": "Whiskey Sour",
+      "category": "酸酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "威士忌",
+        "顺滑"
+      ],
+      "mood_tags": [
+        "疲惫",
+        "失落",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋清",
+          "amount": 15,
+          "unit": "个"
+        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "酒渍樱桃、橙皮",
+      "cost_estimate": 12.98,
+      "suggested_price": [51.92, 51.92],
+      "story": "酸甜平衡的温柔，下班后的最佳慰藉",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "马提尼",
+      "name_en": "Martini",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "干冽",
+        "金酒",
+        "优雅"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "柠檬皮卷或橄榄",
+      "cost_estimate": 8.47,
+      "suggested_price": [33.88, 33.88],
+      "story": "鸡尾酒之王，007的最爱，优雅的极致",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "爱尔兰咖啡",
+      "name_en": "Irish Coffee",
+      "category": "热饮",
+      "strength": "中",
+      "flavor_tags": [
+        "温暖",
+        "咖啡",
+        "奶油"
+      ],
+      "mood_tags": [
+        "寒冷",
+        "疲惫",
+        "失落"
+      ],
+      "ingredients": [
+        {
+          "name": "爱尔兰威士忌",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "热美式咖啡",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        },
+        {
+          "name": "淡奶油",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "爱尔兰咖啡杯",
+      "garnish": "奶油层",
+      "cost_estimate": 7.36,
+      "suggested_price": [29.44, 29.44],
+      "story": "机场的告别之吻，温暖了无数旅人",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "热托迪",
+      "name_en": "Hot Toddy",
+      "category": "热饮",
+      "strength": "中",
+      "flavor_tags": [
+        "温暖",
+        "蜂蜜",
+        "柠檬"
+      ],
+      "mood_tags": [
+        "寒冷",
+        "失落",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "威士忌",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "热水",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "马克杯",
+      "garnish": "柠檬片、肉桂棒",
+      "cost_estimate": 7.31,
+      "suggested_price": [29.24, 29.24],
+      "story": "苏格兰的暖心良药，治愈感冒也治愈心情"
+    },
+    {
+      "name": "椰林飘香",
+      "name_en": "Piña Colada",
+      "category": "热带类",
+      "strength": "中",
+      "flavor_tags": [
+        "椰香",
+        "菠萝",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "解暑",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "菠萝汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "椰子糖浆",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅打",
+      "glass": "飓风杯",
+      "garnish": "菠萝角、樱桃",
+      "cost_estimate": 6.88,
+      "suggested_price": [27.52, 27.52],
+      "story": "波多黎各的国饮，热带度假的味道",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "龙舌兰日出",
+      "name_en": "Tequila Sunrise",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "甜美",
+        "橙味",
+        "渐变"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙角、樱桃",
+      "cost_estimate": 6.96,
+      "suggested_price": [27.84, 27.84],
+      "story": "日落的渐变，滚石乐队的巡演伴侣"
+    },
+    {
+      "name": "性感海滩",
+      "name_en": "Sex on the Beach",
+      "category": "热带类",
+      "strength": "中",
+      "flavor_tags": [
+        "甜美",
+        "果味",
+        "易饮"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "桃子利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "蔓越莓汁",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "橙角",
+      "cost_estimate": 8.7,
+      "suggested_price": [34.8, 34.8],
+      "story": "名字大胆，口感甜美，派对的经典"
+    },
+    {
+      "name": "大都会",
+      "name_en": "Cosmopolitan",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "蔓越莓",
+        "时尚"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "蔓越莓汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 5,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.81,
+      "suggested_price": [31.24, 31.24],
+      "story": "《欲望都市》带火的时尚Icon，都市女性的标配",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "僵尸",
+      "name_en": "Zombie",
+      "category": "热带类",
+      "strength": "烈",
+      "flavor_tags": [
+        "果味",
+        "隐藏酒精",
+        "复杂"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "陈年朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "白朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "高度朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜水",
+          "amount": 12.5,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "树莓糖浆",
+          "amount": 7.5,
+          "unit": "ml"
+        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "摇和",
+      "glass": "飓风杯",
+      "garnish": "薄荷枝、水果装饰",
+      "cost_estimate": 9.47,
+      "suggested_price": [37.88, 37.88],
+      "story": "三种朗姆酒的暴击，传说一人限两杯",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "液体可颂",
+      "name_en": "Butterbeer",
+      "category": "甜酒类",
+      "strength": "低",
+      "flavor_tags": [
+        "甜美",
+        "奶油",
+        "治愈"
+      ],
+      "mood_tags": [
+        "失落",
+        "疲惫",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "百利甜",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "牛奶",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "肉桂粉",
+      "cost_estimate": 4.04,
+      "suggested_price": [16.16, 16.16],
+      "story": "液体的拥抱，治愈系的代表"
+    },
+    {
+      "name": "贝利尼",
+      "name_en": "Bellini",
+      "category": "气泡酒",
+      "strength": "低",
+      "flavor_tags": [
+        "桃香",
+        "气泡",
+        "清爽"
+      ],
+      "mood_tags": [
+        "约会",
+        "庆祝",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "桃子糖浆",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "普罗塞克",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "香槟杯",
+      "garnish": "无",
+      "cost_estimate": 10.73,
+      "suggested_price": [42.92, 42.92],
+      "story": "威尼斯哈利酒吧的传奇，早午餐的经典",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "香槟鸡尾酒",
+      "name_en": "Champagne Cocktail",
+      "category": "气泡酒",
+      "strength": "中",
+      "flavor_tags": [
+        "优雅",
+        "香槟",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "约会",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        },
+        {
+          "name": "香槟",
+          "amount": null,
+          "unit": "topping"        },
+        {
+          "name": "红糖糖浆",
+          "amount": 1,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "香槟杯",
+      "garnish": "柠檬皮卷",
+      "cost_estimate": 5.3,
+      "suggested_price": [21.2, 21.2],
+      "story": "庆祝时刻的仪式感，气泡与时间的共舞",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "蜂蜜威士忌",
+      "name_en": "Honey Whiskey",
+      "category": "简易类",
+      "strength": "中",
+      "flavor_tags": [
+        "甜美",
+        "蜂蜜",
+        "温暖"
+      ],
+      "mood_tags": [
+        "失落",
+        "疲惫",
+        "寒冷"
+      ],
+      "ingredients": [
+        {
+          "name": "威士忌",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 5.99,
+      "suggested_price": [23.96, 23.96],
+      "story": "简单的治愈，蜂蜜包裹着威士忌的锋芒"
+    },
+    {
+      "name": "粉红佳人",
+      "name_en": "Pink Lady",
+      "category": "酸酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "粉红",
+        "优雅"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "苹果白兰地",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 10,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋白",
+          "amount": 1,
+          "unit": "个"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "樱桃",
+      "cost_estimate": 8.08,
+      "suggested_price": [32.32, 32.32],
+      "story": "粉红色的浪漫，优雅女士的经典选择"
+    },
+    {
+      "name": "热黄油朗姆",
+      "name_en": "Hot Buttered Rum",
+      "category": "热饮",
+      "strength": "中",
+      "flavor_tags": [
+        "温暖",
+        "黄油",
+        "香料"
+      ],
+      "mood_tags": [
+        "寒冷",
+        "疲惫",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "黑朗姆酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "黄油",
+          "amount": 15,
+          "unit": "g"
+        },
+        {
+          "name": "红糖",
+          "amount": 15,
+          "unit": "g"
+        },
+        {
+          "name": "肉桂",
+          "amount": 1,
+          "unit": "根"
+        },
+        {
+          "name": "热水",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马克杯",
+      "garnish": "肉桂棒、黄油块",
+      "cost_estimate": 7.22,
+      "suggested_price": [28.88, 28.88],
+      "story": "冬夜的壁炉旁，一杯暖透心扉"
+    },
+    {
+      "name": "金菲士",
+      "name_en": "Gin Fizz",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "气泡"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 8.93,
+      "suggested_price": [35.72, 35.72],
+      "story": "泡沫轻盈，清爽透亮，经典中的经典",
+      "spec_updated": "2026-10-19",
+      "aliases": [
+        "金Fizz",
+        "Gin Fizz"
+      ]
+    },
+    {
+      "name": "边车",
+      "name_en": "Sidecar",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "白兰地",
+        "橙香"
+      ],
+      "mood_tags": [
+        "品味",
+        "社交",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "干邑白兰地",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "lemon j",
+      "cost_estimate": 7.51,
+      "suggested_price": [30.04, 30.04],
+      "story": "一战时期的巴黎，摩托车边座上的经典",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "白色俄罗斯",
+      "name_en": "White Russian",
+      "category": "甜酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "咖啡",
+        "奶油",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "咖啡利口酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "淡奶油",
+          "amount": 25,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "古典杯",
+      "garnish": "无",
+      "cost_estimate": 8.03,
+      "suggested_price": [32.12, 32.12],
+      "story": "《大人物勒布斯基》的标志性饮品，懒人必备",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "黑色俄罗斯",
+      "name_en": "Black Russian",
+      "category": "甜酒类",
+      "strength": "烈",
+      "flavor_tags": [
+        "咖啡",
+        "浓郁",
+        "甜美"
+      ],
+      "mood_tags": [
+        "独处",
+        "温暖",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "咖啡利口酒",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "古典杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 8.75,
+      "suggested_price": [35.0, 35.0],
+      "story": "白色俄罗斯的纯黑版，咖啡爱好者的挚爱"
+    },
+    {
+      "name": "玛格丽特",
+      "name_en": "Margarita",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "龙舌兰",
+        "盐边"
+      ],
+      "mood_tags": [
+        "社交",
+        "庆祝",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"
+        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "盐边、青柠轮",
+      "cost_estimate": 7.51,
+      "suggested_price": [30.04, 30.04],
+      "story": "墨西哥的灵魂，派对女王的标配",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "帕洛玛",
+      "name_en": "Paloma",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "西柚",
+        "龙舌兰"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "西柚汁",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "龙舌兰糖浆",
+          "amount": 7.5,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "盐边、西柚片",
+      "cost_estimate": 7.34,
+      "suggested_price": [29.36, 29.36],
+      "story": "墨西哥人的日常，比玛格丽特更亲民",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "莫斯科骡子",
+      "name_en": "Moscow Mule",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "姜味",
+        "伏特加"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "姜啤",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "直调",
+      "glass": "铜杯",
+      "garnish": "青柠角、薄荷叶",
+      "cost_estimate": 8.67,
+      "suggested_price": [34.68, 34.68],
+      "story": "铜杯是标配，姜味的冲击让人清醒",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "血腥玛丽",
+      "name_en": "Bloody Mary",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "咸鲜",
+        "番茄",
+        "香料"
+      ],
+      "mood_tags": [
+        "疲惫",
+        "解暑",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 2,
+          "unit": "barspoon"
+        },
+        {
+          "name": "塔巴斯科辣酱",
+          "amount": 4,
+          "unit": "dash"
+        },
+        {
+          "name": "芹菜苦精",
+          "amount": 4,
+          "unit": "dash"
+        },
+        {
+          "name": "黑胡椒",
+          "amount": 2,
+          "unit": "转"
+        },
+        {
+          "name": "圣女果",
+          "amount": 150,
+          "unit": "g"
+        },
+        {
+          "name": "小番茄",
+          "amount": 4,
+          "unit": "个"
+        },
+        {
+          "name": "李派林喼汁",
+          "amount": 1.5,
+          "unit": "barspoon"
+        },
+        {
+          "name": "海盐",
+          "amount": 4,
+          "unit": "转"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "高球杯",
+      "garnish": "芹菜杆、柠檬角",
+      "cost_estimate": 8.78,
+      "suggested_price": [35.12, 35.12],
+      "story": "宿醉救星，早午餐的经典，可以当饭喝",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "咸狗",
+      "name_en": "Salty Dog",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "西柚",
+        "咸"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "西柚汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "盐",
+          "amount": 1,
+          "unit": "边"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "盐边、西柚片",
+      "cost_estimate": 6.71,
+      "suggested_price": [26.84, 26.84],
+      "story": "灰狗加了盐边，瞬间高级"
+    },
+    {
+      "name": "新加坡司令",
+      "name_en": "Singapore Sling",
+      "category": "热带类",
+      "strength": "中",
+      "flavor_tags": [
+        "果味",
+        "金酒",
+        "复杂"
+      ],
+      "mood_tags": [
+        "社交",
+        "庆祝",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "菠萝汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "樱桃利口酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "当酒",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "君度橙酒",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "树莓糖浆",
+          "amount": 5,
+          "unit": "ml"
+        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        }
+      ],
+      "method": "摇和",
+      "glass": "飓风杯",
+      "garnish": "lemon",
+      "cost_estimate": 10.2,
+      "suggested_price": [40.8, 40.8],
+      "story": "新加坡莱佛士酒店的传奇，配方复杂到调酒师都头疼",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "蓝色夏威夷",
+      "name_en": "Blue Hawaii",
+      "category": "热带类",
+      "strength": "中",
+      "flavor_tags": [
+        "热带",
+        "蓝橙",
+        "菠萝"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "蓝橙利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "椰浆",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "飓风杯",
+      "garnish": "菠萝角、樱桃、小花伞",
+      "cost_estimate": 6.41,
+      "suggested_price": [25.64, 25.64],
+      "story": "夏威夷的蓝，度假风的标配"
+    },
+    {
+      "name": "蓝色潟湖",
+      "name_en": "Blue Lagoon",
+      "category": "热带类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "蓝橙",
+        "酸甜"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "蓝橙利口酒",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "雪碧",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片、樱桃",
+      "cost_estimate": 8.48,
+      "suggested_price": [33.92, 33.92],
+      "story": "清澈的蓝，夏日的清凉"
+    },
+    {
+      "name": "迈泰",
+      "name_en": "Mai Tai",
+      "category": "热带类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "朗姆",
+        "橙味",
+        "热带"
+      ],
+      "mood_tags": [
+        "社交",
+        "庆祝",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "陈年朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "杏仁糖浆",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "树莓糖浆",
+          "amount": 7.5,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "薄荷枝",
+      "cost_estimate": 6.73,
+      "suggested_price": [26.92, 26.92],
+      "story": "提基文化的代表，波利尼西亚风情",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "飓风",
+      "name_en": "Hurricane",
+      "category": "热带类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "果味",
+        "朗姆",
+        "热带"
+      ],
+      "mood_tags": [
+        "社交",
+        "庆祝",
+        "发泄"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "黑朗姆酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "飓风杯",
+      "garnish": "橙角、樱桃",
+      "cost_estimate": 12.89,
+      "suggested_price": [51.56, 51.56],
+      "story": "新奥尔良的传奇，以飓风灯杯命名"
+    },
+    {
+      "name": "薄荷朱莉普",
+      "name_en": "Mint Julep",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "薄荷",
+        "波本",
+        "清爽"
+      ],
+      "mood_tags": [
+        "解暑",
+        "品味",
+        "独处"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "方糖",
+          "amount": 1,
+          "unit": "块"
+        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 6,
+          "unit": "dash"        },
+        {
+          "name": "薄荷叶",
+          "amount": 10,
+          "unit": "片"
+        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "捣压",
+      "glass": "朱利酒杯",
+      "garnish": "薄荷枝",
+      "cost_estimate": 8.81,
+      "suggested_price": [35.24, 35.24],
+      "story": "肯塔基德比的官方饮品，南方的优雅",
+      "spec_updated": "2026-10-19",
+      "aliases": [
+        "薄荷朱利酒",
+        "Mint Julep"
+      ]
+    },
+    {
+      "name": "萨泽拉克",
+      "name_en": "Sazerac",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "茴香",
+        "黑麦",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 75,
+          "unit": "ml"        },
+        {
+          "name": "方糖",
+          "amount": 1,
+          "unit": "块"
+        },
+        {
+          "name": "裴乔苦精",
+          "amount": 12,
+          "unit": "dash"        },
+        {
+          "name": "茴香酒",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 10.51,
+      "suggested_price": [42.04, 42.04],
+      "story": "新奥尔良的官方鸡尾酒，美国最古老的鸡尾酒之一",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "罗布罗伊",
+      "name_en": "Rob Roy",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苏格兰",
+        "香甜",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "玫瑰味美思",
+          "amount": 17.5,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "酒浸樱桃",
+      "cost_estimate": 8.68,
+      "suggested_price": [34.72, 34.72],
+      "story": "曼哈顿的苏格兰版本，以苏格兰英雄命名",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "完美曼哈顿",
+      "name_en": "Perfect Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "平衡",
+        "威士忌",
+        "优雅"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 10,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 9.67,
+      "suggested_price": [38.68, 38.68],
+      "story": "甜干平衡，完美的曼哈顿",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "布兰迪亚历山大",
+      "name_en": "Brandy Alexander",
+      "category": "甜酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "奶油",
+        "巧克力",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "温暖",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "白兰地",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "可可利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "肉豆蔻粉",
+      "cost_estimate": 7.23,
+      "suggested_price": [28.92, 28.92],
+      "story": "餐后甜酒的典范，奶油与巧克力的拥抱"
+    },
+    {
+      "name": "琴蕾",
+      "name_en": "Gimlet",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "金酒"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "青柠轮",
+      "cost_estimate": 8.03,
+      "suggested_price": [32.12, 32.12],
+      "story": "英国海军的经典，防坏血病的遗产"
+    },
+    {
+      "name": "伏特加马提尼",
+      "name_en": "Vodka Martini",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "干冽",
+        "伏特加",
+        "纯净"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "柠檬皮或橄榄",
+      "cost_estimate": 8.47,
+      "suggested_price": [33.88, 33.88],
+      "story": "詹姆斯·邦德的更爱，摇和还是搅拌？",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "脏马提尼",
+      "name_en": "Dirty Martini",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "咸鲜",
+        "橄榄",
+        "金酒"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"
+        },
+        {
+          "name": "橄榄汁",
+          "amount": 5,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄",
+      "cost_estimate": 8.52,
+      "suggested_price": [34.08, 34.08],
+      "story": "马提尼的咸版，橄榄爱好者的天堂",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "吉布森",
+      "name_en": "Gibson",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "干冽",
+        "金酒",
+        "洋葱"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "珍珠洋葱",
+      "cost_estimate": 8.99,
+      "suggested_price": [35.96, 35.96],
+      "story": "马提尼的表亲，用珍珠洋葱代替橄榄"
+    },
+    {
+      "name": "维斯帕",
+      "name_en": "Vesper",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "干冽",
+        "伏特加",
+        "金酒"
+      ],
+      "mood_tags": [
+        "品味",
+        "庆祝",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "伏特加",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "莉莱白",
+          "amount": 7.5,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "bt orange bitter",
+      "cost_estimate": 8.86,
+      "suggested_price": [35.44, 35.44],
+      "story": "007的原创配方，《皇家赌场》中的名字",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "布朗克斯",
+      "name_en": "Bronx",
+      "category": "餐前酒",
+      "strength": "中烈",
+      "flavor_tags": [
+        "橙香",
+        "金酒",
+        "酸甜"
+      ],
+      "mood_tags": [
+        "社交",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 7.5,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 7.53,
+      "suggested_price": [30.12, 30.12],
+      "story": "纽约布朗克斯区的经典，被遗忘的明星",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "百万富翁",
+      "name_en": "Millionaire",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "果味",
+        "金酒",
+        "蛋酒"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "社交",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "甜味美思",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋白",
+          "amount": 1,
+          "unit": "个"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "菠萝片",
+      "cost_estimate": 7.86,
+      "suggested_price": [31.44, 31.44],
+      "story": "名字豪气，口感柔滑"
+    },
+    {
+      "name": "金手指",
+      "name_en": "Golden Dream",
+      "category": "甜酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "橙香",
+        "奶油",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "庆祝",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "加利安诺",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 5.37,
+      "suggested_price": [21.48, 21.48],
+      "story": "加利安诺的代表作，金色的梦"
+    },
+    {
+      "name": "神风特攻队",
+      "name_en": "Kamikaze",
+      "category": "短饮",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "伏特加",
+        "青柠"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "子弹杯",
+      "garnish": "青柠轮",
+      "cost_estimate": 7.29,
+      "suggested_price": [29.16, 29.16],
+      "story": "名字激烈，口感却酸甜平衡"
+    },
+    {
+      "name": "哈维撞墙",
+      "name_en": "Harvey Wallbanger",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "橙香",
+        "加利安诺",
+        "伏特加"
+      ],
+      "mood_tags": [
+        "社交",
+        "解暑",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "加利安诺",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙角、樱桃",
+      "cost_estimate": 8.31,
+      "suggested_price": [33.24, 33.24],
+      "story": "名字来自一个撞墙的冲浪手哈维"
+    },
+    {
+      "name": "锈钉",
+      "name_en": "Rusty Nail",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "蜂蜜",
+        "威士忌",
+        "草本"
+      ],
+      "mood_tags": [
+        "独处",
+        "品味",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "杜林标",
+          "amount": 25,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮卷",
+      "cost_estimate": 8.21,
+      "suggested_price": [32.84, 32.84],
+      "story": "苏格兰与蜂蜜利口酒的相遇，锈钉般的粗犷"
+    },
+    {
+      "name": "教母",
+      "name_en": "Godmother",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "杏仁",
+        "伏特加",
+        "甜美"
+      ],
+      "mood_tags": [
+        "温暖",
+        "约会",
+        "独处"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "杏仁利口酒",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 7.14,
+      "suggested_price": [28.56, 28.56],
+      "story": "教父的女性版，温柔而甜美"
+    },
+    {
+      "name": "法国关系",
+      "name_en": "French Connection",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "杏仁",
+        "干邑",
+        "甜美"
+      ],
+      "mood_tags": [
+        "独处",
+        "品味",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "干邑",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "杏仁利口酒",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 7.14,
+      "suggested_price": [28.56, 28.56],
+      "story": "教父的法国版，干邑替代威士忌"
+    },
+    {
+      "name": "美国佬",
+      "name_en": "Americano",
+      "category": "开胃酒",
+      "strength": "低",
+      "flavor_tags": [
+        "苦甜",
+        "气泡",
+        "橙香"
+      ],
+      "mood_tags": [
+        "社交",
+        "解暑",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "金巴利",
+          "amount": 25,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 25,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 2,
+          "unit": "barspoon"
+        }
+      ],
+      "method": "直调",
+      "glass": "古典杯",
+      "garnish": "orange juice",
+      "cost_estimate": 5.48,
+      "suggested_price": [21.92, 21.92],
+      "story": "尼格罗尼的前身，美国人最爱的意式开胃酒",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "花花公子",
+      "name_en": "Boulevardier",
+      "category": "开胃酒",
+      "strength": "中烈",
+      "flavor_tags": [
+        "苦甜",
+        "威士忌",
+        "橙香"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "金巴利",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"
+        },
+        {
+          "name": "甜味美思",
+          "amount": 12.5,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 8.71,
+      "suggested_price": [34.84, 34.84],
+      "story": "尼格罗尼的美国版，波本替代金酒",
+      "spec_updated": "2026-10-19",
+      "aliases": [
+        "boulevardier",
+        "Boulevardier",
+        "林荫大道"
+      ]
+    },
+    {
+      "name": "巴比伦",
+      "name_en": "Babylon",
+      "category": "酸酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "果味",
+        "伏特加",
+        "热带"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "桃子利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "桃子片",
+      "cost_estimate": 7.92,
+      "suggested_price": [31.68, 31.68],
+      "story": "热带水果与伏特加的完美融合"
+    },
+    {
+      "name": "青柠冻",
+      "name_en": "Lime Freeze",
+      "category": "冰沙类",
+      "strength": "低",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "冰沙"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "碎冰",
+          "amount": 1,
+          "unit": "杯"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "高球杯",
+      "garnish": "青柠片",
+      "cost_estimate": 6.07,
+      "suggested_price": [24.28, 24.28],
+      "story": "夏日的清凉，冰沙般的口感"
+    },
+    {
+      "name": "草莓得其利",
+      "name_en": "Strawberry Daiquiri",
+      "category": "冰沙类",
+      "strength": "中",
+      "flavor_tags": [
+        "草莓",
+        "酸甜",
+        "冰沙"
+      ],
+      "mood_tags": [
+        "解暑",
+        "约会",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "草莓",
+          "amount": 5,
+          "unit": "颗"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "碎冰",
+          "amount": 1,
+          "unit": "杯"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "高球杯",
+      "garnish": "草莓",
+      "cost_estimate": 7.98,
+      "suggested_price": [31.92, 31.92],
+      "story": "得其利的草莓版，甜蜜的夏日",
+      "aliases": [
+        "草莓大吉利"
+      ]
+    },
+    {
+      "name": "龙舌兰日落",
+      "name_en": "Tequila Sunset",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "橙味",
+        "龙舌兰",
+        "渐变"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙角",
+      "cost_estimate": 6.96,
+      "suggested_price": [27.84, 27.84],
+      "story": "日出的反向渐变，同样美丽"
+    },
+    {
+      "name": "电冰茶",
+      "name_en": "Electric Iced Tea",
+      "category": "高球类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "蓝橙",
+        "隐藏酒精"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "金酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "白朗姆酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "龙舌兰",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "蓝橙利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 25,
+          "unit": "ml"
+        },
+        {
+          "name": "雪碧",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 9.58,
+      "suggested_price": [38.32, 38.32],
+      "story": "长岛冰茶的蓝色版，同样危险"
+    },
+    {
+      "name": "苹果马提尼",
+      "name_en": "Appletini",
+      "category": "马提尼类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "苹果",
+        "酸甜",
+        "现代"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "苹果利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "苹果片",
+      "cost_estimate": 8.88,
+      "suggested_price": [35.52, 35.52],
+      "story": "现代鸡尾酒的代表，苹果的清新"
+    },
+    {
+      "name": "浓缩马提尼",
+      "name_en": "Espresso Martini",
+      "category": "马提尼类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "咖啡",
+        "伏特加",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "疲惫",
+        "社交",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "咖啡利口酒",
+          "amount": 60,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "咖啡豆",
+      "cost_estimate": 11.96,
+      "suggested_price": [47.84, 47.84],
+      "story": "深夜派对的能量站，咖啡因加酒精的双重冲击",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "柠檬水",
+      "name_en": "Lemon Drop",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "柠檬",
+        "糖边"
+      ],
+      "mood_tags": [
+        "社交",
+        "解暑",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "子弹杯",
+      "garnish": "糖边、柠檬片",
+      "cost_estimate": 6.18,
+      "suggested_price": [24.72, 24.72],
+      "story": "像柠檬糖一样甜美，一口闷的乐趣"
+    },
+    {
+      "name": "巧克力马提尼",
+      "name_en": "Chocolate Martini",
+      "category": "甜酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "巧克力",
+        "伏特加",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "庆祝",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "可可利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "巧克力屑",
+      "cost_estimate": 8.91,
+      "suggested_price": [35.64, 35.64],
+      "story": "液体的巧克力，甜点级的享受"
+    },
+    {
+      "name": "爱尔兰之雾",
+      "name_en": "Irish Mist",
+      "category": "热饮",
+      "strength": "中",
+      "flavor_tags": [
+        "蜂蜜",
+        "威士忌",
+        "温暖"
+      ],
+      "mood_tags": [
+        "寒冷",
+        "疲惫",
+        "失落"
+      ],
+      "ingredients": [
+        {
+          "name": "爱尔兰威士忌",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "热水",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬片",
+          "amount": 1,
+          "unit": "片"
+        }
+      ],
+      "method": "直调",
+      "glass": "马克杯",
+      "garnish": "柠檬片、丁香",
+      "cost_estimate": 7.13,
+      "suggested_price": [28.52, 28.52],
+      "story": "爱尔兰的热饮，蜂蜜与威士忌的温暖拥抱"
+    },
+    {
+      "name": "西班牙咖啡",
+      "name_en": "Spanish Coffee",
+      "category": "热饮",
+      "strength": "中烈",
+      "flavor_tags": [
+        "咖啡",
+        "白兰地",
+        "温暖"
+      ],
+      "mood_tags": [
+        "寒冷",
+        "疲惫",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "白兰地",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "咖啡利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "热咖啡",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "爱尔兰咖啡杯",
+      "garnish": "奶油层、肉豆蔻粉",
+      "cost_estimate": 6.95,
+      "suggested_price": [27.8, 27.8],
+      "story": "西班牙的热咖啡，白兰地的点睛之笔"
+    },
+    {
+      "name": "金色凯迪拉克",
+      "name_en": "Golden Cadillac",
+      "category": "甜酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "茴香",
+        "奶油",
+        "巧克力"
+      ],
+      "mood_tags": [
+        "约会",
+        "庆祝",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "加利安诺",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "可可利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "巧克力屑",
+      "cost_estimate": 6.75,
+      "suggested_price": [27.0, 27.0],
+      "story": "金色的豪华，奶油与巧克力的完美融合"
+    },
+    {
+      "name": "天使之吻",
+      "name_en": "Angel's Kiss",
+      "category": "甜酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "奶油",
+        "巧克力",
+        "分层"
+      ],
+      "mood_tags": [
+        "约会",
+        "庆祝",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "可可利口酒",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "樱桃白兰地",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "分层",
+      "glass": "子弹杯",
+      "garnish": "樱桃",
+      "cost_estimate": 3.43,
+      "suggested_price": [13.72, 13.72],
+      "story": "分层的艺术，甜蜜的亲吻"
+    },
+    {
+      "name": "器官研磨者",
+      "name_en": "Organ Grinder",
+      "category": "短饮",
+      "strength": "烈",
+      "flavor_tags": [
+        "草本",
+        "伏特加",
+        "苦"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "金巴利",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "子弹杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 7.1,
+      "suggested_price": [28.4, 28.4],
+      "story": "名字凶猛，口感苦烈"
+    },
+    {
+      "name": "莫斯科骡子姜啤版",
+      "name_en": "Moscow Mule Ginger Beer",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "姜味",
+        "伏特加"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "姜啤酒",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "姜",
+          "amount": 2,
+          "unit": "片"
+        }
+      ],
+      "method": "直调",
+      "glass": "铜杯",
+      "garnish": "青柠角、姜片、薄荷叶",
+      "cost_estimate": 6.85,
+      "suggested_price": [27.4, 27.4],
+      "story": "莫斯科骡子的升级版，姜味更加浓郁"
+    },
+    {
+      "name": "汤姆柯林斯",
+      "name_en": "Tom Collins",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "金酒"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "老汤姆金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片、樱桃",
+      "cost_estimate": 8.84,
+      "suggested_price": [35.36, 35.36],
+      "story": "以虚构人物Tom Collins命名的经典高球",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "约翰柯林斯",
+      "name_en": "John Collins",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "波本"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "soda",
+          "amount": "up",
+          "unit": "fill"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片、樱桃",
+      "cost_estimate": 0.9,
+      "suggested_price": [3.6, 3.6],
+      "story": "汤姆柯林斯的波本版，更加醇厚"
+    },
+    {
+      "name": "拉莫斯金菲士",
+      "name_en": "Ramos Gin Fizz",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "花香",
+        "蛋白"
+      ],
+      "mood_tags": [
+        "解暑",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "老汤姆金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "橙味苦精",
+          "amount": 5,
+          "unit": "dash"
+        },
+        {
+          "name": "淡奶油",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋清",
+          "amount": 1,
+          "unit": "个"
+        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "lemon j",
+      "cost_estimate": 8.37,
+      "suggested_price": [33.48, 33.48],
+      "story": "新奥尔良的传奇，需要摇12分钟的奢华泡沫",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "银色菲士",
+      "name_en": "Silver Fizz",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "蛋白"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋白",
+          "amount": 1,
+          "unit": "个"
+        },
+        {
+          "name": "苏打水",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 7.05,
+      "suggested_price": [28.2, 28.2],
+      "story": "金菲士加了蛋白，更加绵密"
+    },
+    {
+      "name": "皇家菲士",
+      "name_en": "Royal Fizz",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "蛋黄"
+      ],
+      "mood_tags": [
+        "解暑",
+        "品味",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "蛋黄",
+          "amount": 1,
+          "unit": "个"
+        },
+        {
+          "name": "苏打水",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 7.05,
+      "suggested_price": [28.2, 28.2],
+      "story": "蛋黄版的菲士，更加浓郁丝滑"
+    },
+    {
+      "name": "阿方索",
+      "name_en": "Alfonso",
+      "category": "气泡酒",
+      "strength": "中",
+      "flavor_tags": [
+        "橙香",
+        "香槟",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "香槟",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "金巴利",
+          "amount": 5,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "香槟杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 9.61,
+      "suggested_price": [38.44, 38.44],
+      "story": "香槟与干味美思的优雅结合"
+    },
+    {
+      "name": "皇家基尔",
+      "name_en": "Kir Royal",
+      "category": "气泡酒",
+      "strength": "低",
+      "flavor_tags": [
+        "黑醋栗",
+        "香槟",
+        "甜美"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "约会",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "黑醋栗利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "香槟",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "香槟杯",
+      "garnish": "无",
+      "cost_estimate": 11.57,
+      "suggested_price": [46.28, 46.28],
+      "story": "基尔的香槟版，更加优雅"
+    },
+    {
+      "name": "基尔",
+      "name_en": "Kir",
+      "category": "开胃酒",
+      "strength": "低",
+      "flavor_tags": [
+        "黑醋栗",
+        "白葡萄酒",
+        "甜美"
+      ],
+      "mood_tags": [
+        "社交",
+        "解暑",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "黑醋栗利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "白葡萄酒",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "白葡萄酒杯",
+      "garnish": "无",
+      "cost_estimate": 11.57,
+      "suggested_price": [46.28, 46.28],
+      "story": "法国第戎的经典，黑醋栗的甜美"
+    },
+    {
+      "name": "死亡午后",
+      "name_en": "Death in the Afternoon",
+      "category": "气泡酒",
+      "strength": "中烈",
+      "flavor_tags": [
+        "茴香",
+        "香槟",
+        "神秘"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "苦艾酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "香槟",
+          "amount": 120,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "香槟杯",
+      "garnish": "无",
+      "cost_estimate": 13.17,
+      "suggested_price": [52.68, 52.68],
+      "story": "海明威发明的配方，午后的死亡之舞"
+    },
+    {
+      "name": "香槟朱利酒",
+      "name_en": "Champagne Julep",
+      "category": "气泡酒",
+      "strength": "中",
+      "flavor_tags": [
+        "薄荷",
+        "香槟",
+        "清爽"
+      ],
+      "mood_tags": [
+        "庆祝",
+        "解暑",
+        "品味"
+      ],
+      "ingredients": [
+        {
+          "name": "香槟",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "薄荷叶",
+          "amount": 8,
+          "unit": "片"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "捣压",
+      "glass": "香槟杯",
+      "garnish": "薄荷叶枝",
+      "cost_estimate": 7.74,
+      "suggested_price": [30.96, 30.96],
+      "story": "薄荷朱莉普的香槟版，更加优雅"
+    },
+    {
+      "name": "上海",
+      "name_en": "Shanghai",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "果味",
+        "金酒",
+        "复杂"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "黑刺李金酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "柠檬皮卷",
+      "cost_estimate": 7.75,
+      "suggested_price": [31.0, 31.0],
+      "story": "以东方明珠命名的经典，1930年代的传奇"
+    },
+    {
+      "name": "棕榈滩",
+      "name_en": "Palm Beach",
+      "category": "餐前酒",
+      "strength": "中烈",
+      "flavor_tags": [
+        "橙香",
+        "金酒",
+        "甜美"
+      ],
+      "mood_tags": [
+        "社交",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "甜味美思",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 9.14,
+      "suggested_price": [36.56, 36.56],
+      "story": "佛罗里达棕榈滩的优雅，富人的度假标配"
+    },
+    {
+      "name": "阿拉斯加",
+      "name_en": "Alaska",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "草本",
+        "金酒",
+        "黄色"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "黄夏特酒",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "柠檬皮卷",
+      "cost_estimate": 8.75,
+      "suggested_price": [35.0, 35.0],
+      "story": "北极圈的冷冽，金酒与草本利口酒的邂逅"
+    },
+    {
+      "name": "佛罗里达",
+      "name_en": "Florida",
+      "category": "酸酒类",
+      "strength": "中",
+      "flavor_tags": [
+        "果味",
+        "金酒",
+        "甜美"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 6.29,
+      "suggested_price": [25.16, 25.16],
+      "story": "阳光之州的热情，果味四溢"
+    },
+    {
+      "name": "布鲁克林",
+      "name_en": "Brooklyn",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜",
+        "黑麦",
+        "复杂"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "阿梅尔苦酒",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "马拉斯奇诺樱桃利口酒",
+          "amount": 1,
+          "unit": "barspoon"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 9.48,
+      "suggested_price": [37.92, 37.92],
+      "story": "曼哈顿的邻居，更苦更复杂的经典",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "皇后区",
+      "name_en": "Queens",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "果味",
+        "金酒",
+        "菠萝"
+      ],
+      "mood_tags": [
+        "社交",
+        "品味",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "甜味美思",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "菠萝片",
+      "cost_estimate": 10.55,
+      "suggested_price": [42.2, 42.2],
+      "story": "布朗克斯的邻居，菠萝的加入让它更亲民"
+    },
+    {
+      "name": "多明尼加",
+      "name_en": "Dominican",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "朗姆",
+        "橙香",
+        "复杂"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "金朗姆酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "黑刺李金酒",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "柠檬皮卷",
+      "cost_estimate": 10.59,
+      "suggested_price": [42.36, 42.36],
+      "story": "加勒比海的风情，朗姆与草本利口酒的融合"
+    },
+    {
+      "name": "参议员",
+      "name_en": "Senator",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "威士忌",
+        "橙香",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 5,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 9.27,
+      "suggested_price": [37.08, 37.08],
+      "story": "政客的选择，优雅而有力"
+    },
+    {
+      "name": "破冰船",
+      "name_en": "Icebreaker",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "龙舌兰",
+        "橙香"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮卷",
+      "cost_estimate": 7.7,
+      "suggested_price": [30.8, 30.8],
+      "story": "打破僵局的第一杯，酸甜平衡"
+    },
+    {
+      "name": "西瓜马提尼",
+      "name_en": "Watermelon Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "西瓜",
+        "清爽",
+        "现代"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "西瓜汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "西瓜角",
+      "cost_estimate": 6.7,
+      "suggested_price": [26.8, 26.8],
+      "story": "夏日的清新，水果马提尼的代表作"
+    },
+    {
+      "name": "荔枝马提尼",
+      "name_en": "Lychee Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "荔枝",
+        "花香",
+        "现代"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "庆祝"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "荔枝利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "荔枝汁",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "荔枝",
+      "cost_estimate": 9.14,
+      "suggested_price": [36.56, 36.56],
+      "story": "东方的优雅，荔枝的芬芳"
+    },
+    {
+      "name": "抹茶马提尼",
+      "name_en": "Matcha Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "抹茶",
+        "苦甜",
+        "现代"
+      ],
+      "mood_tags": [
+        "品味",
+        "约会",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "抹茶粉",
+          "amount": 3,
+          "unit": "g"
+        },
+        {
+          "name": "糖浆",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "奶油",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "抹茶粉撒面",
+      "cost_estimate": 6.07,
+      "suggested_price": [24.28, 24.28],
+      "story": "日式禅意与西式鸡尾酒的融合"
+    },
+    {
+      "name": "黄瓜金汤力",
+      "name_en": "Cucumber Gin Tonic",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "黄瓜",
+        "清爽",
+        "金酒"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "汤力水",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "黄瓜片",
+          "amount": 5,
+          "unit": "片"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "黄瓜片、迷迭香",
+      "cost_estimate": 6.73,
+      "suggested_price": [26.92, 26.92],
+      "story": "金汤力的现代演绎，黄瓜的清新升级"
+    },
+    {
+      "name": "百香果马提尼",
+      "name_en": "Passion Fruit Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "百香果",
+        "酸甜",
+        "热带"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "百香果利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "百香果汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "百香果籽、糖边",
+      "cost_estimate": 9.31,
+      "suggested_price": [37.24, 37.24],
+      "story": "热带风情与现代马提尼的碰撞"
+    },
+    {
+      "name": "紫罗兰菲士",
+      "name_en": "Violet Fizz",
+      "category": "Fizz类",
+      "strength": "中",
+      "flavor_tags": [
+        "花香",
+        "紫罗兰",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "紫罗兰利口酒",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "紫罗兰花",
+      "cost_estimate": 8.61,
+      "suggested_price": [34.44, 34.44],
+      "story": "紫色的梦幻，花香的诱惑"
+    },
+    {
+      "name": "辣椒菠萝马提尼",
+      "name_en": "Spicy Pineapple Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "菠萝",
+        "辛辣",
+        "现代"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "辣椒糖浆",
+          "amount": 10,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "辣椒片",
+      "cost_estimate": 6.49,
+      "suggested_price": [25.96, 25.96],
+      "story": "甜与辣的碰撞，刺激味蕾"
+    },
+    {
+      "name": "椰子马提尼",
+      "name_en": "Coconut Martini",
+      "category": "马提尼类",
+      "strength": "中",
+      "flavor_tags": [
+        "椰香",
+        "甜美",
+        "热带"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "椰子利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "椰浆",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "椰丝边",
+      "cost_estimate": 9.08,
+      "suggested_price": [36.32, 36.32],
+      "story": "热带度假的味道，椰香四溢"
+    },
+    {
+      "name": "桂花陈酿",
+      "name_en": "Osmanthus Chen Niang",
+      "category": "中国特色",
+      "strength": "中",
+      "flavor_tags": [
+        "桂花",
+        "花香",
+        "米酒"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "温暖"
+      ],
+      "ingredients": [
+        {
+          "name": "桂花陈酿",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "桂花",
+      "cost_estimate": 5.35,
+      "suggested_price": [21.4, 21.4],
+      "story": "秋天的味道，桂花的芬芳与米酒的温柔"
+    },
+    {
+      "name": "茅台马提尼",
+      "name_en": "Moutai Martini",
+      "category": "中国特色",
+      "strength": "烈",
+      "flavor_tags": [
+        "酱香",
+        "茅台",
+        "中国"
+      ],
+      "mood_tags": [
+        "品味",
+        "庆祝",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "茅台",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "伏特加",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "花椒",
+      "cost_estimate": 8.09,
+      "suggested_price": [32.36, 32.36],
+      "story": "国酒与鸡尾酒的碰撞，中西合璧"
+    },
+    {
+      "name": "青梅竹马",
+      "name_en": "Green Plum Bamboo",
+      "category": "中国特色",
+      "strength": "中",
+      "flavor_tags": [
+        "青梅",
+        "竹叶青",
+        "清新"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "tio pepe fino",
+          "amount": "57.5",
+          "unit": "ml"
+        },
+        {
+          "name": "dolin dry",
+          "amount": "17.5",
+          "unit": "ml"
+        },
+        {
+          "name": "beefeater gin",
+          "amount": "45",
+          "unit": "ml"
+        },
+        {
+          "name": "de kuyper white menthe",
+          "amount": "15",
+          "unit": "ml"
+        },
+        {
+          "name": "lillet blanc",
+          "amount": "15",
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "fresh lemon",
+      "cost_estimate": 14.97,
+      "suggested_price": [59.88, 59.88],
+      "story": "童年的回忆，青梅与竹叶青的清新"
+    },
+    {
+      "name": "北京冰茶",
+      "name_en": "Beijing Iced Tea",
+      "category": "中国特色",
+      "strength": "烈",
+      "flavor_tags": [
+        "白酒",
+        "隐藏酒精",
+        "现代"
+      ],
+      "mood_tags": [
+        "发泄",
+        "想醉",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "二锅头",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "伏特加",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "可乐",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 5.98,
+      "suggested_price": [23.92, 23.92],
+      "story": "长岛冰茶的北京版，二锅头的豪迈"
+    },
+    {
+      "name": "上海之夜",
+      "name_en": "Shanghai Night",
+      "category": "中国特色",
+      "strength": "中烈",
+      "flavor_tags": [
+        "黄酒",
+        "桂花",
+        "优雅"
+      ],
+      "mood_tags": [
+        "品味",
+        "约会",
+        "独处"
+      ],
+      "ingredients": [
+        {
+          "name": "绍兴黄酒",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "桂花利口酒",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "桂花",
+      "cost_estimate": 6.07,
+      "suggested_price": [24.28, 24.28],
+      "story": "外滩的夜色，黄酒的温润与桂花的芬芳"
+    },
+    {
+      "name": "龙井绿茶马提尼",
+      "name_en": "Longjing Martini",
+      "category": "中国特色",
+      "strength": "中",
+      "flavor_tags": [
+        "龙井",
+        "茶香",
+        "优雅"
+      ],
+      "mood_tags": [
+        "品味",
+        "独处",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "龙井茶",
+          "amount": 5,
+          "unit": "g"
+        },
+        {
+          "name": "蜂蜜",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "热水",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "龙井茶叶",
+      "cost_estimate": 6.18,
+      "suggested_price": [24.72, 24.72],
+      "story": "西湖龙井的禅意，茶与酒的对话"
+    },
+    {
+      "name": "荔枝西柚",
+      "name_en": "Lychee Grapefruit",
+      "category": "中国特色",
+      "strength": "中",
+      "flavor_tags": [
+        "荔枝",
+        "西柚",
+        "清爽"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "荔枝利口酒",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "伏特加",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "西柚汁",
+          "amount": 60,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "高球杯",
+      "garnish": "荔枝、西柚片",
+      "cost_estimate": 7.68,
+      "suggested_price": [30.72, 30.72],
+      "story": "南方的味道，荔枝与西柚的清新碰撞"
+    },
+    {
+      "name": "杨枝甘露马提尼",
+      "name_en": "Mango Pomelo Martini",
+      "category": "中国特色",
+      "strength": "中",
+      "flavor_tags": [
+        "芒果",
+        "柚子",
+        "港式"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "芒果泥",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "柚子汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "椰浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "马提尼杯",
+      "garnish": "柚子粒",
+      "cost_estimate": 6.75,
+      "suggested_price": [27.0, 27.0],
+      "story": "港式甜品的液态演绎，杨枝甘露的鸡尾酒版"
+    },
+    {
+      "name": "无酒精莫吉托",
+      "name_en": "Virgin Mojito",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "清爽",
+        "薄荷",
+        "酸甜"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "薄荷叶",
+          "amount": 10,
+          "unit": "片"
+        }
+      ],
+      "method": "捣压",
+      "glass": "高球杯",
+      "garnish": "薄荷叶枝、青柠角",
+      "cost_estimate": 1.56,
+      "suggested_price": [6.24, 6.24],
+      "story": "莫吉托的无酒精版，同样清爽怡人"
+    },
+    {
+      "name": "无酒精玛格丽特",
+      "name_en": "Virgin Margarita",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "酸甜",
+        "青柠",
+        "盐边"
+      ],
+      "mood_tags": [
+        "社交",
+        "解暑",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "青柠汁",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "橙汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "玛格丽特杯",
+      "garnish": "盐边、青柠轮",
+      "cost_estimate": 1.59,
+      "suggested_price": [6.36, 6.36],
+      "story": "玛格丽特的无酒精版，酸甜平衡不减"
+    },
+    {
+      "name": "秀兰邓波儿",
+      "name_en": "Shirley Temple",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "甜美",
+        "姜味",
+        "樱桃"
+      ],
+      "mood_tags": [
+        "社交",
+        "庆祝",
+        "约会"
+      ],
+      "ingredients": [
+        {
+          "name": "姜啤酒",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "樱桃、橙角",
+      "cost_estimate": 1.47,
+      "suggested_price": [5.88, 5.88],
+      "story": "以童星命名的经典无酒精鸡尾酒"
+    },
+    {
+      "name": "灰狗无酒精版",
+      "name_en": "Virgin Greyhound",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "清爽",
+        "西柚",
+        "简单"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "西柚汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "西柚片",
+      "cost_estimate": 1.88,
+      "suggested_price": [7.52, 7.52],
+      "story": "灰狗的无酒精版，西柚的清爽"
+    },
+    {
+      "name": "无酒精得其利",
+      "name_en": "Virgin Daiquiri",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "简单"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "青柠汁",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "苏打水",
+          "amount": 30,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "青柠轮",
+      "cost_estimate": 1.37,
+      "suggested_price": [5.48, 5.48],
+      "story": "得其利的无酒精版，海明威也会喜欢",
+      "aliases": [
+        "无酒精大吉利"
+      ]
+    },
+    {
+      "name": "无酒精皮纳科拉达",
+      "name_en": "Virgin Pina Colada",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "椰香",
+        "菠萝",
+        "热带"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "椰浆",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 90,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "飓风杯",
+      "garnish": "菠萝角、樱桃",
+      "cost_estimate": 2.09,
+      "suggested_price": [8.36, 8.36],
+      "story": "椰林飘香的无酒精版，热带度假的感觉"
+    },
+    {
+      "name": "日出无酒精",
+      "name_en": "Virgin Sunrise",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "橙味",
+        "渐变",
+        "甜美"
+      ],
+      "mood_tags": [
+        "社交",
+        "约会",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "橙汁",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "红石榴糖浆",
+          "amount": 20,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙角、樱桃",
+      "cost_estimate": 1.9,
+      "suggested_price": [7.6, 7.6],
+      "story": "龙舌兰日出的无酒精版，渐变同样美丽"
+    },
+    {
+      "name": "无酒精莫斯科骡子",
+      "name_en": "Virgin Mule",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "姜味",
+        "清爽",
+        "简单"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "疲惫"
+      ],
+      "ingredients": [
+        {
+          "name": "姜啤酒",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "铜杯",
+      "garnish": "青柠角、薄荷叶",
+      "cost_estimate": 1.51,
+      "suggested_price": [6.04, 6.04],
+      "story": "莫斯科骡子的无酒精版，姜味依然爽口"
+    },
+    {
+      "name": "蓝珊瑚",
+      "name_en": "Blue Coral",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "蓝橙",
+        "清爽",
+        "甜美"
+      ],
+      "mood_tags": [
+        "约会",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "蓝橙糖浆",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "雪碧",
+          "amount": 90,
+          "unit": "ml"
+        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "柠檬片、樱桃",
+      "cost_estimate": 1.54,
+      "suggested_price": [6.16, 6.16],
+      "story": "蓝色的清凉，无酒精的夏日"
+    },
+    {
+      "name": "无酒精血腥玛丽",
+      "name_en": "Virgin Mary",
+      "category": "无酒精",
+      "strength": "无",
+      "flavor_tags": [
+        "咸鲜",
+        "番茄",
+        "香料"
+      ],
+      "mood_tags": [
+        "疲惫",
+        "社交",
+        "解暑"
+      ],
+      "ingredients": [
+        {
+          "name": "番茄汁",
+          "amount": 120,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "伍斯特酱",
+          "amount": 3,
+          "unit": "dash"
+        },
+        {
+          "name": "辣椒酱",
+          "amount": 2,
+          "unit": "dash"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "高球杯",
+      "garnish": "芹菜杆、柠檬角",
+      "cost_estimate": 1.78,
+      "suggested_price": [7.12, 7.12],
+      "story": "血腥玛丽的无酒精版，同样适合早午餐"
+    },
+    {
+      "name": "天使面孔",
+      "name_en": "Angel Face",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "果香",
+        "苹果",
+        "杏子",
+        "草本"
+      ],
+      "mood_tags": [
+        "浪漫",
+        "约会",
+        "优雅"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "苹果白兰地",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "杏子白兰地利口酒",
+          "amount": 7.5,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "无",
+      "cost_estimate": 9.04,
+      "suggested_price": [36.16, 36.16],
+      "story": "禁酒令时期的经典，三种材料的完美融合",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "狐步舞",
+      "name_en": "Fox Trot",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "龙舌兰",
+        "薄荷",
+        "烟熏",
+        "草本"
+      ],
+      "mood_tags": [
+        "放松",
+        "夜晚",
+        "独特"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "梅斯卡尔",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "干味美思",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "白薄荷利口酒",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮",
+      "cost_estimate": 9.82,
+      "suggested_price": [39.28, 39.28],
+      "story": "墨西哥风情与意大利味美思的跨界融合"
+    },
+    {
+      "name": "罗马假日",
+      "name_en": "Roma Holiday",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "咖啡",
+        "菠萝",
+        "白兰地",
+        "阿玛罗"
+      ],
+      "mood_tags": [
+        "浪漫",
+        "夜晚",
+        "意式风情"
+      ],
+      "ingredients": [
+        {
+          "name": "白兰地",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "菠萝汁",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "浓缩咖啡",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "阿玛罗",
+          "amount": 15,
+          "unit": "ml"
+        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "菠萝片",
+      "cost_estimate": 8.06,
+      "suggested_price": [32.24, 32.24],
+      "story": "意大利咖啡文化与热带水果的浪漫邂逅"
+    },
+    {
+      "name": "青苹果竹子",
+      "name_en": "Green Apple Bamboo",
+      "category": "开胃酒",
+      "strength": "低",
+      "flavor_tags": [
+        "青苹果",
+        "雪莉",
+        "焦糖",
+        "清爽"
+      ],
+      "mood_tags": [
+        "开胃",
+        "午后",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "tio pepe fino",
+          "amount": "57.5",
+          "unit": "ml"
+        },
+        {
+          "name": "dolin dry",
+          "amount": "17.5",
+          "unit": "ml"
+        },
+        {
+          "name": "beefeater gin",
+          "amount": "45",
+          "unit": "ml"
+        },
+        {
+          "name": "de kuyper white menthe",
+          "amount": "15",
+          "unit": "ml"
+        },
+        {
+          "name": "lillet blanc",
+          "amount": "15",
+          "unit": "ml"
+        }
+      ],
+      "method": "搅拌",
+      "glass": "鸡尾酒杯",
+      "garnish": "fresh lemon",
+      "cost_estimate": 14.97,
+      "suggested_price": [59.88, 59.88],
+      "story": "经典竹子鸡尾酒的青苹果变奏"
+    },
+    {
+      "name": "伦敦呼唤",
+      "name_en": "London Calling",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "金酒",
+        "雪莉",
+        "柑橘",
+        "橙香"
+      ],
+      "mood_tags": [
+        "英伦",
+        "优雅",
+        "夜晚"
+      ],
+      "ingredients": [
+        {
+          "name": "海曼伦敦干金",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "曼萨尼亚雪莉",
+          "amount": 30,
+          "unit": "ml"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 20,
+          "unit": "ml"
+        },
+        {
+          "name": "橙皮利口酒",
+          "amount": 10,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "鸡尾酒杯",
+      "garnish": "橙皮",
+      "cost_estimate": 9.36,
+      "suggested_price": [37.44, 37.44],
+      "story": "致敬伦敦的经典金酒调配"
+    },
+    {
+      "name": "番茄苏果",
+      "name_en": "Tomato Sugo",
+      "category": "餐前酒",
+      "strength": "中",
+      "flavor_tags": [
+        "番茄",
+        "威士忌",
+        "辣味",
+        "鲜咸"
+      ],
+      "mood_tags": [
+        "开胃",
+        "餐前",
+        "独特"
+      ],
+      "ingredients": [
+        {
+          "name": "芝华仕水楢桶威士忌",
+          "amount": 45,
+          "unit": "ml"
+        },
+        {
+          "name": "番茄汁",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "辣椒仔",
+          "amount": 3,
+          "unit": "dash"
+        },
+        {
+          "name": "喼汁",
+          "amount": 2,
+          "unit": "dash"
+        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"
+        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "番茄片",
+      "cost_estimate": 6.54,
+      "suggested_price": [26.16, 26.16],
+      "story": "意大利番茄酱灵感，血腥玛丽的威士忌变奏"
+    },
+    {
+      "name": "纸飞机",
+      "name_en": "Paper Plane",
+      "category": "短饮",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "柑橘",
+        "草本",
+        "现代经典"
+      ],
+      "mood_tags": [
+        "夜晚",
+        "社交",
+        "现代"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "阿佩罗",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"
+        },
+        {
+          "name": "蒙特内罗",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "无",
+      "cost_estimate": 7.7,
+      "suggested_price": [30.8, 30.8],
+      "story": "2008年由调酒师Sam Ross在纽约创造，等比例配方简单好记",
+      "spec_updated": "2026-10-19"
+    },
+    {
+      "name": "苦精大爆炸",
+      "name_en": "Don Lee's DLB",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑朗姆酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "费内特·布兰卡",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "裴乔苦精",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 12.5,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "橙皮油",
+      "cost_estimate": 12.17,
+      "suggested_price": [48.68, 48.68],
+      "story": "黑朗姆打底、三种苦精叠加的重口味古典变体，苦甜层层推开",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "D.L.B",
+        "DLB",
+        "Don Lee's DLB",
+        "Don's Little Bitter"
+      ]
+    },
+    {
+      "name": "查理·卓别林",
+      "name_en": "Charlie Chaplin",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "苹果白兰地",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "黑刺李金酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "杏子白兰地利口酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 8.05,
+      "suggested_price": [32.2, 32.2],
+      "story": "1920年代纽约华尔道夫酒店的姓氏鸡尾酒，苹果白兰地配黑刺李金酒",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "卓别林",
+        "Charlie Chaplin"
+      ]
+    },
+    {
+      "name": "黑麦古典",
+      "name_en": "Rye Old Fashioned",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        },
+        {
+          "name": "橙味苦精",
+          "amount": 3,
+          "unit": "dash"        },
+        {
+          "name": "红糖糖浆",
+          "amount": 10,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 8.08,
+      "suggested_price": [32.32, 32.32],
+      "story": "用黑麦威士忌做的古典，辛香更足、甜度更低",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "古典 · 黑麦",
+        "Rye Old Fashioned"
+      ]
+    },
+    {
+      "name": "压轴",
+      "name_en": "XYZ Cocktail",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "朗姆酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "白橙皮利口酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 7.51,
+      "suggested_price": [30.04, 30.04],
+      "story": "朗姆版古典的变体，名字取自字母表末尾，意为压轴之作",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "XYZ",
+        "XYZ Cocktail",
+        "XYZ 鸡尾酒"
+      ]
+    },
+    {
+      "name": "波本古典",
+      "name_en": "Bourbon Old Fashioned",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        },
+        {
+          "name": "橙味苦精",
+          "amount": 3,
+          "unit": "dash"        },
+        {
+          "name": "红糖糖浆",
+          "amount": 5,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.99,
+      "suggested_price": [31.96, 31.96],
+      "story": "波本版本，香草与焦糖的甜感更明显",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "古典 · 波本",
+        "Bourbon Old Fashioned"
+      ]
+    },
+    {
+      "name": "多特",
+      "name_en": "Dot",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "平衡"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "菲诺雪莉酒",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "白朗姆酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "杏子白兰地利口酒",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 9.63,
+      "suggested_price": [38.52, 38.52],
+      "story": "金酒与菲诺雪莉的组合，收口带回甘的坚果气息",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "寡妇之吻",
+      "name_en": "The Widow's Kiss",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "苹果白兰地",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "当酒",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "查特绿",
+          "amount": 5,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "樱桃",
+      "cost_estimate": 7.91,
+      "suggested_price": [31.64, 31.64],
+      "story": "苹果白兰地配当酒与查特绿，药草香突出的古典遗珠",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "床笫之间",
+      "name_en": "Between the Sheets",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "干邑白兰地",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 7.39,
+      "suggested_price": [29.56, 29.56],
+      "story": "禁酒令时期哈瓦那客房里的双基酒经典，朗姆与干邑并肩",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "无赖",
+      "name_en": "Scofflaw",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "树莓糖浆",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "橙皮油",
+      "cost_estimate": 10.18,
+      "suggested_price": [40.72, 40.72],
+      "story": "禁酒令年代巴黎酒吧的怪名之作，黑麦配树莓糖浆",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "干曼哈顿",
+      "name_en": "Dry Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        },
+        {
+          "name": "白波特酒",
+          "amount": 7.5,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 8.92,
+      "suggested_price": [35.68, 35.68],
+      "story": "曼哈顿的干型版本，苦精换橙味，收口更利落",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "曼哈顿干",
+        "Dry Manhattan"
+      ]
+    },
+    {
+      "name": "波本曼哈顿",
+      "name_en": "Bourbon Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 20,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 9.67,
+      "suggested_price": [38.68, 38.68],
+      "story": "波本版曼哈顿，甜美圆润、易饮度高",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "曼哈顿 · 波本",
+        "Bourbon Manhattan"
+      ]
+    },
+    {
+      "name": "黑麦曼哈顿",
+      "name_en": "Rye Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 20,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 9.67,
+      "suggested_price": [38.68, 38.68],
+      "story": "黑麦版曼哈顿，辛香挺拔、结构更硬",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "曼哈顿 · 黑麦",
+        "Rye Manhattan"
+      ]
+    },
+    {
+      "name": "汉基潘基",
+      "name_en": "Hanky Panky",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 17.5,
+          "unit": "ml"        },
+        {
+          "name": "费内特·布兰卡",
+          "amount": 2,
+          "unit": "barspoon"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 10.17,
+      "suggested_price": [40.68, 40.68],
+      "story": "伦敦萨伏伊酒店 Ada Coleman 的代表作，一点费内特点睛",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "猴腺",
+      "name_en": "Monkey Gland",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "果香"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "树莓糖浆",
+          "amount": 1,
+          "unit": "barspoon"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "橙片",
+      "cost_estimate": 6.89,
+      "suggested_price": [27.56, 27.56],
+      "story": "1920年代巴黎哈里酒吧的怪名经典，金酒配橙汁与树莓",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "竹子",
+      "name_en": "Bamboo",
+      "category": "古典类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "菲诺雪莉酒",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 17.5,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 6.8,
+      "suggested_price": [27.2, 27.2],
+      "story": "明治末期横滨 Grand Hotel 的作品，雪莉与干味美思的极简组合",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "朗姆古典",
+      "name_en": "Rum Old Fashioned",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "陈年朗姆酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "方糖",
+          "amount": 5,
+          "unit": "ml"        },
+        {
+          "name": "朗姆酒",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 4,
+          "unit": "dash"        },
+        {
+          "name": "巧克力苦精",
+          "amount": 3,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.96,
+      "suggested_price": [31.84, 31.84],
+      "story": "陈年朗姆版古典，方糖与巧克力苦精增加厚度",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "狮与玫瑰",
+      "name_en": "Lion & Rose",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜",
+        "烟熏"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "蒙特内罗",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "橙皮油",
+      "cost_estimate": 7.41,
+      "suggested_price": [29.64, 29.64],
+      "story": "苏格兰威士忌配蒙特内罗，苦甜交织的搅拌型鸡尾酒",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "白色尼格罗尼",
+      "name_en": "White Negroni",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 37.5,
+          "unit": "ml"        },
+        {
+          "name": "莉莱白",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "苏兹龙胆酒",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 6.66,
+      "suggested_price": [26.64, 26.64],
+      "story": "尼格罗尼的白色版本，莉莱白与苏兹替代金巴利",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "白尼格罗尼",
+        "White Negroni"
+      ]
+    },
+    {
+      "name": "罗西塔",
+      "name_en": "Rosita",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "龙舌兰",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "金巴利",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 9.51,
+      "suggested_price": [38.04, 38.04],
+      "story": "龙舌兰版的双味美思配方，金巴利收尾带出苦韵",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "老广场",
+      "name_en": "Vieux Carré",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "干邑白兰地",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "黑麦威士忌",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "当酒",
+          "amount": 5,
+          "unit": "ml"        },
+        {
+          "name": "裴乔苦精",
+          "amount": 2,
+          "unit": "dash"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 8.6,
+      "suggested_price": [34.4, 34.4],
+      "story": "新奥尔良法语区的经典，干邑、黑麦与当酒三重奏",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "遗言",
+      "name_en": "The Last Word",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "马拉斯奇诺樱桃利口酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "查特绿",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "樱桃",
+      "cost_estimate": 7.7,
+      "suggested_price": [30.8, 30.8],
+      "story": "底特律禁酒令时期的作品，查特绿与樱桃利口酒等量对撞",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "老友",
+      "name_en": "Old Pal",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 12.5,
+          "unit": "ml"        },
+        {
+          "name": "金巴利",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "芳香苦精",
+          "amount": 2,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 8.86,
+      "suggested_price": [35.44, 35.44],
+      "story": "1920年代巴黎酒客的老方子，黑麦配金巴利的苦甜平衡",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "血与沙",
+      "name_en": "Blood & Sand",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "果香",
+        "花香",
+        "烟熏"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "玫瑰味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "樱桃利口酒",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "苏格兰威士忌（泥煤）",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "橙皮油",
+      "cost_estimate": 7.6,
+      "suggested_price": [30.4, 30.4],
+      "story": "以1922年同名电影命名，苏格兰威士忌配樱桃与橙汁",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "马丁内斯",
+      "name_en": "Martinez",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "老汤姆金酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "白橙皮利口酒",
+          "amount": 1,
+          "unit": "barspoon"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "dash"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "柠檬皮、樱桃",
+      "cost_estimate": 8.71,
+      "suggested_price": [34.84, 34.84],
+      "story": "公认的马提尼前身，老汤姆金酒与甜味美思的甜口版本",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "黑曼哈顿",
+      "name_en": "Black Manhattan",
+      "category": "古典类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "慢饮",
+        "独处",
+        "佐餐"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "阿维纳苦味酒",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        },
+        {
+          "name": "樱桃糖浆",
+          "amount": 1,
+          "unit": "barspoon"        }
+      ],
+      "method": "搅拌",
+      "glass": "古典杯",
+      "garnish": "樱桃",
+      "cost_estimate": 7.46,
+      "suggested_price": [29.84, 29.84],
+      "story": "用阿维纳替代味美思的曼哈顿变体，苦甜更浓",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "哈瓦那马提尼",
+      "name_en": "Havana Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "陈年朗姆酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "菲诺雪莉酒",
+          "amount": 1,
+          "unit": "barspoon"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "柠檬皮/橙皮油",
+      "cost_estimate": 7.81,
+      "suggested_price": [31.24, 31.24],
+      "story": "陈年朗姆做的马提尼，一吧勺雪莉提香",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "干金马提尼",
+      "name_en": "Dry Gin Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄、柠檬皮",
+      "cost_estimate": 8.47,
+      "suggested_price": [33.88, 33.88],
+      "story": "干味美思只用10ml，最标准的干型马提尼",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "完美马提尼",
+      "name_en": "Perfect Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 57.5,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "甜味美思",
+          "amount": 7.5,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄、柠檬皮",
+      "cost_estimate": 8.96,
+      "suggested_price": [35.84, 35.84],
+      "story": "干味美思与甜味美思各半的\"完美\"比例",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "干伏特加马提尼",
+      "name_en": "Dry Vodka Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄、柠檬皮",
+      "cost_estimate": 8.47,
+      "suggested_price": [33.88, 33.88],
+      "story": "伏特加版干马提尼，口感更干净、更冷冽",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "脏伏特加马提尼",
+      "name_en": "Dirty Vodka Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        },
+        {
+          "name": "橄榄汁",
+          "amount": 5,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄",
+      "cost_estimate": 8.52,
+      "suggested_price": [34.08, 34.08],
+      "story": "加橄榄汁的咸鲜版本，下酒首选",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "脏马提尼 · 伏特加",
+        "Dirty Vodka Martini"
+      ]
+    },
+    {
+      "name": "脏金酒马提尼",
+      "name_en": "Dirty Gin Martini",
+      "category": "马提尼类",
+      "strength": "烈",
+      "flavor_tags": [
+        "苦甜"
+      ],
+      "mood_tags": [
+        "正式",
+        "社交",
+        "慢饮"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "干味美思",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "橙味苦精",
+          "amount": 2,
+          "unit": "drop"        },
+        {
+          "name": "橄榄汁",
+          "amount": 5,
+          "unit": "ml"        }
+      ],
+      "method": "搅拌",
+      "glass": "马提尼杯",
+      "garnish": "橄榄",
+      "cost_estimate": 8.52,
+      "suggested_price": [34.08, 34.08],
+      "story": "金酒版脏马提尼，草本与咸鲜同时在线",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "脏马提尼 · 金酒",
+        "Dirty Gin Martini"
+      ]
+    },
+    {
+      "name": "三叶草俱乐部",
+      "name_en": "Clover Club",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "树莓糖浆",
+          "amount": 17.5,
+          "unit": "ml"        },
+        {
+          "name": "蛋清",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "树莓、樱桃",
+      "cost_estimate": 6.28,
+      "suggested_price": [25.12, 25.12],
+      "story": "费城三叶草俱乐部的招牌，树莓糖浆打出粉色云顶",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "杏仁酸",
+      "name_en": "Amaretto Sour",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "黑麦威士忌",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "杏仁利口酒",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"        },
+        {
+          "name": "蛋清",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "樱桃、橙片",
+      "cost_estimate": 7.44,
+      "suggested_price": [29.76, 29.76],
+      "story": "杏仁利口酒做的酸酒，加黑麦威士忌撑起骨架",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "特立尼达酸",
+      "name_en": "Trinidad Sour",
+      "category": "酸酒类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "黑麦威士忌",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "杏仁糖浆",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 9.18,
+      "suggested_price": [36.72, 36.72],
+      "story": "异类酸酒——直接把安格斯图拉苦精当成基酒",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "皮斯科酸",
+      "name_en": "Pisco Sour",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "皮斯科",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "蛋清",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "安格斯图拉苦精点缀",
+      "cost_estimate": 8.19,
+      "suggested_price": [32.76, 32.76],
+      "story": "秘鲁国饮，皮斯科配柠檬与蛋清，顶层再点苦精",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "蜜蜂之膝",
+      "name_en": "Bee's Knees",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "甜润"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "蜂蜜水",
+          "amount": 10,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 6.61,
+      "suggested_price": [26.44, 26.44],
+      "story": "禁酒令时期的蜂蜜金酒酸酒，甜润顺口",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "蜜蜂膝盖",
+        "Bee's Knees"
+      ]
+    },
+    {
+      "name": "飞行",
+      "name_en": "Aviation",
+      "category": "酸酒类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香",
+        "花香"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "马拉斯奇诺樱桃利口酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "紫罗兰利口酒",
+          "amount": 7.5,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "樱桃",
+      "cost_estimate": 8.23,
+      "suggested_price": [32.92, 32.92],
+      "story": "1910年代的经典，紫罗兰利口酒带来淡紫色与花香",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "白色佳人",
+      "name_en": "White Lady",
+      "category": "酸酒类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "开胃",
+        "社交",
+        "夏天"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"        },
+        {
+          "name": "蛋清",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 7.68,
+      "suggested_price": [30.72, 30.72],
+      "story": "巴黎哈里酒吧的白色女士，金酒、君度与柠檬的优雅组合",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "凯匹林纳",
+      "name_en": "Caipirinha",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "甜润"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "卡莎萨",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "蜂蜜水",
+          "amount": 2.5,
+          "unit": "ml"        }
+      ],
+      "method": "捣压",
+      "glass": "高球杯",
+      "garnish": "青柠角",
+      "cost_estimate": 6.75,
+      "suggested_price": [27.0, 27.0],
+      "story": "巴西国饮，卡莎萨配青柠捣压出汁，粗犷直接",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "帕帕多布尔",
+      "name_en": "Papa Doble",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "马拉斯奇诺樱桃利口酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "西柚汁",
+          "amount": 22,
+          "unit": "ml"        }
+      ],
+      "method": "直调",
+      "glass": "碟形杯",
+      "garnish": "青柠片",
+      "cost_estimate": 7.62,
+      "suggested_price": [30.48, 30.48],
+      "story": "海明威在哈瓦那的挚爱，青柠与西柚的双倍酸度",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "黑暗风暴",
+      "name_en": "Dark 'n' Stormy",
+      "category": "高球类",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜",
+        "辛香"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "黑朗姆酒",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "姜啤",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "青柠角",
+      "cost_estimate": 8.67,
+      "suggested_price": [34.68, 34.68],
+      "story": "百慕大经典，黑朗姆与姜啤的辛烈组合",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "暗夜风暴",
+        "Dark 'n' Stormy",
+        "黑风暴"
+      ]
+    },
+    {
+      "name": "南区",
+      "name_en": "South Side",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "清爽",
+        "酸甜"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "薄荷叶",
+          "amount": 8,
+          "unit": "片"        }
+      ],
+      "method": "直调",
+      "glass": "碟形杯",
+      "garnish": "薄荷叶",
+      "cost_estimate": 6.66,
+      "suggested_price": [26.64, 26.64],
+      "story": "芝加哥南区的金酒酸酒，薄荷带来清凉尾韵",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "斯普莫尼",
+      "name_en": "Spumoni",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "苦甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "金巴利",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "西柚汁",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "汤力水",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙片",
+      "cost_estimate": 6.3,
+      "suggested_price": [25.2, 25.2],
+      "story": "意大利餐前酒，金巴利与西柚汁的苦甜平衡",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "白兰地朱莉普",
+      "name_en": "Brandy Julep",
+      "category": "高球类",
+      "strength": "烈",
+      "flavor_tags": [
+        "清爽"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "干邑白兰地",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "方糖",
+          "amount": 1,
+          "unit": "块"        },
+        {
+          "name": "薄荷叶",
+          "amount": 8,
+          "unit": "片"        },
+        {
+          "name": "苏打水",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "捣压",
+      "glass": "高球杯",
+      "garnish": "薄荷枝",
+      "cost_estimate": 8.35,
+      "suggested_price": [33.4, 33.4],
+      "story": "朱利酒的白兰地版本，薄荷与方糖打底",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "白兰地朱利",
+        "Brandy Julep"
+      ]
+    },
+    {
+      "name": "罗勒捣碎",
+      "name_en": "Basil Smash",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "清爽",
+        "酸甜"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 50,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "罗勒叶",
+          "amount": 8,
+          "unit": "片"        }
+      ],
+      "method": "捣压",
+      "glass": "古典杯",
+      "garnish": "罗勒叶",
+      "cost_estimate": 6.66,
+      "suggested_price": [26.64, 26.64],
+      "story": "Smash 家族的罗勒版本，草本香气直接冲出来",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "荆棘",
+      "name_en": "Bramble",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 2,
+          "unit": "ml"        },
+        {
+          "name": "黑莓糖浆",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "薄荷枝",
+      "cost_estimate": 6.02,
+      "suggested_price": [24.08, 24.08],
+      "story": "1980年代伦敦的作品，黑莓糖浆淋面如荆棘划过",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "皮姆杯",
+      "name_en": "Pimm's Cup",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香",
+        "辛香"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "金酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "皮姆一号",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "西柚汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "姜汁汽水",
+          "amount": null,
+          "unit": "topping"        },
+        {
+          "name": "草莓",
+          "amount": 3,
+          "unit": "片"        },
+        {
+          "name": "黄瓜",
+          "amount": 3,
+          "unit": "片"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "黄瓜片、草莓、薄荷",
+      "cost_estimate": 6.66,
+      "suggested_price": [26.64, 26.64],
+      "story": "温布尔登网球赛的招牌，水果与姜汁汽水的长饮",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "青霉素",
+      "name_en": "Penicillin",
+      "category": "高球类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "辛香",
+        "烟熏",
+        "甜润"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "苏格兰威士忌",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 25,
+          "unit": "ml"        },
+        {
+          "name": "蜂蜜水",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "姜糖浆",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "苏格兰威士忌（泥煤）",
+          "amount": 15,
+          "unit": "ml"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "姜片、柠檬皮",
+      "cost_estimate": 8.05,
+      "suggested_price": [32.2, 32.2],
+      "story": "现代经典，泥煤威士忌配蜂蜜姜糖浆，号称\"一杯见效\"",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "阿佩罗气泡酒",
+      "name_en": "Aperol Spritz",
+      "category": "高球类",
+      "strength": "中",
+      "flavor_tags": [
+        "平衡"
+      ],
+      "mood_tags": [
+        "解暑",
+        "社交",
+        "轻松"
+      ],
+      "ingredients": [
+        {
+          "name": "阿佩罗",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "苏打水",
+          "amount": 30,
+          "unit": "ml"        },
+        {
+          "name": "普罗塞克",
+          "amount": 120,
+          "unit": "ml"        }
+      ],
+      "method": "直调",
+      "glass": "高球杯",
+      "garnish": "橙片",
+      "cost_estimate": 15.05,
+      "suggested_price": [60.2, 60.2],
+      "story": "意大利最流行的餐前气泡酒，苦甜清爽、度数低",
+      "spec_updated": "2026-10-26",
+      "aliases": [
+        "阿佩罗气泡",
+        "Aperol Spritz"
+      ]
+    },
+    {
+      "name": "老古巴",
+      "name_en": "Old Cuban",
+      "category": "热带类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "清爽",
+        "酸甜",
+        "苦甜"
+      ],
+      "mood_tags": [
+        "度假",
+        "夏天",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "白朗姆酒",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "薄荷叶",
+          "amount": 8,
+          "unit": "片"        },
+        {
+          "name": "安格斯图拉苦精",
+          "amount": 2,
+          "unit": "dash"        },
+        {
+          "name": "香槟",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "摇和",
+      "glass": "碟形杯",
+      "garnish": "薄荷枝",
+      "cost_estimate": 11.22,
+      "suggested_price": [44.88, 44.88],
+      "story": "莫吉托的气泡升级版，顶部用香槟补满",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "止痛剂",
+      "name_en": "Painkiller",
+      "category": "热带类",
+      "strength": "中烈",
+      "flavor_tags": [
+        "酸甜",
+        "果香",
+        "奶香",
+        "辛香"
+      ],
+      "mood_tags": [
+        "度假",
+        "夏天",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "白朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "陈年朗姆酒",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "椰子糖浆",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "橙汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "菠萝汁",
+          "amount": 22,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "肉桂粉",
+          "amount": null,
+          "unit": "topping"        }
+      ],
+      "method": "摇和",
+      "glass": "飓风杯",
+      "garnish": "橙片、肉豆蔻粉",
+      "cost_estimate": 9.26,
+      "suggested_price": [37.04, 37.04],
+      "story": "英属维尔京群岛的招牌，三种朗姆加椰子与肉桂",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "蓝色火焰",
+      "name_en": "Blue Blazer",
+      "category": "热饮",
+      "strength": "中",
+      "flavor_tags": [
+        "酸甜",
+        "甜润"
+      ],
+      "mood_tags": [
+        "取暖",
+        "冬天",
+        "睡前"
+      ],
+      "ingredients": [
+        {
+          "name": "波本威士忌",
+          "amount": 60,
+          "unit": "ml"        },
+        {
+          "name": "热水",
+          "amount": 120,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "蜂蜜水",
+          "amount": 30,
+          "unit": "ml"        }
+      ],
+      "method": "点燃",
+      "glass": "耐热杯",
+      "garnish": "柠檬皮",
+      "cost_estimate": 9.41,
+      "suggested_price": [37.64, 37.64],
+      "story": "19世纪的表演型热饮，点燃波本在两杯之间抛接",
+      "spec_updated": "2026-10-26"
+    },
+    {
+      "name": "雪国",
+      "name_en": "Yukiguni",
+      "category": "餐前酒",
+      "strength": "烈",
+      "flavor_tags": [
+        "酸甜"
+      ],
+      "mood_tags": [
+        "开胃",
+        "佐餐",
+        "社交"
+      ],
+      "ingredients": [
+        {
+          "name": "伏特加",
+          "amount": 45,
+          "unit": "ml"        },
+        {
+          "name": "君度橙酒",
+          "amount": 15,
+          "unit": "ml"        },
+        {
+          "name": "青柠汁",
+          "amount": 12.5,
+          "unit": "ml"        },
+        {
+          "name": "柠檬汁",
+          "amount": 10,
+          "unit": "ml"        },
+        {
+          "name": "糖浆",
+          "amount": 1,
+          "unit": "barspoon"        }
+      ],
+      "method": "摇和",
+      "glass": "古典杯",
+      "garnish": "柠檬片",
+      "cost_estimate": 7.52,
+      "suggested_price": [30.08, 30.08],
+      "story": "日本调酒师的获奖作品，伏特加配君度与双酸",
+      "spec_updated": "2026-10-26"
+    }
+  ],
+  "total": 177,
+  "last_updated": "2026-11-16"
+}

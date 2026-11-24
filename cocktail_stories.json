@@ -1,0 +1,573 @@
+{
+  "description": "16条故事入口：历史证据库优先，原方/现代变体/原创文案分离；未核起源不作为事实。",
+  "stories": [
+    {
+      "name": "法兰西75",
+      "name_en": "French 75",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "必须按配方分开：1915、1922的同名线索含苹果白兰地和石榴糖浆、没有香槟；1930 Savoy第73页才是此处直接核到的金酒、柠檬、糖与香槟长饮版本。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "经典版",
+          "base": "金酒",
+          "note": "现代主流版本",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "干邑版",
+          "base": "干邑白兰地",
+          "note": "现代基酒替换试做；本轮未证其为唯一或更早原版",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "柑橘与气泡把金酒拉成一道明亮的长线。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "french75"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "同名非同构，1915/1922前身不能冒充现代香槟式。1930原书准确标题带French；归属与绝对首次仍有缺口。不要把含气泡的全部材料密闭摇和。"
+    },
+    {
+      "name": "莫吉托",
+      "name_en": "Mojito",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "确切1930版未核到；直接读到的是Sloppy Joe’s Season 1931-32、阅读器标1932的第9页。原页有薄荷，英文写Lemon，不能套成现代捣碎薄荷的标准规格。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "草莓莫吉托",
+          "addition": "新鲜草莓",
+          "note": "果香更浓郁",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "芒果莫吉托",
+          "addition": "芒果泥",
+          "note": "热带风味",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "无酒精莫吉托",
+          "base": "无",
+          "note": "独立无酒精路线；逐项核查苦精/利口酒等是否含酒精",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "朗姆、青柠与薄荷，清爽但不等于酒精消失。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "mojito"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "1930确切版、最早名称记录、薄荷处理和柑橘译名仍有缺口；不将早期疗愈或海盗传说写成已证发明。1932含薄荷原页不能用省略薄荷的搜索摘要替代。"
+    },
+    {
+      "name": "古典",
+      "name_en": "Old Fashioned",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "1806-05-13的报纸答复把cocktail说明为烈酒、糖、水与苦精构成的饮品；本次通过机构摘录核验，不等于找到词语或饮品的全球首次。 1862 no109是gum syrup、Bogart's bitters、whiskey、lemon peel与冰的Whiskey Cocktail，原文要求摇和过滤。这里只关联古典结构，不把Old Fashioned名称或杯中搅拌倒记1862。 1895 Kappeler明确记录糖、水、Angostura、冰、柠檬皮和威士忌的杯中搅拌服务；这是可核历史版本，不是发明证书。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "枫糖古典",
+          "syrup": "枫糖浆",
+          "note": "加拿大风味",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "蜂蜜古典",
+          "syrup": "蜂蜜",
+          "note": "更温润",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "黑麦古典",
+          "base": "黑麦威士忌",
+          "note": "更辛辣，更传统",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "烈酒、甜味、苦精与稀释，四个零件就足够讲层次。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "cocktail_definition",
+        "old_fashioned",
+        "old_fashioned_1895"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "定义日期不是发明日期。此处不声称全球最早鸡尾酒、词语首次出现或某个人发明。 1862记录是Whiskey Cocktail，不是已核Old Fashioned命名或发明记录；古典的后期命名应另找独立来源。 1895是已核出版版本，不是全球最早或作者首创定论。旧书whiskey不自动等于某一波本品牌；dash与jigger不能套用任一现代统一体积。"
+    },
+    {
+      "name": "马提尼",
+      "name_en": "Martini",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "本次能直接定位的Martini独立标题是Johnson1888 no57 p38–39，含gum、Boker's、Curaçao、Old Tom及vermouth。Thomas1887可核的是Martinez，不用Martini代改。 Byron1884 p21仅说以gin替换Manhattan中的whisky，指向两种Manhattan存在歧义；Thomas1887 p25则独立列Old Tom、vermouth、Maraschino与Boker's。后者不能记成1862。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "脏马提尼",
+          "addition": "橄榄卤水",
+          "note": "更咸鲜",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "Vesper",
+          "base": "金酒+伏特加",
+          "note": "邦德款，以Lillet Blonde代替苦艾酒",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "伏特加马提尼",
+          "base": "伏特加",
+          "note": "现代版本，更中性",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "martini",
+        "martinez"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "此处不声称Johnson发明Martini或1888全球首印；不把Martini/Martinez仅因现代相近而视为可交换的历史名字。 两份配方记录不能证明单一发明者、城市或Martinez到Martini的唯一直线演化；本次未核这些归属。"
+    },
+    {
+      "name": "长岛冰茶",
+      "name_en": "Long Island Iced Tea",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "阿拉斯加冰茶",
+          "replace": "可乐→雪碧",
+          "note": "更清爽",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "夏威夷冰茶",
+          "replace": "可乐→菠萝汁",
+          "note": "热带风味",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "德州冰茶",
+          "addition": "加白兰地",
+          "note": "更烈",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "warning": "⚠️ 度数较高，建议每人限购2杯",
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "尼格罗尼",
+      "name_en": "Negroni",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "1919伯爵加金酒故事有二手支持但归属有争议，本次未核到具名Negroni的最早出版原谱。现代等量结构可用于教学，不假借1930 Savoy的Campari Cocktail作来源。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "Boulevardier",
+          "replace": "金酒→波本威士忌",
+          "note": "更醇厚，更美式",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "Old Pal",
+          "replace": "甜苦艾酒→干苦艾酒",
+          "note": "更干，更清爽",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "白色尼格罗尼",
+          "replace": "金巴利→Suze",
+          "note": "更草本，更苦",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "negroni"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "1919故事与竞争归属必须标争议；具名最早出版原谱未核。不得把Campari Cocktail、Americano或其他同构酒谱冒充最早Negroni。"
+    },
+    {
+      "name": "曼哈顿",
+      "name_en": "Manhattan",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "Byron1884印刷p21列两个Manhattan，French vermouth/gum与Italian vermouth/Curaçao并存；Thomas1887 p24另为rye、vermouth、修饰利口酒、Boker's版本。Johnson1882未在已查目录和OCR找到，不能倒记后版。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "干曼哈顿",
+          "vermouth": "干苦艾酒",
+          "note": "更干，更优雅",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "完美曼哈顿",
+          "vermouth": "干甜各半",
+          "note": "平衡之选",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "黑麦曼哈顿",
+          "base": "黑麦威士忌",
+          "note": "更传统，更辛辣",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "manhattan"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "这些是可定位配方记录，不证明1884首次提及或全球最早，也不收录未经本次核验的地点与名人宴会传说。"
+    },
+    {
+      "name": "教父",
+      "name_en": "Godfather",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "教母",
+          "replace": "威士忌→伏特加",
+          "note": "更柔和",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "可可教父",
+          "addition": "加可可利口酒",
+          "note": "更甜，巧克力风味",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "威士忌遇见杏仁香，两种材料也能有深浅。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "爱尔兰咖啡",
+      "name_en": "Irish Coffee",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "苏格兰咖啡",
+          "replace": "爱尔兰威士忌→苏格兰威士忌",
+          "note": "更烟熏",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "墨西哥咖啡",
+          "replace": "威士忌→龙舌兰",
+          "note": "加肉桂，更热情",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "西班牙咖啡",
+          "base": "白兰地",
+          "note": "点燃白兰地后加咖啡",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "得其利",
+      "name_en": "Daiquiri",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "已直接核到Straub版权1914的Drinks第24页Daiguiri Cocktail；两项jigger分数在OCR中损坏，保留缺口，不拿它替代古巴当地早期出版证据。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "海明威得其利",
+          "addition": "西柚汁+黑樱桃利口酒",
+          "note": "现代常见派生风格，不能自动等同海明威当年个人原方；利口酒本身有糖",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "草莓得其利",
+          "addition": "新鲜草莓",
+          "note": "果香版",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "冰沙得其利",
+          "method": "搅拌机打成冰沙",
+          "note": "夏日清爽版",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "三种材料不是简单，是每一处都无处藏身。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "daiquiri"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "已核名称、材料类别、糖粉量和方法，但原书jigger分数暂不可读，故不发布可执行的1914复原规格。1909/1914古巴早期出版及Cox的确定发明权仍留待进一步原始史料核验。"
+    },
+    {
+      "name": "椰林飘香",
+      "name_en": "Piña Colada",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "草莓椰林飘香",
+          "addition": "新鲜草莓",
+          "note": "粉红色版本",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "芒果椰林飘香",
+          "addition": "芒果泥",
+          "note": "更热带",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "无酒精版",
+          "base": "无",
+          "note": "独立无酒精路线；逐项核查苦精/利口酒等是否含酒精",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "大都会",
+      "name_en": "Cosmopolitan",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "柠檬大都会",
+          "addition": "更多柠檬汁",
+          "note": "更酸",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "白大都会",
+          "replace": "蔓越莓汁→白色蔓越莓汁",
+          "note": "更清澈，风味更纯粹",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "金汤力",
+      "name_en": "Gin & Tonic",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "Hendrick's金汤力",
+          "gin": "Hendrick's",
+          "garnish": "黄瓜片",
+          "note": "黄瓜玫瑰香",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "孟买蓝宝石金汤力",
+          "gin": "Bombay Sapphire",
+          "note": "植物香气浓郁",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "添加利金汤力",
+          "gin": "Tanqueray",
+          "note": "杜松子香气突出",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "威士忌酸",
+      "name_en": "Whiskey Sour",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "具体命名与归属按历史证据库对应主张解释；不得根据名字反推事实。",
+      "history": "已核的是1862 Brandy Sour的引用式配方，不能用其证明Whiskey Sour同年首次或发明。酸酒的角色结构可参考对应记录，威士忌同名原书条目尚待单独核验。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "波士顿酸",
+          "addition": "蛋白",
+          "note": "更顺滑，泡沫丰富",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "纽约酸",
+          "top": "红酒漂浮",
+          "note": "增加酸度和层次",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [
+        "brandy_sour"
+      ],
+      "history_status": "evidence_linked",
+      "history_caution": "history_record_ids关联的是结构家族，不是Whiskey Sour同名酒谱的首次记录。"
+    },
+    {
+      "name": "B-52",
+      "name_en": "B-52",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [
+        "分层取决于实际产品密度；观察层次不必点火。"
+      ],
+      "recipe_variations": [
+        {
+          "name": "B-53",
+          "replace": "君度→萨姆布卡",
+          "note": "更烈，甘草味",
+          "historical_status": "modern_variation_not_verified_original"
+        },
+        {
+          "name": "B-54",
+          "replace": "君度→杏仁利口酒",
+          "note": "坚果风味",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "serving_tip": "不点火、不吸燃烧的酒；选择稳定杯具，适量慢饮。",
+      "quote": "咖啡、奶油与橙味的漂亮分层；不点火，适量慢饮。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    },
+    {
+      "name": "性感海滩",
+      "name_en": "Sex on the Beach",
+      "origin_year": null,
+      "origin_location": "本版不据旧传说断定确切诞生地点",
+      "creator": "未能独立确证；文献收录者不等于发明者",
+      "naming_origin": "本轮命名历史未核，不作为事实输出。",
+      "history": "本版尚未为此酒建立已核原始文献记录。只讲材料结构、口感与明确标注的现代变体，不输出旧故事的精确发明年/人或名人引语。",
+      "cultural_impact": [],
+      "trivia": [],
+      "recipe_variations": [
+        {
+          "name": "性感海滩二号",
+          "addition": "蔓越莓汁",
+          "note": "更红，更酸甜",
+          "historical_status": "modern_variation_not_verified_original"
+        }
+      ],
+      "quote": "这杯的故事先从风味讲起，历史留给有出处的那一页。",
+      "quote_type": "original_bar_copy_not_historical_quote",
+      "history_record_ids": [],
+      "history_status": "not_researched_in_this_release",
+      "history_caution": "未收录不等于没有历史；需要另核早期出版或可信归属资料。"
+    }
+  ],
+  "usage": {
+    "description": "先查cocktail_history.json与history_record_ids；文案不是史料名言，未核起源只讲风味，不退回无出处旧传说。",
+    "triggers": [
+      "这酒有什么故事",
+      "给我讲讲xxx的来历",
+      "这款酒的起源是什么"
+    ]
+  },
+  "version": "2.7.0",
+  "updated": "2026-11-23"
+}

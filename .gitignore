@@ -1,0 +1,14 @@
+# 仅分发公共知识与空业务模板；真实业务数据应保存在另一个私有目录。
+# 已被Git跟踪的JSON不受ignore保护，禁止在此仓库录入真实业务后提交。
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+.workbuddy/
+backup/
+_skillhub_meta.json
+_knot_meta.json
+feedback.jsonl
+*.log
+*.zip
