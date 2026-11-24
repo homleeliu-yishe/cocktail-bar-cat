@@ -287,7 +287,7 @@ def bar_detail(b):
     mine = [s for s in SIGS if s['bar'] == b['name']]
     cur = [s for s in mine if eff_freshness(s) != 'historical']
     old = [s for s in mine if eff_freshness(s) == 'historical']
-    print(f"\n  【当前 / 近期快照中的可复刻款】{len(cur)} 杯")
+    print(f"\n  【非历史快照中的可复刻款（可能偏旧或日期未知，须核对当日酒单）】{len(cur)} 杯")
     for s in cur:
         print(f"    · {s['name']}  {FRESH_MARK.get(eff_freshness(s), '⚪')} "
               f"快照 {s.get('menu_snapshot', '?')} · {age_text(s.get('menu_snapshot'))}"

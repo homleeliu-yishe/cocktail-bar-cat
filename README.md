@@ -31,7 +31,7 @@ v2.7.2｜经典有出处，公开有边界。新增可公开分发的演示版�
 
 ## 安装：使用skills CLI或宿主导入
 
-以下 `npx skills add`、`--skill`、`--list` 与默认项目安装语法依据 **2026-11-23** 查询的官方文档：
+以下 `npx skills@1.9.0 add`、`--skill`、`--list` 与默认项目安装语法依据 **2026-11-23** 查询的官方文档；固定 `1.9.0` 是因为该版本已于 2026-11-24 实际核对，升级前须重新审查，避免临时下载未审查的更新：
 
 - skills官方说明：<https://skills.sh/docs>
 - 官方CLI README：<https://github.com/vercel-labs/skills/blob/main/README.md>
@@ -43,9 +43,9 @@ v2.7.2｜经典有出处，公开有边界。新增可公开分发的演示版�
 
 ```bash
 # 先列出仓库技能；该命令联网，只有发布后才可用
-npx skills add homleeliu-yishe/cocktail-bar-cat --list
+npx skills@1.9.0 add homleeliu-yishe/cocktail-bar-cat --list
 # 安装指定技能，默认项目范围，交互选择受支持的代理
-npx skills add homleeliu-yishe/cocktail-bar-cat --skill cocktail-bar-cat
+npx skills@1.9.0 add homleeliu-yishe/cocktail-bar-cat --skill cocktail-bar-cat
 ```
 
 确有全局安装需求才加 `--global`；先备份已有同名技能及本机私有数据，不使用无确认的全代理安装来覆盖旧副本。CLI是第三方工具，其联网、遥测和安装审查政策独立于本技能，使用前阅读官方说明。
@@ -55,7 +55,7 @@ npx skills add homleeliu-yishe/cocktail-bar-cat --skill cocktail-bar-cat
 在包含 `cocktail-bar-cat/` 的父目录执行（本地技能应含SKILL、全部JSON、scripts、references及随包说明）：
 
 ```bash
-npx skills add ./cocktail-bar-cat --skill cocktail-bar-cat
+npx skills@1.9.0 add ./cocktail-bar-cat --skill cocktail-bar-cat
 ```
 
 `npx` 本身可能下载CLI并联网，不能把此方式说成完全离线。若不使用CLI，按宿主官方技能导入流程导入完整目录；不要只复制SKILL而丢掉JSON或references。宿主是否允许读取文件、运行Python、导出文档及实际技能路径需要实测，静态文件包不保证所有平台具备这些能力。
